@@ -13,22 +13,21 @@ type Props = {
 
 export function PostHeader({ title, coverImage, date, author }: Props) {
   return (
-    <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
+    <header className="mb-12">
+      {/* Title and Meta */}
+      <div className="text-center mb-8">
+        <PostTitle>{title}</PostTitle>
+        <div className="flex items-center justify-center space-x-4 text-sm text-muted mt-4">
+          <DateFormatter dateString={date} />
+          <span>•</span>
+          <span>{author.name}</span>
+        </div>
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      
+      {/* Cover Image */}
+      <div className="mb-8 rounded-xl overflow-hidden max-w-full max-h-64 md:max-h-80">
         <CoverImage title={title} src={coverImage} />
       </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
-      </div>
-    </>
+    </header>
   );
 }

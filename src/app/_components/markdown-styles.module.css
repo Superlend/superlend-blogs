@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-relaxed text-secondary-dark dark:text-gray-100 transition-colors duration-200;
 }
 
 .markdown p,
@@ -9,10 +9,73 @@
   @apply my-6;
 }
 
+.markdown h1 {
+  @apply text-4xl mt-12 mb-6 leading-tight font-bold text-secondary-dark dark:text-gray-100 transition-colors duration-200;
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 leading-snug font-semibold text-secondary-dark dark:text-gray-100 transition-colors duration-200;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-snug font-semibold text-secondary-dark dark:text-gray-100 transition-colors duration-200;
+}
+
+.markdown h4 {
+  @apply text-xl mt-6 mb-3 leading-snug font-medium text-secondary-dark dark:text-gray-100 transition-colors duration-200;
+}
+
+.markdown h5,
+.markdown h6 {
+  @apply text-lg mt-4 mb-2 leading-snug font-medium text-secondary-dark dark:text-gray-100 transition-colors duration-200;
+}
+
+.markdown a {
+  @apply text-primary hover:text-primary/80 transition-colors underline;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-primary pl-6 italic text-gray-600 dark:text-gray-400 transition-colors duration-200;
+}
+
+.markdown code {
+  @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono;
+}
+
+.markdown pre {
+  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.markdown pre code {
+  @apply bg-transparent p-0;
+}
+
+.markdown img {
+  @apply rounded-lg shadow-sm my-6;
+}
+
+.markdown table {
+  @apply w-full border-collapse my-6;
+}
+
+.markdown th,
+.markdown td {
+  @apply border border-gray-200 dark:border-gray-700 px-4 py-2 text-left;
+}
+
+.markdown th {
+  @apply bg-gray-50 dark:bg-gray-800 font-semibold;
+}
+
+.markdown ul,
+.markdown ol {
+  @apply pl-6;
+}
+
+.markdown li {
+  @apply my-2;
+}
+
+.markdown hr {
+  @apply border-gray-200 dark:border-gray-700 my-8;
 }

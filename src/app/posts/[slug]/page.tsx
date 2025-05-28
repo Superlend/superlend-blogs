@@ -8,6 +8,7 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import Link from "next/link";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -20,11 +21,25 @@ export default async function Post(props: Params) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <main>
-      <Alert preview={post.preview} />
+    <main className="min-h-screen">
+      <Header />
+      {/* <Alert preview={post.preview} /> */}
+      
       <Container>
-        <Header />
-        <article className="mb-32">
+        {/* Back Navigation */}
+        <div className="max-w-4xl mx-auto pt-8 pb-4">
+          <Link 
+            href="/"
+            className="inline-flex items-center text-muted hover:text-primary transition-colors text-sm"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Blog
+          </Link>
+        </div>
+        
+        <article className="max-w-4xl mx-auto pb-16">
           <PostHeader
             title={post.title}
             coverImage={post.coverImage}
@@ -52,12 +67,14 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     return notFound();
   }
 
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${post.title} | Superlend Blog`;
 
   return {
     title,
+    description: post.excerpt,
     openGraph: {
       title,
+      description: post.excerpt,
       images: [post.ogImage.url],
     },
   };
