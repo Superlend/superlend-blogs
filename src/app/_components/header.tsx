@@ -22,7 +22,7 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo and Brand */}
-            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center space-x-1 hover:opacity-80 transition-opacity">
               <Image
                 src="/assets/superlend-logo.svg"
                 alt="Superlend Logo"

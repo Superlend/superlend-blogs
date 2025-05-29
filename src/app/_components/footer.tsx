@@ -10,7 +10,7 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Brand Section */}
             <div>
-              <div className="flex items-center space-x-3 mb-4">
+              <div className="flex items-center space-x-1 mb-4">
                 <Image
                   src="/assets/superlend-logo.svg"
                   alt="Superlend Logo"
