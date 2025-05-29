@@ -2,7 +2,7 @@
 title: "What is DeFi? A Beginner's Guide"
 excerpt: "Imagine you could send money to anyone, earn interest on it, or borrow some—all without a bank in between. That's DeFi, or Decentralized Finance."
 coverImage: "/assets/blog/covers/abstract-1.jpg"
-date: "2024-12-20T10:00:00.000Z"
+date: "2025-05-29T12:00:00.000Z"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.jpeg"
@@ -68,7 +68,7 @@ Here's how it works:
 
 1. You deposit USDC into [**SuperFund**](https://funds.superlend.xyz).
 
-2. SuperFund automatically invests your money in the **best DeFi protocols** like [**Aave**](https://aave.com), [**Euler**](https://www.euler.finance), and [**Morpho**](https://morpho.org).
+2. SuperFund automatically invests your money in the **best DeFi protocols** like [**Aave**](https://aave.com), [**Euler**](https://www.euler.finance), [**Fluid**](https://fluid.io) and [**Morpho**](https://morpho.org).
 
 3. You sit back and earn **passive income**, with SuperFund managing your money and maximizing your returns.
 

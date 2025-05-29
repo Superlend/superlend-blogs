@@ -31,23 +31,23 @@
 }
 
 .markdown a {
-  @apply text-primary hover:text-primary/80 transition-colors underline;
+  @apply text-primary hover:text-orange-600 hover:bg-white/40 transition-all duration-200 underline decoration-2 underline-offset-2 px-1 py-0.5 rounded;
 }
 
 .markdown blockquote {
-  @apply border-l-4 border-primary pl-6 italic text-gray-600 dark:text-gray-400 transition-colors duration-200;
+  @apply border-l-4 border-primary pl-6 italic text-gray-700 dark:text-gray-400 transition-colors duration-200 bg-white/60 py-4 rounded-r-lg;
 }
 
 .markdown code {
-  @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono;
+  @apply bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600;
 }
 
 .markdown pre {
-  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto my-6;
+  @apply bg-gray-200 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto my-6 border border-gray-300 dark:border-gray-600;
 }
 
 .markdown pre code {
-  @apply bg-transparent p-0;
+  @apply bg-transparent p-0 border-0 text-gray-800 dark:text-gray-200;
 }
 
 .markdown img {
@@ -55,16 +55,20 @@
 }
 
 .markdown table {
-  @apply w-full border-collapse my-6;
+  @apply w-full border-collapse my-6 bg-white/80 rounded-lg overflow-hidden shadow-sm;
 }
 
 .markdown th,
 .markdown td {
-  @apply border border-gray-200 dark:border-gray-700 px-4 py-2 text-left;
+  @apply border border-gray-300 dark:border-gray-700 px-4 py-2 text-left;
 }
 
 .markdown th {
-  @apply bg-gray-50 dark:bg-gray-800 font-semibold;
+  @apply bg-gray-300 dark:bg-gray-800 font-semibold text-gray-800 dark:text-gray-100;
+}
+
+.markdown td {
+  @apply text-gray-800 dark:text-gray-200;
 }
 
 .markdown ul,
@@ -73,9 +77,50 @@
 }
 
 .markdown li {
-  @apply my-2;
+  @apply my-2 text-gray-700 dark:text-gray-200;
+}
+
+.markdown ul li {
+  @apply relative;
+}
+
+.markdown ul li::before {
+  content: "•";
+  @apply absolute -left-4 font-bold text-gray-600 text-lg;
+}
+
+.markdown ol {
+  @apply list-none pl-6;
+  counter-reset: list-counter;
+}
+
+.markdown ol li {
+  @apply relative;
+  counter-increment: list-counter;
+}
+
+.markdown ol li::before {
+  content: counter(list-counter) ".";
+  @apply absolute -left-6 font-semibold text-gray-600;
+  min-width: 1.5rem;
+  text-align: right;
+}
+
+.markdown strong,
+.markdown b {
+  @apply font-semibold text-gray-900 dark:text-gray-100;
+}
+
+.markdown em,
+.markdown i {
+  @apply italic text-gray-700 dark:text-gray-300;
 }
 
 .markdown hr {
-  @apply border-gray-200 dark:border-gray-700 my-8;
+  @apply border-0 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent my-8;
+}
+
+/* Also add alternative styling for thematic breaks */
+.markdown hr:first-of-type {
+  @apply bg-gradient-to-r from-transparent via-primary/60 to-transparent;
 }

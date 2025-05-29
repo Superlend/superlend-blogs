@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { ThemeSwitcher } from "./theme-switcher";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,7 +36,7 @@ const Header = () => {
               </div>
             </Link>
 
-            {/* Navigation and Theme Switcher */}
+            {/* Navigation */}
             <div className="flex items-center space-x-6">
               {/* Navigation Links */}
               <nav className="hidden md:flex items-center space-x-6">
@@ -69,9 +68,6 @@ const Header = () => {
                   All Posts
                 </Link>
               </nav>
-
-              {/* Theme Switcher */}
-              <ThemeSwitcher />
               
               {/* Mobile menu button */}
               <div className="md:hidden">
