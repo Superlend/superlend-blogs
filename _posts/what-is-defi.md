@@ -52,7 +52,7 @@ In simple terms, DeFi is like **the internet for money**. It lets you do financi
 
 Let's walk through a super simple example:
 
-* **Lending:** Let's say you have some **USDC** (a type of digital dollar). In traditional finance, if you wanted to lend it to someone, you'd go through a bank. But in DeFi, you can lend your USDC directly to someone else on a platform like **SuperFund**, and **earn interest**—without a bank in the middle.
+* **Lending:** Let's say you have some **USDC** (a type of digital dollar). In traditional finance, if you wanted to lend it to someone, you'd go through a bank. But in DeFi, you can lend your USDC directly to someone else on a platform like [**SuperFund**](https://funds.superlend.xyz), and **earn interest**—without a bank in the middle.
 
 * **Borrowing:** If you need to borrow money, you can do it directly through DeFi platforms. No credit checks, no bank approvals. Just collateral (like crypto), and you're good to go.
 
@@ -62,13 +62,13 @@ Let's walk through a super simple example:
 
 ### **What's Special About SuperFund?**
 
-Now, you might be wondering, "How do I start using DeFi?" Well, that's where **SuperFund** comes in. SuperFund is an easy-to-use **DeFi vault** that helps you earn the best interest on your USDC.
+Now, you might be wondering, "How do I start using DeFi?" Well, that's where [**SuperFund**](https://funds.superlend.xyz) comes in. SuperFund is an easy-to-use **DeFi vault** that helps you earn the best interest on your USDC.
 
 Here's how it works:
 
-1. You deposit USDC into SuperFund.
+1. You deposit USDC into [**SuperFund**](https://funds.superlend.xyz).
 
-2. SuperFund automatically invests your money in the **best DeFi protocols** like **Aave**, **Euler**, and **Morpho**.
+2. SuperFund automatically invests your money in the **best DeFi protocols** like [**Aave**](https://aave.com), [**Euler**](https://www.euler.finance), and [**Morpho**](https://morpho.org).
 
 3. You sit back and earn **passive income**, with SuperFund managing your money and maximizing your returns.
 
@@ -76,7 +76,7 @@ Here's how it works:
 
 ### **Why Should You Use DeFi?**
 
-* **Earn More, Risk Less:** DeFi platforms like SuperFund find the best protocols to invest your money in. This means **higher yields** for you without the need to do the hard work yourself.
+* **Earn More, Risk Less:** DeFi platforms like [**SuperFund**](https://funds.superlend.xyz) find the best protocols to invest your money in. This means **higher yields** for you without the need to do the hard work yourself.
 
 * **Control Your Money:** With DeFi, you control your assets. No bank or middleman can freeze your account or take a cut of your profits.
 
@@ -100,7 +100,7 @@ To make things even clearer, here are a few terms you'll come across when using 
 
 ### **How to Start Using DeFi with SuperFund?**
 
-1. **Connect Your Wallet:** Use a wallet like **MetaMask or Phantom** to connect your crypto to the platform.
+1. **Connect Your Wallet:** Use a wallet like [**MetaMask**](https://metamask.io) or [**Phantom**](https://phantom.com) to connect your crypto to the platform.
 
 2. **Deposit USDC:** Put your stablecoins (like USDC) into SuperFund's vault.
 
