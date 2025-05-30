@@ -6,6 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.17.6",
+    "@amplitude/engagement-browser": "^1.0.0",
+    "@amplitude/plugin-session-replay-browser": "^1.16.9",
     "@tailwindcss/typography": "^0.5.16",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",

@@ -2,6 +2,7 @@ import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import cn from "classnames";
+import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
 
 import "./globals.css";
 
@@ -20,6 +21,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get Amplitude API key from environment variables
+  const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || '';
+
   return (
     <html lang="en" data-mode="light">
       <head>
@@ -58,8 +62,10 @@ export default function RootLayout({
       <body
         className={cn("font-sans bg-background text-secondary-dark min-h-screen")}
       >
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>
+          <div className="min-h-screen">{children}</div>
+          <Footer />
+        </AmplitudeAnalyticsProvider>
       </body>
     </html>
   );

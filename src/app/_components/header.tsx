@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { TrackedLink } from "@/components/analytics/tracked-link";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +22,12 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo and Brand */}
-            <Link href="/" className="flex items-center space-x-1 hover:opacity-80 transition-opacity">
+            <TrackedLink 
+              href="/" 
+              className="flex items-center space-x-1 hover:opacity-80 transition-opacity"
+              eventName="header_logo_click"
+              eventData={{ section: 'header', element: 'logo' }}
+            >
               <Image
                 src="/assets/superlend-logo.svg"
                 alt="Superlend Logo"
@@ -34,39 +40,47 @@ const Header = () => {
                   Superlend <span className="text-primary">Blog</span>
                 </h1>
               </div>
-            </Link>
+            </TrackedLink>
 
             {/* Navigation */}
             <div className="flex items-center space-x-6">
               {/* Navigation Links */}
               <nav className="hidden md:flex items-center space-x-6">
-                <Link 
+                <TrackedLink 
                   href="https://markets.superlend.xyz/" 
                   target="_blank"
                   className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
+                  eventName="header_nav_click"
+                  eventData={{ section: 'header', element: 'markets_link' }}
                 >
                   Markets
-                </Link>
-                <Link 
+                </TrackedLink>
+                <TrackedLink 
                   href="https://app.superlend.xyz/" 
                   target="_blank"
                   className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
+                  eventName="header_nav_click"
+                  eventData={{ section: 'header', element: 'aggregator_link' }}
                 >
                   Aggregator
-                </Link>
-                <Link 
+                </TrackedLink>
+                <TrackedLink 
                   href="https://funds.superlend.xyz/" 
                   target="_blank"
                   className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
+                  eventName="header_nav_click"
+                  eventData={{ section: 'header', element: 'superfund_link' }}
                 >
                   SuperFund
-                </Link>
-                <Link 
+                </TrackedLink>
+                <TrackedLink 
                   href="/" 
                   className="btn-primary text-sm px-4 py-2"
+                  eventName="header_nav_click"
+                  eventData={{ section: 'header', element: 'all_posts_button' }}
                 >
                   All Posts
-                </Link>
+                </TrackedLink>
               </nav>
               
               {/* Mobile menu button */}
@@ -111,38 +125,46 @@ const Header = () => {
           }`}
         >
           <div className="px-4 py-3 space-y-1">
-            <Link 
+            <TrackedLink 
               href="https://markets.superlend.xyz/" 
               target="_blank"
               onClick={closeMobileMenu}
               className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
+              eventName="mobile_nav_click"
+              eventData={{ section: 'mobile_menu', element: 'markets_link' }}
             >
               Markets
-            </Link>
-            <Link 
+            </TrackedLink>
+            <TrackedLink 
               href="https://app.superlend.xyz/" 
               target="_blank"
               onClick={closeMobileMenu}
               className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
+              eventName="mobile_nav_click"
+              eventData={{ section: 'mobile_menu', element: 'aggregator_link' }}
             >
               Aggregator
-            </Link>
-            <Link 
+            </TrackedLink>
+            <TrackedLink 
               href="https://funds.superlend.xyz/" 
               target="_blank"
               onClick={closeMobileMenu}
               className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
+              eventName="mobile_nav_click"
+              eventData={{ section: 'mobile_menu', element: 'superfund_link' }}
             >
               SuperFund
-            </Link>
+            </TrackedLink>
             <div className="pt-2">
-              <Link 
+              <TrackedLink 
                 href="/" 
                 onClick={closeMobileMenu}
                 className="block btn-primary text-center py-3"
+                eventName="mobile_nav_click"
+                eventData={{ section: 'mobile_menu', element: 'all_posts_button' }}
               >
                 All Posts
-              </Link>
+              </TrackedLink>
             </div>
           </div>
         </div>

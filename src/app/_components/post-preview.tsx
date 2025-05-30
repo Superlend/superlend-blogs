@@ -1,8 +1,8 @@
-import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import Avatar from "./avatar";
+import { type Author } from "@/interfaces/author";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
+import { TrackedLink } from "@/components/analytics/tracked-link";
 
 type Props = {
   title: string;
@@ -23,7 +23,17 @@ export function PostPreview({
 }: Props) {
   return (
     <article className="group">
-      <Link href={`/posts/${slug}`} className="block">
+      <TrackedLink 
+        href={`/posts/${slug}`} 
+        className="block"
+        eventName="post_preview_click"
+        eventData={{ 
+          section: 'blog_posts', 
+          element: 'post_preview',
+          post_title: title,
+          post_slug: slug 
+        }}
+      >
         <div className="mb-4 overflow-hidden rounded-lg aspect-[16/9] bg-gray-100 dark:bg-gray-800">
           <CoverImage title={title} src={coverImage} />
         </div>
@@ -43,7 +53,7 @@ export function PostPreview({
             {excerpt}
           </p>
         </div>
-      </Link>
+      </TrackedLink>
     </article>
   );
 }
