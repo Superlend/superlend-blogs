@@ -73,14 +73,14 @@ const Header = () => {
                 >
                   SuperFund
                 </TrackedLink>
-                <TrackedLink 
+                {/* <TrackedLink 
                   href="/" 
                   className="btn-primary text-sm px-4 py-2"
                   eventName="header_nav_click"
                   eventData={{ section: 'header', element: 'all_posts_button' }}
                 >
                   All Posts
-                </TrackedLink>
+                </TrackedLink> */}
               </nav>
               
               {/* Mobile menu button */}
@@ -155,7 +155,7 @@ const Header = () => {
             >
               SuperFund
             </TrackedLink>
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <TrackedLink 
                 href="/" 
                 onClick={closeMobileMenu}
@@ -165,7 +165,7 @@ const Header = () => {
               >
                 All Posts
               </TrackedLink>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
