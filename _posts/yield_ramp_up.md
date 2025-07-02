@@ -11,7 +11,7 @@ ogImage:
   url: "/assets/blog/covers/abstract-3.jpg"
 ---
 
-![][image1]
+<!-- ![][image1] -->
 
 A persistent issue in many yield-generating protocols is the volatility and unpredictability of returns. This is often made worse by distribution models that intentionally or unintentionally favor large players, coupled with sudden rate swings.
 

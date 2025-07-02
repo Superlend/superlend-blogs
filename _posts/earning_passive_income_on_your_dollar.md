@@ -11,7 +11,7 @@ ogImage:
   url: "/assets/blog/covers/abstract-2.jpg"
 ---
 
-![][image1]
+<!-- ![][image1] -->
 
 You’ve probably heard stories about people making (and losing) fortunes in crypto by buying random memecoins, YOLO-ing their savings, and inevitably getting *rekt*.
 
@@ -48,7 +48,7 @@ Here’s what we mean;
 * Crypto: Low Risk DeFi protocols  \- \~4% to \~7%   
 * Crypto: Onchain Yield Allocator (eg. SuperFund) \- \~12%  
 
-![][image2]
+<!-- ![][image2] -->
 
 ### **A Quiet Way to Grow Your Money**
 
