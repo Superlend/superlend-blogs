@@ -22,7 +22,7 @@ export function PostPreview({
   slug,
 }: Props) {
   return (
-    <article className="group">
+    <article className="group bg-white bg-opacity-25 dark:bg-gray-800 rounded-2xl hover:bg-opacity-50 transition-all duration-300 overflow-hidden">
       <TrackedLink 
         href={`/posts/${slug}`} 
         className="block"
@@ -34,11 +34,11 @@ export function PostPreview({
           post_slug: slug 
         }}
       >
-        <div className="mb-4 overflow-hidden rounded-lg aspect-[16/9] bg-gray-100 dark:bg-gray-800">
+        <div className="mb-4 overflow-hidden aspect-[16/9] bg-gray-100 dark:bg-gray-800">
           <CoverImage title={title} src={coverImage} />
         </div>
         
-        <div className="space-y-3">
+        <div className="space-y-3 p-4">
           <div className="flex items-center text-sm text-muted">
             <DateFormatter dateString={date} />
             <span className="mx-2">•</span>

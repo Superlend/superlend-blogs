@@ -15,9 +15,9 @@ export function MoreStories({ posts }: Props) {
   // First post is the large featured card
   const featuredPost = posts[0];
   // Next 4 posts are smaller cards
-  const gridPosts = posts.slice(1, 5);
+  const gridPosts = posts.slice(1, 2);
   // Remaining posts in standard grid
-  const remainingPosts = posts.slice(5);
+  const remainingPosts = posts.slice(3);
 
   return (
     <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
