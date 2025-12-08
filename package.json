@@ -14,9 +14,9 @@
     "date-fns": "^3.6.0",
     "googleapis": "^149.0.0",
     "gray-matter": "^4.0.3",
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "remark": "^15.0.1",
     "remark-external-links": "^9.0.1",
     "remark-html": "^16.0.1"
