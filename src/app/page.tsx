@@ -1,8 +1,8 @@
-import { HeroPost } from "@/app/_components/hero-post";
-import { MoreStories } from "@/app/_components/more-stories";
-import Header from "@/app/_components/header";
+import { HeroPost } from "@/components/hero-post";
+import { MoreStories } from "@/components/more-stories";
+import Header from "@/components/header";
 import { getAllPosts } from "@/lib/api";
-import Hero from "@/app/_components/hero";
+import Hero from "@/components/hero";
 
 export default function Index() {
   const allPosts = getAllPosts() || []; // Fallback to empty array

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import DateFormatter from "./date-formatter";
-import { PostTitle } from "@/app/_components/post-title";
 import { type Author } from "@/interfaces/author";
 import { calculateReadingTime, formatReadingTime } from "@/lib/reading-time";
 

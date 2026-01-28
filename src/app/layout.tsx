@@ -1,11 +1,11 @@
-import Footer from "@/app/_components/footer";
+import Footer from "@/components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import cn from "classnames";
 import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
 
 import "./globals.css";
-import { BackgroundImage } from "./_components/background-image";
+import { BackgroundImage } from "../components/background-image";
 
 export const metadata: Metadata = {
   title: `Superlend Blog - DeFi Insights & Updates`,

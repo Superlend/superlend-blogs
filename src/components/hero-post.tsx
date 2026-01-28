@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import type { Post } from "@/interfaces/post";
 import { TrackedLink } from "@/components/analytics/tracked-link";

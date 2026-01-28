@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import DateFormatter from "@/app/_components/date-formatter";
+import DateFormatter from "@/components/date-formatter";
 import { type Author } from "@/interfaces/author";
 import { formatReadingTime } from "@/lib/reading-time";
 

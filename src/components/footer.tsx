@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "@/app/_components/container";
+import Container from "@/components/container";
 import Image from "next/image";
 import { TrackedLink } from "@/components/analytics/tracked-link";
 import { LINKS } from "@/lib/constants";
@@ -134,7 +134,7 @@ export function Footer() {
           </div>
 
           {/* Bottom Section */}
-          <div className="pt-6 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center">
+          <div className="pt-6 border-t border-secondary-navy/20 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted text-sm mb-4 md:mb-0">
               © 2026 Superlend. All rights reserved.
             </p>
