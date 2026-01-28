@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
     title: "Superlend Blog - DeFi Insights & Updates",
-    description: "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    description:
+      "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
   },
 };
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Get Amplitude API key from environment variables
-  const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || '';
+  const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || "";
 
   return (
     <html lang="en" data-mode="light">
@@ -60,7 +61,9 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn("font-sans bg-background text-secondary-dark min-h-screen")}
+        className={cn(
+          "font-sans bg-background text-secondary-dark min-h-screen",
+        )}
       >
         <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>
           <div className="min-h-screen">{children}</div>

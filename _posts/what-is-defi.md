@@ -5,7 +5,7 @@ coverImage: "/assets/blog/covers/abstract-1.jpg"
 date: "2025-05-29T12:00:00.000Z"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/abstract-1.jpg"
 ---

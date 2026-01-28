@@ -1,14 +1,14 @@
 ---
 title: "Beyond Stablecoins: Your Guide to High-APR Lending in DeFi"
 excerpt: "While stablecoin lending offers predictable yields, lending volatile assets like ETH, SOL, or other non-stable tokens can unlock APRs from 15% to over 80%"
-coverImage: "/assets/blog/covers/abstract-4.jpg"
+coverImage: "/assets/blog/covers/3d-superlend-brand.png"
 date: "2025-06-29T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/covers/abstract-4.jpg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/abstract-4.jpg"
+  url: "/assets/blog/covers/3d-superlend-brand.png"
 ---
 
 For some time, stablecoins like USDC and USDT have been reliable workhorses for anyone looking for stable yield in crypto. Lending them on established protocols could net you a steady 5-10% APY with little price risk. But in 2025, the DeFi playground has evolved. For those willing to step up the risk ladder, applying some lending strategies can push returns into double or even triple digits.

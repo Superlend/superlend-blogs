@@ -6,7 +6,7 @@ date: "2025-08-14T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/covers/loop.png"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/loop.png"
 ---

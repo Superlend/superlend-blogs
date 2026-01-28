@@ -1,115 +1,124 @@
 /* Basier Circle Font Definitions */
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-BoldItalic.eot');
-    src:
-        local('Basier Circle Bold Italic'),
-        local('BasierCircle-BoldItalic'),
-        url('/fonts/basier-circle/BasierCircle-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-BoldItalic.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-BoldItalic.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-BoldItalic.eot");
+  src:
+    local("Basier Circle Bold Italic"),
+    local("BasierCircle-BoldItalic"),
+    url("/fonts/basier-circle/BasierCircle-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-BoldItalic.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-BoldItalic.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-Bold.eot');
-    src:
-        local('Basier Circle Bold'),
-        local('BasierCircle-Bold'),
-        url('/fonts/basier-circle/BasierCircle-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-Bold.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-Bold.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-Bold.eot");
+  src:
+    local("Basier Circle Bold"),
+    local("BasierCircle-Bold"),
+    url("/fonts/basier-circle/BasierCircle-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-Bold.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-Bold.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-MediumItalic.eot');
-    src:
-        local('Basier Circle Medium Itali'),
-        local('BasierCircle-MediumItalic'),
-        url('/fonts/basier-circle/BasierCircle-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-MediumItalic.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-MediumItalic.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-MediumItalic.eot");
+  src:
+    local("Basier Circle Medium Itali"),
+    local("BasierCircle-MediumItalic"),
+    url("/fonts/basier-circle/BasierCircle-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-MediumItalic.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-MediumItalic.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-Italic.eot');
-    src:
-        local('Basier Circle Italic'),
-        local('BasierCircle-Italic'),
-        url('/fonts/basier-circle/BasierCircle-Italic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-Italic.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-Italic.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-Italic.eot");
+  src:
+    local("Basier Circle Italic"),
+    local("BasierCircle-Italic"),
+    url("/fonts/basier-circle/BasierCircle-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-Italic.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-Italic.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-SemiBold.eot');
-    src:
-        local('Basier Circle SemiBold'),
-        local('BasierCircle-SemiBold'),
-        url('/fonts/basier-circle/BasierCircle-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-SemiBold.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-SemiBold.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-SemiBold.eot");
+  src:
+    local("Basier Circle SemiBold"),
+    local("BasierCircle-SemiBold"),
+    url("/fonts/basier-circle/BasierCircle-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-SemiBold.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-SemiBold.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-Medium.eot');
-    src:
-        local('Basier Circle Medium'),
-        local('BasierCircle-Medium'),
-        url('/fonts/basier-circle/BasierCircle-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-Medium.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-Medium.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-Medium.eot");
+  src:
+    local("Basier Circle Medium"),
+    local("BasierCircle-Medium"),
+    url("/fonts/basier-circle/BasierCircle-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-Medium.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-Medium.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-Regular.eot');
-    src:
-        local('Basier Circle Regular'),
-        local('BasierCircle-Regular'),
-        url('/fonts/basier-circle/BasierCircle-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-Regular.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-Regular.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-Regular.eot");
+  src:
+    local("Basier Circle Regular"),
+    local("BasierCircle-Regular"),
+    url("/fonts/basier-circle/BasierCircle-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-Regular.woff2") format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-Regular.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Basier Circle';
-    src: url('/fonts/basier-circle/BasierCircle-SemiBoldItalic.eot');
-    src:
-        local('Basier Circle SemiBold Ita'),
-        local('BasierCircle-SemiBoldItalic'),
-        url('/fonts/basier-circle/BasierCircle-SemiBoldItalic.eot?#iefix')
-            format('embedded-opentype'),
-        url('/fonts/basier-circle/BasierCircle-SemiBoldItalic.woff2') format('woff2'),
-        url('/fonts/basier-circle/BasierCircle-SemiBoldItalic.woff') format('woff'),
-        url('/fonts/basier-circle/BasierCircle-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+  font-family: "Basier Circle";
+  src: url("/fonts/basier-circle/BasierCircle-SemiBoldItalic.eot");
+  src:
+    local("Basier Circle SemiBold Ita"),
+    local("BasierCircle-SemiBoldItalic"),
+    url("/fonts/basier-circle/BasierCircle-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/basier-circle/BasierCircle-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("/fonts/basier-circle/BasierCircle-SemiBoldItalic.woff") format("woff"),
+    url("/fonts/basier-circle/BasierCircle-SemiBoldItalic.ttf")
+      format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @tailwind base;
@@ -122,39 +131,41 @@
 
 @layer base {
   html {
-    font-family: 'Basier Circle', system-ui, sans-serif;
+    font-family: "Basier Circle", system-ui, sans-serif;
   }
-  
+
   body {
     background-color: #b4e2fb;
     color: #0a0a0a;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
   }
-  
+
   /* Dark mode styles - proper dark theme */
   .dark body {
     background-color: #0a0a0a;
     color: #e5e5e5;
   }
-  
+
   /* Custom scrollbar to match Superlend theme */
   ::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
-    background: #B0E3FF;
+    background: #b0e3ff;
   }
-  
+
   .dark ::-webkit-scrollbar-track {
     background: #1a1a1a;
   }
-  
+
   ::-webkit-scrollbar-thumb {
-    background: #FF5B00;
+    background: #ff5b00;
     border-radius: 4px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: #e54f00;
   }
@@ -164,54 +175,54 @@
   .btn-primary {
     @apply bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 shadow-superlend;
   }
-  
+
   .btn-secondary {
     @apply bg-secondary-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200;
   }
-  
+
   .card {
     @apply bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-all duration-200 hover:shadow-md;
   }
-  
+
   .dark .card {
     @apply bg-gray-900 border-gray-800;
   }
-  
+
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-secondary-blue bg-clip-text text-transparent;
   }
-  
+
   /* Header styles */
   .header-bg {
     @apply bg-white/80 backdrop-blur-sm border-gray-100 transition-colors duration-200;
   }
-  
+
   .dark .header-bg {
     @apply bg-gray-900/80 border-gray-800;
   }
-  
+
   /* Footer styles */
   .footer-bg {
-    @apply bg-white border-gray-200 transition-colors duration-200;
+    @apply bg-white bg-opacity-40 border-gray-200 transition-colors duration-200;
   }
-  
+
   .dark .footer-bg {
     @apply bg-gray-900 border-gray-800;
   }
-  
+
   /* Text color transitions */
   .text-adaptive {
     @apply text-secondary-dark transition-colors duration-200;
   }
-  
+
   .dark .text-adaptive {
     @apply text-gray-100;
   }
-  
+
   .text-muted {
     @apply text-gray-600 transition-colors duration-200;
   }
-  
+
   .dark .text-muted {
     @apply text-gray-400;
   }
@@ -224,7 +235,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
+
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -235,7 +246,8 @@
 
 /* Hero Banner Animations */
 @keyframes gradient {
-  0%, 100% {
+  0%,
+  100% {
     background-size: 200% 200%;
     background-position: 0% 50%;
   }
@@ -257,7 +269,8 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
@@ -279,12 +292,107 @@
   .backdrop-blur-xs {
     backdrop-filter: blur(2px);
   }
-  
+
   .text-shadow-lg {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-  
+
   .bg-noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
   }
+}
+
+/* ========================================
+   SMOOTH SCROLL & REDUCED MOTION
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   GLASSMORPHISM UTILITIES
+   ======================================== */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.dark .glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+}
+
+.dark .glass-nav {
+  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   CLOUD BACKGROUND
+   ======================================== */
+
+.cloud-background {
+  background: linear-gradient(180deg, #e8f4fd 0%, #b4e2fb 50%, #9dd6f5 100%);
+}
+
+.dark .cloud-background {
+  background: linear-gradient(180deg, #0f244b 0%, #0a0a0a 50%, #000000 100%);
+}
+
+/* ========================================
+   SCALE UTILITIES FOR HOVER EFFECTS
+   ======================================== */
+
+.scale-102 {
+  transform: scale(1.02);
+}
+
+.scale-105 {
+  transform: scale(1.05);
+}
+
+/* ========================================
+   CONTENT CARD - Clean, Readable Container
+   Solid backgrounds for maximum readability
+   ======================================== */
+
+.content-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(15, 36, 75, 0.06);
+  border: 1px solid rgba(15, 36, 75, 0.05);
+}
+
+.dark .content-card {
+  background: #1a202c;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }

@@ -1,13 +1,13 @@
 ---
 title: "Why Structured Yield Products Are the Future of Passive Income in DeFi"
 excerpt: "Structured yield products simplify DeFi passive income with automated strategies, risk-adjusted returns, and safer onchain yield. Discover why they’re replacing yield farming."
-coverImage: "/assets/blog/covers/structured-yield-products-will-win.jpg"
+coverImage: "/assets/blog/covers/3d-yield-growth.png"
 date: "2025-12-01T12:00:00.000Z"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/structured-yield-products-will-win.jpg"
+  url: "/assets/blog/covers/3d-yield-growth.png"
   published: true
 ---
 

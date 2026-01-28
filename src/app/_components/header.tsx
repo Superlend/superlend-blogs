@@ -1,175 +1,231 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TrackedLink } from "@/components/analytics/tracked-link";
+import { LINKS } from "@/lib/constants";
+
+const BLOG_TABS = [
+  "DeFi Insights",
+  "Market Trends",
+  "Product Updates",
+  "About",
+];
 
 const Header = () => {
+  // const [activeTab, setActiveTab] = useState("DeFi Insights");
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <>
-      <header className="header-bg border-b relative z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo and Brand */}
-            <TrackedLink 
-              href="/" 
-              className="flex items-center space-x-1 hover:opacity-80 transition-opacity"
-              eventName="header_logo_click"
-              eventData={{ section: 'header', element: 'logo' }}
-            >
-              <Image
-                src="/assets/superlend-logo.svg"
-                alt="Superlend Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8"
-              />
-              <div>
-                <h1 className="text-xl font-bold text-adaptive">
-                  Superlend <span className="text-primary">Blog</span>
-                </h1>
-              </div>
-            </TrackedLink>
+    <header
+    //   className={`
+    //   sticky top-0 left-0 right-0 z-50 transition-all duration-300
+    //   ${isScrolled ? "bg-white bg-opacity-50 backdrop-blur-lg" : "bg-transparent"}
+    // `}
+    >
+      <div className="max-w-7xl mx-auto max-md:px-2">
+        {/* Top Row: Logo + External Links + Subscribe */}
+        <div className="flex items-center justify-between py-4 border-b border-gray-200/20 dark:border-gray-700/20">
+          {/* Logo */}
+          <TrackedLink
+            href="/"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            eventName="header_logo_click"
+            eventData={{ section: "header", element: "logo" }}
+          >
+            <Image
+              src="/assets/superlend-logo.webp"
+              alt="Superlend"
+              width={176}
+              height={24.59}
+              className="my-auto w-28 shrink-0 cursor-pointer object-contain lg:w-44 "
+            />
+          </TrackedLink>
 
-            {/* Navigation */}
-            <div className="flex items-center space-x-6">
-              {/* Navigation Links */}
-              <nav className="hidden md:flex items-center space-x-6">
-                <TrackedLink 
-                  href="https://markets.superlend.xyz/" 
-                  target="_blank"
-                  className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
-                  eventName="header_nav_click"
-                  eventData={{ section: 'header', element: 'markets_link' }}
-                >
-                  Markets
-                </TrackedLink>
-                <TrackedLink 
-                  href="https://app.superlend.xyz/" 
-                  target="_blank"
-                  className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
-                  eventName="header_nav_click"
-                  eventData={{ section: 'header', element: 'aggregator_link' }}
-                >
-                  Aggregator
-                </TrackedLink>
-                <TrackedLink 
-                  href="https://funds.superlend.xyz/" 
-                  target="_blank"
-                  className="text-adaptive hover:text-primary transition-colors text-sm font-medium"
-                  eventName="header_nav_click"
-                  eventData={{ section: 'header', element: 'superfund_link' }}
-                >
-                  SuperFund
-                </TrackedLink>
-                {/* <TrackedLink 
-                  href="/" 
-                  className="btn-primary text-sm px-4 py-2"
-                  eventName="header_nav_click"
-                  eventData={{ section: 'header', element: 'all_posts_button' }}
-                >
-                  All Posts
-                </TrackedLink> */}
-              </nav>
-              
-              {/* Mobile menu button */}
-              <div className="md:hidden">
-                <button 
-                  onClick={toggleMobileMenu}
-                  className="text-adaptive hover:text-primary transition-colors"
-                  aria-label="Toggle mobile menu"
-                >
-                  {isMobileMenuOpen ? (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  ) : (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile Navigation Overlay */}
-      <div 
-        className={`md:hidden fixed inset-0 z-40 transition-opacity duration-300 ease-in-out ${
-          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-        }`}
-      >
-        {/* Backdrop */}
-        <div 
-          className="absolute inset-0 bg-black/20 backdrop-blur-sm"
-          onClick={closeMobileMenu}
-        ></div>
-        
-        {/* Mobile Menu Panel */}
-        <div 
-          className={`absolute top-20 left-0 right-0 header-bg border-b border-gray-200 dark:border-gray-700 shadow-lg transform transition-transform duration-300 ease-in-out ${
-            isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
-          }`}
-        >
-          <div className="px-4 py-3 space-y-1">
-            <TrackedLink 
-              href="https://markets.superlend.xyz/" 
+          {/* Right: External Links + Subscribe (Desktop) */}
+          <div className="hidden md:flex items-center gap-6">
+            <TrackedLink
+              href={LINKS.AGGREGATOR}
               target="_blank"
-              onClick={closeMobileMenu}
-              className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
-              eventName="mobile_nav_click"
-              eventData={{ section: 'mobile_menu', element: 'markets_link' }}
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+              eventName="header_external_click"
+              eventData={{ section: "header", element: "aggregator" }}
+            >
+              Discover
+            </TrackedLink>
+            <TrackedLink
+              href={LINKS.MARKETS}
+              target="_blank"
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+              eventName="header_external_click"
+              eventData={{ section: "header", element: "markets" }}
             >
               Markets
             </TrackedLink>
-            <TrackedLink 
-              href="https://app.superlend.xyz/" 
+            <TrackedLink
+              href={LINKS.SUPERFUND}
               target="_blank"
-              onClick={closeMobileMenu}
-              className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
-              eventName="mobile_nav_click"
-              eventData={{ section: 'mobile_menu', element: 'aggregator_link' }}
-            >
-              Aggregator
-            </TrackedLink>
-            <TrackedLink 
-              href="https://funds.superlend.xyz/" 
-              target="_blank"
-              onClick={closeMobileMenu}
-              className="block px-3 py-3 text-adaptive hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors text-base font-medium"
-              eventName="mobile_nav_click"
-              eventData={{ section: 'mobile_menu', element: 'superfund_link' }}
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+              eventName="header_external_click"
+              eventData={{ section: "header", element: "superfund" }}
             >
               SuperFund
             </TrackedLink>
-            {/* <div className="pt-2">
-              <TrackedLink 
-                href="/" 
-                onClick={closeMobileMenu}
-                className="block btn-primary text-center py-3"
-                eventName="mobile_nav_click"
-                eventData={{ section: 'mobile_menu', element: 'all_posts_button' }}
+            <TrackedLink
+              href={LINKS.VAULTS}
+              target="_blank"
+              className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+              eventName="header_external_click"
+              eventData={{ section: "header", element: "superloop" }}
+            >
+              Vaults
+            </TrackedLink>
+
+            {/* <button
+              className="px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
+              onClick={() => {
+                // Add newsletter subscription logic here
+                alert("Newsletter subscription coming soon!");
+              }}
+            >
+              Subscribe Now
+            </button> */}
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-gray-600 dark:text-gray-400"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                All Posts
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
+
+        {/* Bottom Row: Horizontal Tabs (Desktop) */}
+        {/* <div className="hidden md:flex items-center gap-8 py-3">
+          {BLOG_TABS.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`
+                text-sm font-medium transition-all pb-2 border-b-2
+                ${
+                  activeTab === tab
+                    ? "text-primary border-primary"
+                    : "text-gray-600 dark:text-gray-400 border-transparent hover:text-primary hover:border-primary/50"
+                }
+              `}
+            >
+              {tab}
+            </button>
+          ))}
+        </div> */}
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden border-t border-gray-200/20 dark:border-gray-700/20 bg-white/40 dark:bg-gray-900/95 backdrop-blur-lg">
+          <div className="px-6 py-4 space-y-3">
+            {/* Blog Tabs */}
+            {/* {BLOG_TABS.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => {
+                  setActiveTab(tab);
+                  setIsMobileMenuOpen(false);
+                }}
+                className={`
+                  block w-full text-left px-4 py-2 rounded-lg transition-colors
+                  ${
+                    activeTab === tab
+                      ? "bg-primary/10 text-primary font-medium"
+                      : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  }
+                `}
+              >
+                {tab}
+              </button>
+            ))} */}
+
+            <div className="border-t border-gray-200/20">
+              <TrackedLink
+                href={LINKS.MARKETS}
+                target="_blank"
+                className="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                eventName="mobile_external_click"
+                eventData={{ element: "markets" }}
+              >
+                Markets
               </TrackedLink>
-            </div> */}
+              <TrackedLink
+                href={LINKS.AGGREGATOR}
+                target="_blank"
+                className="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                eventName="mobile_external_click"
+                eventData={{ element: "aggregator" }}
+              >
+                Aggregator
+              </TrackedLink>
+              <TrackedLink
+                href={LINKS.SUPERFUND}
+                target="_blank"
+                className="block px-4 py-2 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                eventName="mobile_external_click"
+                eventData={{ element: "superfund" }}
+              >
+                SuperFund
+              </TrackedLink>
+            </div>
+
+            {/* <button
+              className="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-full font-medium transition-all"
+              onClick={() => alert("Newsletter subscription coming soon!")}
+            >
+              Subscribe Now
+            </button> */}
           </div>
         </div>
-      </div>
-    </>
+      )}
+    </header>
   );
 };
 
