@@ -28,9 +28,9 @@ const Header = () => {
 
   return (
     <header
-      className={`
-        bg-white bg-opacity-50 backdrop-blur-lg
-    `}
+    //   className={`
+    //     bg-white bg-opacity-50 backdrop-blur-lg
+    // `}
     >
       <div className="max-w-7xl mx-auto max-md:px-2">
         {/* Top Row: Logo + External Links + Subscribe */}
@@ -53,7 +53,7 @@ const Header = () => {
 
           {/* Right: External Links + Subscribe (Desktop) */}
           <div className="hidden md:flex items-center gap-6">
-            <TrackedLink
+            {/* <TrackedLink
               href={LINKS.AGGREGATOR}
               target="_blank"
               className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
@@ -88,17 +88,19 @@ const Header = () => {
               eventData={{ section: "header", element: "superloop" }}
             >
               Vaults
-            </TrackedLink>
+            </TrackedLink> */}
 
-            {/* <button
-              className="px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
-              onClick={() => {
-                // Add newsletter subscription logic here
-                alert("Newsletter subscription coming soon!");
-              }}
+            <TrackedLink
+              href={LINKS.LANDING}
+              target="_blank"
+              className="px-6 py-2 bg-primary hover:bg-primary/90 active:scale-100 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
+              // onClick={() => {
+              //   // Add newsletter subscription logic here
+              //   alert("Newsletter subscription coming soon!");
+              // }}
             >
-              Subscribe Now
-            </button> */}
+              Launch App
+            </TrackedLink>
           </div>
 
           {/* Mobile menu button */}

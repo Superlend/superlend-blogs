@@ -4,6 +4,7 @@ export const HOME_OG_IMAGE_URL =
   "https://markets.superlend.xyz/superlend_banner.png";
 
 export const LINKS = {
+  LANDING: "https://app.superlend.xyz",
   AGGREGATOR: "https://app.superlend.xyz/discover",
   MARKETS: "https://app.superlend.xyz/markets",
   VAULTS: "https://app.superlend.xyz/vaults",
