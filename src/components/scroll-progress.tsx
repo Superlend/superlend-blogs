@@ -29,8 +29,8 @@ export function ScrollProgress() {
 
   return (
     <div
-      className="fixed left-0 right-0 h-1 bg-transparent z-50"
-      style={{ top: "var(--header-height, 62px)" }}
+      className="fixed left-0 right-0 h-1.5 bg-transparent z-50"
+      style={{ top: "var(--header-height, 0px)" }}
     >
       <div
         ref={progressBarRef}

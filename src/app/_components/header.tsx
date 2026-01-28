@@ -28,10 +28,9 @@ const Header = () => {
 
   return (
     <header
-    //   className={`
-    //   sticky top-0 left-0 right-0 z-50 transition-all duration-300
-    //   ${isScrolled ? "bg-white bg-opacity-50 backdrop-blur-lg" : "bg-transparent"}
-    // `}
+      className={`
+        bg-white bg-opacity-50 backdrop-blur-lg
+    `}
     >
       <div className="max-w-7xl mx-auto max-md:px-2">
         {/* Top Row: Logo + External Links + Subscribe */}
@@ -164,7 +163,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200/20 dark:border-gray-700/20 bg-white/40 dark:bg-gray-900/95 backdrop-blur-lg">
-          <div className="px-6 py-4 space-y-3">
+          <div className="py-4 space-y-3">
             {/* Blog Tabs */}
             {/* {BLOG_TABS.map((tab) => (
               <button
@@ -186,7 +185,7 @@ const Header = () => {
               </button>
             ))} */}
 
-            <div className="border-t border-gray-200/20">
+            <div className="space-y-3">
               <TrackedLink
                 href={LINKS.MARKETS}
                 target="_blank"
