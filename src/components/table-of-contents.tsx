@@ -63,7 +63,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <nav className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-auto">
       <h3 className="text-sm font-semibold text-secondary-navy dark:text-white mb-4">
-        Table of Contents
+        Table of Content
       </h3>
       <ul className="space-y-2 text-sm">
         {headings.map((heading) => (

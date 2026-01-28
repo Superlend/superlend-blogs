@@ -65,7 +65,7 @@ export default async function Post(props: Params) {
             <PostBody content={content} />
           </article>
 
-          {/* Right Sidebar - Table of Contents (hidden on mobile, sticky on desktop) */}
+          {/* Right Sidebar - Table of Content (hidden on mobile, sticky on desktop) */}
           <div className="hidden lg:block">
             <TableOfContents headings={headings} />
           </div>
