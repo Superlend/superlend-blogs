@@ -42,7 +42,7 @@ export function HeroPost({ featuredPost }: HeroBannerProps) {
             }}
           >
             <div className="lg:col-span-2">
-              <div className="bg-white bg-opacity-40 hover:bg-opacity-70 transition duration-150 ease-in-out rounded-4 p-2 h-full flex flex-col md:flex-row gap-6">
+              <div className="bg-white bg-opacity-60 hover:bg-opacity-75 transition duration-150 ease-in-out rounded-4 p-2 h-full flex flex-col md:flex-row gap-6">
                 {/* Featured Image */}
                 <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[280px] rounded-soft overflow-hidden flex-shrink-0">
                   <Image

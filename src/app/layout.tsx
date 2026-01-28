@@ -5,6 +5,7 @@ import cn from "classnames";
 import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
 
 import "./globals.css";
+import { BackgroundImage } from "./_components/background-image";
 
 export const metadata: Metadata = {
   title: `Superlend Blog - DeFi Insights & Updates`,
@@ -65,6 +66,7 @@ export default function RootLayout({
           "font-sans bg-background text-secondary-dark min-h-screen",
         )}
       >
+        <BackgroundImage />
         <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>
           <div className="min-h-screen">{children}</div>
           <Footer />

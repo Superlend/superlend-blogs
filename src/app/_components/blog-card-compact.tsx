@@ -39,8 +39,8 @@ export function BlogCardCompact({
         rounded-4 overflow-hidden
         transition-all duration-300 ease-out
         hover:scale-105 active:scale-100 hover:shadow-xl
-        animate-slide-up bg-white bg-opacity-40
-        hover:bg-opacity-60
+        animate-slide-up bg-white bg-opacity-60
+        hover:bg-opacity-75
       `}
       style={{ animationDelay: `${index * 80}ms` }}
     >
