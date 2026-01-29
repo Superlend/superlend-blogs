@@ -59,6 +59,7 @@ export function BlogCardCompact({
         <div className="relative aspect-[16/10] rounded-[16px] overflow-hidden">
           <div
             className={`
+            h-full w-full
             transition-transform duration-500
             group-hover:scale-105
           `}
