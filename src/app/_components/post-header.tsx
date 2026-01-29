@@ -25,7 +25,7 @@ export function PostHeader({ title, coverImage, date, author }: Props) {
       </div>
       
       {/* Cover Image */}
-      <div className="mb-8 rounded-xl overflow-hidden max-w-full max-h-64 md:max-h-80">
+      <div className="mb-8 rounded-xl overflow-hidden max-w-full">
         <CoverImage title={title} src={coverImage} />
       </div>
     </header>
