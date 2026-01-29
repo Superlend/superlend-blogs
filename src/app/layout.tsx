@@ -8,13 +8,26 @@ import "./globals.css";
 import { BackgroundImage } from "../components/background-image";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://blog.superlend.xyz"),
   title: `Superlend Blog - DeFi Insights & Updates`,
   description: `Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator. Discover trends, strategies, and innovations in decentralized finance.`,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
     title: "Superlend Blog - DeFi Insights & Updates",
     description:
       "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    type: "website",
+    siteName: "Superlend Blog",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Superlend Blog - DeFi Insights & Updates",
+    description:
+      "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    images: [HOME_OG_IMAGE_URL],
   },
 };
 

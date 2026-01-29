@@ -46,7 +46,7 @@ export function HeroPost({ featuredPost }: HeroBannerProps) {
                 <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[280px] rounded-soft overflow-hidden flex-shrink-0">
                   <Image
                     src={featuredPost.coverImage}
-                    alt={featuredPost.title}
+                    alt={`Cover image for article: ${featuredPost.title}`}
                     fill
                     className="object-cover"
                     priority
