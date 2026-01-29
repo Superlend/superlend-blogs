@@ -8,6 +8,7 @@ import DateFormatter from "./date-formatter";
 import { TrackedLink } from "@/components/analytics/tracked-link";
 
 import { calculateReadingTime, formatReadingTime } from "@/lib/reading-time";
+import { BlogCategory } from "@/interfaces/post";
 
 interface BlogCardCompactProps {
   title: string;
@@ -18,6 +19,7 @@ interface BlogCardCompactProps {
   slug: string;
   index: number;
   content: string; // Added for reading time calculation
+  category: BlogCategory;
 }
 
 export function BlogCardCompact({
@@ -29,6 +31,7 @@ export function BlogCardCompact({
   slug,
   index,
   content,
+  category,
 }: BlogCardCompactProps) {
   const readTime = calculateReadingTime(content);
 
@@ -72,7 +75,7 @@ export function BlogCardCompact({
         <div className="mt-4 pb-12">
           {/* Category Badge */}
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-3 w-fit">
-            Article
+            {category}
           </span>
 
           {/* Title (smaller, 2 lines max) */}

@@ -4,6 +4,7 @@ excerpt: "A persistent issue in many yield-generating protocols is the volatilit
 coverImage: "/assets/blog/covers/yield_ramp_up.webp"
 date: "2025-06-29T19:18:03.920Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"

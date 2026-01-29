@@ -4,6 +4,7 @@ excerpt: "Loop Vaults are automated DeFi strategies designed to maximize yield w
 coverImage: "/assets/blog/covers/superlend_loop.webp"
 date: "2025-08-14T19:18:03.920Z"
 published: true
+category: "Product Updates"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"

@@ -4,6 +4,7 @@ excerpt: "Learn how DeFi lending protocols work, what assets you can lend or bor
 coverImage: "/assets/blog/covers/understanding_lending_protocols.webp"
 date: "2025-07-11T19:18:03.920Z"
 published: true
+category: "DeFi Basics"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"

@@ -54,9 +54,15 @@ export function HeroPost({ featuredPost }: HeroBannerProps) {
 
                 {/* Content */}
                 <div className="md:w-1/2 flex flex-col justify-between p-4 min-h-full">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-secondary-navy dark:text-white mb-4 line-clamp-3 group-hover:text-primary transition-colors duration-150 ease-in-out">
-                    {featuredPost.title}
-                  </h2>
+                  {/* Category Badge */}
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-3">
+                      {featuredPost.category}
+                    </span>
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-secondary-navy dark:text-white mb-4 line-clamp-3 group-hover:text-primary transition-colors duration-150 ease-in-out">
+                      {featuredPost.title}
+                    </h2>
+                  </div>
                   {/* <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
                     {featuredPost.excerpt}
                   </p> */}

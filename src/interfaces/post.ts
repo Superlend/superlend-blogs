@@ -1,5 +1,15 @@
 import { type Author } from "./author";
 
+// Available blog categories - add new categories here
+export const BLOG_CATEGORIES = [
+  "DeFi Basics",
+  "Yield Strategies",
+  "Product Updates",
+  "Guides",
+] as const;
+
+export type BlogCategory = (typeof BLOG_CATEGORIES)[number];
+
 export type Post = {
   slug: string;
   title: string;
@@ -11,5 +21,6 @@ export type Post = {
     url: string;
   };
   content: string;
+  category: BlogCategory;
   preview?: boolean;
 };

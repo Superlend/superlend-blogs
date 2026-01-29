@@ -46,6 +46,7 @@ export function MoreStories({ posts }: Props) {
             slug={post.slug}
             index={index}
             content={post.content || ""}
+            category={post.category}
           />
         ))}
       </div>

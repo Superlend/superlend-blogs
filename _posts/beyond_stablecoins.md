@@ -4,6 +4,7 @@ excerpt: "While stablecoin lending offers predictable yields, lending volatile a
 coverImage: "/assets/blog/covers/beyond_stablecoins.webp"
 date: "2025-06-29T19:18:03.920Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"

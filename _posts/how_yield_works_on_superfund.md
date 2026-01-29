@@ -4,6 +4,7 @@ excerpt: "SuperFund is like a Candy Machine that gives out candy 🍬 (money!) e
 coverImage: "/assets/blog/covers/how_yield_works_on_superfund.webp"
 date: "2025-05-28T19:18:03.920Z"
 published: false
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"
