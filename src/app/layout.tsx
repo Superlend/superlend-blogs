@@ -6,6 +6,7 @@ import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provid
 
 import "./globals.css";
 import { BackgroundImage } from "../components/background-image";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://blog.superlend.xyz"),
@@ -86,6 +87,11 @@ export default function RootLayout({
           <Footer />
         </AmplitudeAnalyticsProvider>
       </body>
+      <Script
+        src="https://scripts.ahrefs.com/ae.js"
+        strategy="afterInteractive"
+        data-project-id="EbD32RmwTubQE3StFq2h4Q"
+      />
     </html>
   );
 }
