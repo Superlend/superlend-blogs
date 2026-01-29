@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/components/container";
 import Header from "@/components/header";
@@ -13,6 +12,7 @@ import { TableOfContents } from "@/components/table-of-contents";
 import { ArticleMetadataSidebar } from "@/components/article-metadata-sidebar";
 import { extractHeadings } from "@/lib/extract-headings";
 import { calculateReadingTime } from "@/lib/reading-time";
+import Image from "next/image";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -60,7 +60,16 @@ export default async function Post(props: Params) {
           </div>
 
           {/* Center - Article Content */}
-          <article className="min-w-0 px-4 pt-5 rounded-4 bg-white bg-opacity-40">
+          <article className="min-w-0 px-4 pt-5 rounded-4 bg-white bg-opacity-40 flex flex-col gap-6">
+            <div className="relative aspect-[21/9] rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                width={736}
+                height={315}
+                className="object-cover aspect-[21/9]"
+              />
+            </div>
             <PostBody content={content} />
           </article>
 

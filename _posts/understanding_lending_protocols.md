@@ -1,14 +1,14 @@
 ---
 title: "Understanding Lending Protocols: Assets, Rates, and Risks"
 excerpt: "Learn how DeFi lending protocols work, what assets you can lend or borrow, how interest rates are set, and what risks to watch out for."
-coverImage: "/assets/blog/covers/abstract-3.jpg"
+coverImage: "/assets/blog/covers/understanding_lending_protocols.webp"
 date: "2025-07-11T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/abstract-3.jpg"
+  url: "/assets/blog/covers/understanding_lending_protocols.webp"
 ---
 
 Lending protocols are one of the biggest forces behind DeFi, with over $56.7 billion in Total Value Locked. Aave, the biggest lending platform, holds the number one spot for all of DeFi TVL on [DeFiLlama](https://defillama.com/).

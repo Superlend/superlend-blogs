@@ -1,14 +1,14 @@
 ---
 title: "Earning Passive Income on Your Dollar"
 excerpt: "When you supply assets like USDC to a lending protocol, your funds are lent out safely (only to overcollateralized borrowers), and you earn interest in return"
-coverImage: "/assets/blog/covers/3d-future-structure.png"
+coverImage: "/assets/blog/covers/earning_passive_income_on_your_dollar.webp"
 date: "2025-06-28T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/3d-future-structure.png"
+  url: "/assets/blog/covers/earning_passive_income_on_your_dollar.webp"
 ---
 
 <!-- ![][image1] -->

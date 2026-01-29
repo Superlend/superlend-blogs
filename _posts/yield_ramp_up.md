@@ -1,14 +1,14 @@
 ---
 title: "Yield Ramp-Up: The Path to Stable DeFi Returns"
 excerpt: "A persistent issue in many yield-generating protocols is the volatility and unpredictability of returns"
-coverImage: "/assets/blog/covers/abstract-3.jpg"
+coverImage: "/assets/blog/covers/yield_ramp_up.webp"
 date: "2025-06-29T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/abstract-3.jpg"
+  url: "/assets/blog/covers/yield_ramp_up.webp"
 ---
 
 <!-- ![][image1] -->
