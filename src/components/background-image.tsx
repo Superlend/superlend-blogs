@@ -2,14 +2,19 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const BackgroundImage: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
   const pathname = usePathname();
 
-  if (pathname !== "/") {
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (pathname !== "/" || !isMounted) {
     return null;
   }
 

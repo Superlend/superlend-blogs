@@ -40,7 +40,7 @@ export default function RootLayout({
   const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || "";
 
   return (
-    <html lang="en" data-mode="light">
+    <html lang="en" data-mode="light" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -78,6 +78,7 @@ export default function RootLayout({
         className={cn(
           "font-sans bg-background text-secondary-dark min-h-screen",
         )}
+        suppressHydrationWarning
       >
         <BackgroundImage />
         <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>

@@ -48,7 +48,11 @@ export function TrackedLink({
     <Link {...linkProps} onClick={handleClick}>
       {children}
       {isExternalLink && (
-        <ArrowUpRight size="14" className="inline-block ml-0.5" />
+        <ArrowUpRight
+          size="14"
+          className="inline-block ml-0.5"
+          aria-hidden="true"
+        />
       )}
     </Link>
   );
