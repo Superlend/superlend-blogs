@@ -6,9 +6,10 @@ type Props = {
   title: string;
   src: string;
   slug?: string;
+  isPriority?: boolean;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, isPriority = false }: Props) => {
   const image = (
     <Image
       src={src}
@@ -18,7 +19,8 @@ const CoverImage = ({ title, src, slug }: Props) => {
       })}
       width={1300}
       height={630}
-      priority
+      priority={isPriority}
+      loading={isPriority ? undefined : "lazy"}
     />
   );
   return (

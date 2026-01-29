@@ -18,7 +18,6 @@ const POPULAR_CATEGORIES = [
 ];
 
 export function HeroPost({ featuredPost }: HeroBannerProps) {
-  console.log(featuredPost);
   const readTime = calculateReadingTime(featuredPost.content);
 
   return (
