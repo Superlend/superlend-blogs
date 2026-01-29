@@ -24,10 +24,10 @@ const BackgroundImage: React.FC = () => {
         fill
         loading="lazy"
         onLoad={() => setIsLoaded(true)}
-        quality={75}
-        src="/assets/decorative/bg-cloud.webp"
+        quality={60}
+        src="/assets/decorative/bg-cloud-optimized.jpg"
         style={{ objectPosition: "center" }}
-        unoptimized
+        sizes="100vw"
       />
     </div>
   );
