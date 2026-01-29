@@ -1,14 +1,19 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Alert from "@/app/_components/alert";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
+import Container from "@/components/container";
+import Header from "@/components/header";
+import { PostBody } from "@/components/post-body";
+import { PostHeader } from "@/components/post-header";
 import { BackNavigation } from "@/components/analytics/back-navigation";
+import { ScrollProgress } from "@/components/scroll-progress";
+import { TableOfContents } from "@/components/table-of-contents";
+import { ArticleMetadataSidebar } from "@/components/article-metadata-sidebar";
+import { extractHeadings } from "@/lib/extract-headings";
+import { calculateReadingTime } from "@/lib/reading-time";
+import { ArticleSchema } from "@/components/article-schema";
+import Image from "next/image";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -19,27 +24,70 @@ export default async function Post(props: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
+  const headings = extractHeadings(content);
+  const readTime = calculateReadingTime(post.content || "");
+  const postUrl = `https://blog.superlend.xyz/posts/${params.slug}`;
 
   return (
-    <main className="min-h-screen">
-      <Header />
-      {/* <Alert preview={post.preview} /> */}
-      
-      <Container>
-        {/* Back Navigation */}
-        <BackNavigation />
-        
-        <article className="max-w-4xl mx-auto pb-16">
+    <>
+      {/* JSON-LD structured data for rich search results */}
+      <ArticleSchema post={post} url={postUrl} />
+
+      <main className="min-h-screen bg-background">
+        {/* LayerZero-style scroll progress indicator */}
+        <ScrollProgress />
+
+        <Header />
+
+        {/* Clean tinted background */}
+        <Container>
+          <div className="py-6">
+            <BackNavigation />
+          </div>
+
           <PostHeader
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
             author={post.author}
+            content={post.content ?? ""}
           />
-          <PostBody content={content} />
-        </article>
-      </Container>
-    </main>
+
+          {/* Three-column layout: metadata sidebar | content | TOC sidebar */}
+          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_260px] gap-4 max-w-7xl mx-auto pb-16">
+            {/* Left Sidebar - Metadata (hidden on mobile, sticky on desktop) */}
+            <div className="hidden lg:block">
+              <ArticleMetadataSidebar
+                author={post.author}
+                date={post.date}
+                readTime={readTime}
+                category="Article"
+                title={post.title}
+              />
+            </div>
+
+            {/* Center - Article Content */}
+            <article className="min-w-0 px-4 pt-5 rounded-4 bg-white bg-opacity-40 flex flex-col gap-6">
+              <div className="relative aspect-[21/9] rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src={post.coverImage}
+                  alt={`Cover image for article: ${post.title}`}
+                  width={736}
+                  height={315}
+                  className="object-cover aspect-[21/9]"
+                />
+              </div>
+              <PostBody content={content} />
+            </article>
+
+            {/* Right Sidebar - Table of Content (hidden on mobile, sticky on desktop) */}
+            <div className="hidden lg:block">
+              <TableOfContents headings={headings} />
+            </div>
+          </div>
+        </Container>
+      </main>
+    </>
   );
 }
 
@@ -58,14 +106,31 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   }
 
   const title = `${post.title} | Superlend Blog`;
+  const url = `/posts/${params.slug}`;
+  const imageUrl = post.ogImage.url.startsWith("http")
+    ? post.ogImage.url
+    : `https://blog.superlend.xyz${post.ogImage.url}`;
 
   return {
     title,
     description: post.excerpt,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title,
       description: post.excerpt,
-      images: [post.ogImage.url],
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author.name],
+      images: [imageUrl],
+      url,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: post.excerpt,
+      images: [imageUrl],
     },
   };
 }

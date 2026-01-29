@@ -1,14 +1,15 @@
 ---
 title: "Looping on Etherlink: Automated Vaults & Manual Markets for Supercharged Yield"
 excerpt: "Loop Vaults are automated DeFi strategies designed to maximize yield while keeping the process simple"
-coverImage: "/assets/blog/covers/loop.png"
+coverImage: "/assets/blog/covers/superlend_loop.webp"
 date: "2025-08-14T19:18:03.920Z"
 published: true
+category: "Product Updates"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/covers/loop.png"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/loop.png"
+  url: "/assets/blog/covers/superlend_loop.webp"
 ---
 
 We’re bringing a smarter way to grow your assets on Etherlink.

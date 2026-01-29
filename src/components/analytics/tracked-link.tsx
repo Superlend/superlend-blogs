@@ -1,8 +1,9 @@
 "use client";
 
-import Link, { LinkProps } from 'next/link';
-import { useAnalytics } from '@/context/amplitude-analytics-provider';
-import { ReactNode, MouseEvent } from 'react';
+import Link, { LinkProps } from "next/link";
+import { useAnalytics } from "@/context/amplitude-analytics-provider";
+import { ReactNode, MouseEvent } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 interface TrackedLinkProps extends LinkProps {
   children: ReactNode;
@@ -22,13 +23,15 @@ export function TrackedLink({
   ...linkProps
 }: TrackedLinkProps) {
   const analytics = useAnalytics();
+  const isExternalLink =
+    (linkProps?.target ?? "") === "_blank" && typeof children === "string";
 
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     // Track the click event
-    const defaultEventName = eventName || 'link_click';
+    const defaultEventName = eventName || "link_click";
     const defaultEventData = {
       link_url: linkProps.href.toString(),
-      link_text: typeof children === 'string' ? children : 'Link',
+      link_text: typeof children === "string" ? children : "Link",
       timestamp: new Date().toISOString(),
       ...eventData,
     };
@@ -44,6 +47,13 @@ export function TrackedLink({
   return (
     <Link {...linkProps} onClick={handleClick}>
       {children}
+      {isExternalLink && (
+        <ArrowUpRight
+          size="14"
+          className="inline-block ml-0.5"
+          aria-hidden="true"
+        />
+      )}
     </Link>
   );
-} 
+}
