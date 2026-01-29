@@ -10,6 +10,7 @@ interface ArticleMetadataSidebarProps {
   date: string;
   readTime: number;
   category?: string;
+  title: string;
 }
 
 export function ArticleMetadataSidebar({
@@ -17,7 +18,26 @@ export function ArticleMetadataSidebar({
   date,
   readTime,
   category,
+  title,
 }: ArticleMetadataSidebarProps) {
+  const handleShareOnX = () => {
+    const url = window.location.href;
+    const text = `Learn more about ${title}`;
+    window.open(
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+      "_blank",
+    );
+  };
+
+  const handleShareOnLinkedIn = () => {
+    const url = window.location.href;
+    const text = `Learn more about ${title}`;
+    window.open(
+      `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(text)}`,
+      "_blank",
+    );
+  };
+
   return (
     <aside className="sticky top-24 space-y-6">
       {/* Author */}
@@ -92,13 +112,7 @@ export function ArticleMetadataSidebar({
         <div className="flex gap-2">
           {/* X/Twitter */}
           <button
-            onClick={() => {
-              const url = window.location.href;
-              window.open(
-                `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`,
-                "_blank",
-              );
-            }}
+            onClick={handleShareOnX}
             className="p-2.5 rounded-lg bg-gray-900 hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700 text-white transition-colors"
             aria-label="Share on X"
           >
@@ -109,13 +123,7 @@ export function ArticleMetadataSidebar({
 
           {/* LinkedIn */}
           <button
-            onClick={() => {
-              const url = window.location.href;
-              window.open(
-                `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
-                "_blank",
-              );
-            }}
+            onClick={handleShareOnLinkedIn}
             className="p-2.5 rounded-lg bg-[#0077B5] hover:bg-[#006399] text-white transition-colors"
             aria-label="Share on LinkedIn"
           >

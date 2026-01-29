@@ -56,6 +56,7 @@ export default async function Post(props: Params) {
               date={post.date}
               readTime={readTime}
               category="Article"
+              title={post.title}
             />
           </div>
 
