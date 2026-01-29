@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { TrackedLink } from "@/components/analytics/tracked-link";
 import { LINKS } from "@/lib/constants";
 
@@ -13,26 +12,9 @@ const BLOG_TABS = [
 ];
 
 const Header = () => {
-  // const [activeTab, setActiveTab] = useState("DeFi Insights");
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-    //   className={`
-    //     bg-white bg-opacity-50 backdrop-blur-lg
-    // `}
-    >
-      <div className="max-w-7xl mx-auto max-md:px-2">
+    <header>
+      <div className="max-w-7xl mx-auto max-md:px-2 max-xl:px-4">
         {/* Top Row: Logo + External Links + Subscribe */}
         <div className="flex items-center justify-between py-4 border-b border-gray-200/20 dark:border-gray-700/20">
           {/* Logo */}
@@ -52,7 +34,7 @@ const Header = () => {
           </TrackedLink>
 
           {/* Right: External Links + Subscribe (Desktop) */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-6">
             {/* <TrackedLink
               href={LINKS.AGGREGATOR}
               target="_blank"
@@ -93,18 +75,16 @@ const Header = () => {
             <TrackedLink
               href={LINKS.LANDING}
               target="_blank"
-              className="px-6 py-2 bg-primary hover:bg-primary/90 active:scale-100 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
-              // onClick={() => {
-              //   // Add newsletter subscription logic here
-              //   alert("Newsletter subscription coming soon!");
-              // }}
+              className="md:px-6 md:py-2 px-4 py-2 bg-primary hover:bg-primary/90 active:scale-100 text-white rounded-full text-sm font-medium transition-all hover:scale-105"
+              eventName="header_launch_app_click"
+              eventData={{ section: "header", element: "launch_app" }}
             >
               Launch App
             </TrackedLink>
           </div>
 
           {/* Mobile menu button */}
-          <button
+          {/* <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-gray-600 dark:text-gray-400"
             aria-label="Toggle menu"
@@ -138,7 +118,7 @@ const Header = () => {
                 />
               </svg>
             )}
-          </button>
+          </button> */}
         </div>
 
         {/* Bottom Row: Horizontal Tabs (Desktop) */}
@@ -163,31 +143,16 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200/20 dark:border-gray-700/20 bg-white/40 dark:bg-gray-900/95 backdrop-blur-lg">
-          <div className="py-4 space-y-3">
-            {/* Blog Tabs */}
-            {/* {BLOG_TABS.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => {
-                  setActiveTab(tab);
-                  setIsMobileMenuOpen(false);
-                }}
-                className={`
-                  block w-full text-left px-4 py-2 rounded-lg transition-colors
-                  ${
-                    activeTab === tab
-                      ? "bg-primary/10 text-primary font-medium"
-                      : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }
-                `}
-              >
-                {tab}
-              </button>
-            ))} */}
-
-            <div className="space-y-3">
+      {/* <AnimatePresence key="mobile-menu">
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: 400 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 400 }}
+            transition={{ duration: 0.2 }}
+            className="absolute z-50 top-12 left-0 right-0 h-full flex items-center justify-center md:hidden border-t border-gray-200/20 dark:border-gray-700/20 bg-white/50 dark:bg-gray-900/50 backdrop-blur-lg"
+          >
+            <div className="space-y-8 text-2xl">
               <TrackedLink
                 href={LINKS.MARKETS}
                 target="_blank"
@@ -216,16 +181,9 @@ const Header = () => {
                 SuperFund
               </TrackedLink>
             </div>
-
-            {/* <button
-              className="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-full font-medium transition-all"
-              onClick={() => alert("Newsletter subscription coming soon!")}
-            >
-              Subscribe Now
-            </button> */}
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence> */}
     </header>
   );
 };
