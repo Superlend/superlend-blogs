@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
       throw new Error(tokenData.error_description || tokenData.error);
     }
 
-    // Return HTML that posts the token back to Decap CMS
+    // Return HTML that posts the token back to Decap CMS using the two-step handshake
     const html = `
       <!DOCTYPE html>
       <html>
@@ -60,23 +60,23 @@ export async function GET(request: NextRequest) {
         </head>
         <body>
           <script>
-            (function() {
+            (() => {
               const token = "${tokenData.access_token}";
               const provider = "github";
+              const content = JSON.stringify({ provider, token });
               
-              // Send message to parent window (Decap CMS)
-              // Use '*' for targetOrigin since popup may have different origin
-              if (window.opener) {
-                window.opener.postMessage(
-                  'authorization:' + provider + ':success:' + JSON.stringify({ token, provider }),
-                  '*'
-                );
-                setTimeout(function() {
-                  window.close();
-                }, 500);
-              } else {
-                document.body.innerHTML = '<p>Authorization successful! You can close this window.</p>';
-              }
+              // Two-step handshake: wait for opener to acknowledge before sending token
+              window.addEventListener('message', ({ data, origin }) => {
+                if (data === 'authorizing:' + provider) {
+                  window.opener?.postMessage(
+                    'authorization:' + provider + ':success:' + content,
+                    origin
+                  );
+                }
+              });
+              
+              // Initiate handshake
+              window.opener?.postMessage('authorizing:' + provider, '*');
             })();
           </script>
           <p>Authorizing... If this window doesn't close automatically, please close it manually.</p>
@@ -103,16 +103,20 @@ export async function GET(request: NextRequest) {
         </head>
         <body>
           <script>
-            (function() {
-              if (window.opener) {
-                window.opener.postMessage(
-                  'authorization:github:error:' + JSON.stringify({ message: "${errorMessage}" }),
-                  '*'
-                );
-                setTimeout(function() {
-                  window.close();
-                }, 500);
-              }
+            (() => {
+              const provider = "github";
+              const content = JSON.stringify({ provider, error: "${errorMessage}" });
+              
+              window.addEventListener('message', ({ data, origin }) => {
+                if (data === 'authorizing:' + provider) {
+                  window.opener?.postMessage(
+                    'authorization:' + provider + ':error:' + content,
+                    origin
+                  );
+                }
+              });
+              
+              window.opener?.postMessage('authorizing:' + provider, '*');
             })();
           </script>
           <p>Authentication failed: ${errorMessage}</p>
