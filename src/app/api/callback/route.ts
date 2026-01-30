@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 /**
  * OAuth callback endpoint for Decap CMS
  * Exchanges GitHub authorization code for access token
- * and sends it back to the CMS via postMessage
+ * and sends it back to the CMS via postMessage or localStorage fallback
  */
 export async function GET(request: NextRequest) {
   const clientId = process.env.GITHUB_OAUTH_CLIENT_ID;
@@ -50,7 +50,11 @@ export async function GET(request: NextRequest) {
       throw new Error(tokenData.error_description || tokenData.error);
     }
 
-    // Return HTML that posts the token back to Decap CMS using the two-step handshake
+    const token = tokenData.access_token;
+    const provider = "github";
+    const origin = request.nextUrl.origin;
+
+    // Return HTML that attempts postMessage first, then falls back to localStorage
     const html = `
       <!DOCTYPE html>
       <html>
@@ -59,27 +63,61 @@ export async function GET(request: NextRequest) {
           <title>Authorizing...</title>
         </head>
         <body>
+          <p id="status">Authorizing...</p>
           <script>
-            (() => {
-              const token = "${tokenData.access_token}";
-              const provider = "github";
+            (function() {
+              const token = "${token}";
+              const provider = "${provider}";
+              const origin = "${origin}";
               const content = JSON.stringify({ provider, token });
+              const statusEl = document.getElementById('status');
               
-              // Two-step handshake: wait for opener to acknowledge before sending token
-              window.addEventListener('message', ({ data, origin }) => {
-                if (data === 'authorizing:' + provider) {
-                  window.opener?.postMessage(
-                    'authorization:' + provider + ':success:' + content,
-                    origin
-                  );
+              let messageReceived = false;
+              
+              // Method 1: Try postMessage with handshake (works if opened as popup)
+              if (window.opener) {
+                window.addEventListener('message', function(event) {
+                  if (event.data === 'authorizing:' + provider) {
+                    messageReceived = true;
+                    window.opener.postMessage(
+                      'authorization:' + provider + ':success:' + content,
+                      event.origin
+                    );
+                    setTimeout(function() { window.close(); }, 100);
+                  }
+                });
+                
+                // Initiate handshake
+                window.opener.postMessage('authorizing:' + provider, '*');
+                
+                // Give postMessage 2 seconds to work
+                setTimeout(function() {
+                  if (!messageReceived) {
+                    fallbackToRedirect();
+                  }
+                }, 2000);
+              } else {
+                // No opener, use redirect method immediately
+                fallbackToRedirect();
+              }
+              
+              function fallbackToRedirect() {
+                // Method 2: Store in localStorage and redirect to admin
+                // Decap CMS checks localStorage for 'netlify-cms-user' key
+                try {
+                  const userData = {
+                    token: token,
+                    backendName: provider
+                  };
+                  localStorage.setItem('netlify-cms-user', JSON.stringify(userData));
+                  statusEl.textContent = 'Authorization successful! Redirecting...';
+                  window.location.href = origin + '/admin/index.html#/';
+                } catch (e) {
+                  statusEl.textContent = 'Authorization successful! Please close this window and refresh the admin page.';
                 }
-              });
-              
-              // Initiate handshake
-              window.opener?.postMessage('authorizing:' + provider, '*');
+              }
             })();
           </script>
-          <p>Authorizing... If this window doesn't close automatically, please close it manually.</p>
         </body>
       </html>
     `;
@@ -93,7 +131,6 @@ export async function GET(request: NextRequest) {
     const errorMessage =
       error instanceof Error ? error.message : "Authentication failed";
 
-    // Return HTML that posts error back to Decap CMS
     const html = `
       <!DOCTYPE html>
       <html>
@@ -102,24 +139,9 @@ export async function GET(request: NextRequest) {
           <title>Authentication Error</title>
         </head>
         <body>
-          <script>
-            (() => {
-              const provider = "github";
-              const content = JSON.stringify({ provider, error: "${errorMessage}" });
-              
-              window.addEventListener('message', ({ data, origin }) => {
-                if (data === 'authorizing:' + provider) {
-                  window.opener?.postMessage(
-                    'authorization:' + provider + ':error:' + content,
-                    origin
-                  );
-                }
-              });
-              
-              window.opener?.postMessage('authorizing:' + provider, '*');
-            })();
-          </script>
-          <p>Authentication failed: ${errorMessage}</p>
+          <h1>Authentication Failed</h1>
+          <p>${errorMessage}</p>
+          <p><a href="/admin/index.html">Return to Admin</a></p>
         </body>
       </html>
     `;
