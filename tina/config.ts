@@ -1,6 +1,5 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
 const branch =
   process.env.NEXT_PUBLIC_TINA_BRANCH ||
   process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
@@ -10,9 +9,7 @@ const branch =
 export default defineConfig({
   branch,
 
-  // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
   token: process.env.TINA_TOKEN,
 
   build: {
@@ -23,7 +20,7 @@ export default defineConfig({
     tina: {
       mediaRoot: "assets",
       publicFolder: "public",
-      static: false, //default is false
+      static: false,
     },
   },
   schema: {
