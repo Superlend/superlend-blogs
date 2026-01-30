@@ -1,25 +1,26 @@
-# Decap CMS Configuration for Superlend Blog
+import { NextResponse } from "next/server";
+
+/**
+ * Serve Decap CMS config.yml via API route
+ * This works around Next.js not serving .yml files from public/
+ */
+export async function GET() {
+  const config = `# Decap CMS Configuration for Superlend Blog
 # Documentation: https://decapcms.org/docs/
 
 backend:
   name: github
   repo: Tezsure/superlend-blogs
   branch: development
-  # Use our custom OAuth endpoints hosted on Vercel
   base_url: /api
   auth_endpoint: auth
-  # Optional: Enable editorial workflow for draft/review/publish states
-  # publish_mode: editorial_workflow
 
-# Media files location
 media_folder: "public/assets/blog/covers"
 public_folder: "/assets/blog/covers"
 
-# Site URL for previews (update with your production URL)
 site_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
 display_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
 
-# Logo for the CMS (optional)
 logo_url: /assets/blog/authors/superlend-team.svg
 
 collections:
@@ -35,7 +36,6 @@ collections:
     summary: "{{title}} - {{date}}"
     
     fields:
-      # Required fields
       - label: "Title"
         name: "title"
         widget: "string"
@@ -75,7 +75,6 @@ collections:
           - "Guides"
         hint: "Choose the most relevant category for this post"
 
-      # Author section
       - label: "Author"
         name: "author"
         widget: "object"
@@ -91,7 +90,6 @@ collections:
             media_folder: "/public/assets/blog/authors"
             public_folder: "/assets/blog/authors"
 
-      # Open Graph image (for social sharing)
       - label: "OG Image"
         name: "ogImage"
         widget: "object"
@@ -104,9 +102,16 @@ collections:
             media_folder: "/public/assets/blog/covers"
             public_folder: "/assets/blog/covers"
 
-      # Post body content
       - label: "Body"
         name: "body"
         widget: "markdown"
         required: true
         hint: "The main content of your blog post"
+`;
+
+  return new NextResponse(config, {
+    headers: {
+      "Content-Type": "text/yaml",
+    },
+  });
+}
