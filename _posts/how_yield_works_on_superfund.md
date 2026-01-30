@@ -7,7 +7,7 @@ published: false
 category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/how_yield_works_on_superfund.webp"
 ---

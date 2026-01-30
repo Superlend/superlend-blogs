@@ -20,7 +20,7 @@ site_url: https://blog.superlend.xyz
 display_url: https://blog.superlend.xyz
 
 # Logo for the CMS (optional)
-logo_url: /assets/blog/authors/superlend-team.svg
+logo_url: /assets/blog/authors/superlend-team.png
 
 collections:
   - name: "posts"
@@ -87,7 +87,7 @@ collections:
           - label: "Picture"
             name: "picture"
             widget: "image"
-            default: "/assets/blog/authors/superlend-team.svg"
+            default: "/assets/blog/authors/superlend-team.png"
             media_folder: "/public/assets/blog/authors"
             public_folder: "/assets/blog/authors"
 

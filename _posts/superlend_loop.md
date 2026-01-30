@@ -7,7 +7,7 @@ published: true
 category: "Product Updates"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/superlend_loop.webp"
 ---

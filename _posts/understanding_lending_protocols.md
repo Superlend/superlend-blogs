@@ -7,7 +7,7 @@ published: true
 category: "DeFi Basics"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/understanding_lending_protocols.webp"
 ---

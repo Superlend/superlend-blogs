@@ -7,7 +7,7 @@ published: true
 category: "Guides"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/earning_passive_income_on_your_dollar.webp"
 ---

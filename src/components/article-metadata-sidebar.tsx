@@ -24,7 +24,9 @@ export function ArticleMetadataSidebar({
     const url = window.location.href;
     const text = `Learn more about ${title}`;
     window.open(
-      `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        text,
+      )}&url=${encodeURIComponent(url)}`,
       "_blank",
     );
   };
@@ -33,7 +35,9 @@ export function ArticleMetadataSidebar({
     const url = window.location.href;
     const text = `Learn more about ${title}`;
     window.open(
-      `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(text)}`,
+      `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+        url,
+      )}&title=${encodeURIComponent(text)}`,
       "_blank",
     );
   };
@@ -49,9 +53,9 @@ export function ArticleMetadataSidebar({
           <Image
             src={author.picture || "/assets/default-avatar.png"}
             alt={author.name}
-            width={36}
-            height={36}
-            className="rounded-full min-h-9 min-w-9 max-h-9 max-w-9"
+            width={24}
+            height={24}
+            className="min-h-6 min-w-6 max-h-6 max-w-6 object-contain"
           />
           <span className="text-sm font-medium text-secondary-navy dark:text-white">
             {author.name}
