@@ -16,8 +16,8 @@ media_folder: "public/assets/blog/covers"
 public_folder: "/assets/blog/covers"
 
 # Site URL for previews (update with your production URL)
-site_url: https://blog.superlend.xyz
-display_url: https://blog.superlend.xyz
+site_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
+display_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
 
 # Logo for the CMS (optional)
 logo_url: /assets/blog/authors/superlend-team.svg
