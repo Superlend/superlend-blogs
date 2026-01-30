@@ -13,9 +13,9 @@ ogImage:
 
 ## DeFi Looping Strategy: How Loop Vaults Amplify Your Yield
 
-Looking to implement a DeFi looping strategy without the complexity of manual management? We're bringing a smarter way to grow your assets on Etherlink with **Loop Vaults** – automated DeFi strategies designed to maximize yield while keeping the process simple.
+Loop Vaults are Superlend's one-click leveraged yield product. Instead of manually executing multiple transactions to loop your position, Loop Vaults automate the entire process – depositing, borrowing, and redepositing to amplify your yield exposure.
 
-Whether you prefer a fully hands-off experience or want to fine-tune your strategy, Loop Vaults and Loop Markets put you in control, with the potential to earn more than traditional supply-only lending.
+Superlend is a non-custodial aggregator connecting you to 350+ money markets across 11+ chains. Loop Vaults build on this foundation, offering automated leveraged strategies on Etherlink that can significantly outperform simple supply-only lending.
 
 ---
 
@@ -87,7 +87,7 @@ Looping is for anyone looking to make their assets work harder:
 
 ---
 
-## Coming Soon to Superlend Loop
+## Coming Soon to Loop Vaults
 
 - Historical performance and PnL history
 - Daily earnings and APY trends
@@ -108,7 +108,7 @@ Looping is for anyone looking to make their assets work harder:
 
 3. Deposit your tokens:
    - Use the base token for direct deposit
-   - Or deposit another supported token and let the app swap it for you
+   - Or deposit another supported token and let the vault swap it for you
 
 4. Start earning as the vault loops your position to seek higher yield.
 

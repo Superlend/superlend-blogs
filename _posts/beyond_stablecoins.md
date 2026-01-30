@@ -13,13 +13,11 @@ ogImage:
 
 ## High APR DeFi Lending: Strategies Beyond Stablecoins
 
-Looking for high APR DeFi lending opportunities that go beyond basic stablecoin yields? For some time, stablecoins like USDC and USDT have been reliable workhorses for anyone seeking stable yield in crypto. Lending them on established protocols could net you a steady 5-10% APY with little price risk. (For stablecoin strategies, see our [USDC lending guide](/blog/usdc-lending-guide) and [stablecoin yield strategies](/blog/stablecoin-yield-strategies).)
+Stablecoin lending yields 5-10% APY. For users willing to accept more risk, strategies using volatile assets, leverage, or yield derivatives can push returns to 15-80% APR.
 
-But in 2025, the DeFi playground has evolved. For those willing to step up the risk ladder, certain lending strategies can push returns into double or even triple digits.
+**The tradeoff is real:** higher yields mean higher risk of liquidation, smart contract exploits, or token devaluation. This guide covers four strategies – LST stacking, leveraged looping, Pendle yield tokenization, and emerging protocol farming – with risks explained for each.
 
-The allure is undeniable. While stablecoin lending offers predictable yields, lending volatile assets like ETH, SOL, or other non-stable tokens can unlock APRs from 15% to over 80%. These opportunities are driven by intense market demand, clever protocol incentives, and new financial mechanics.
-
-Let's dive deep into the major plays for chasing these outsized returns on lending protocols and how to navigate their risks.
+Superlend aggregates 350+ money markets across 11+ chains. Compare rates across Aave, Morpho, Compound, and Euler from one dashboard at [app.superlend.xyz](https://app.superlend.xyz).
 
 ---
 

@@ -6,7 +6,7 @@ date: "2026-01-29T12:00:00.000Z"
 published: true
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/eth-lending-rates.png"
 ---
@@ -15,19 +15,13 @@ Ethereum holders face a common dilemma: you believe in ETH's long-term potential
 
 The answer lies in ETH lending rates. By supplying your Ethereum to DeFi lending protocols, you can earn passive income while keeping full ownership of your assets. When you're ready to exit, you simply withdraw your ETH plus the interest you've earned.
 
-In this guide, we'll explore current ETH lending rates across major protocols, show you how to stack yields using liquid staking tokens, and help you understand the risks involved. Whether you're holding 0.5 ETH or 50 ETH, these strategies can put your Ethereum to work.
-
-**What you'll learn:**
-- How ETH lending works in DeFi
-- Current rates across major protocols
-- How to earn 4-8% by combining staking and lending
-- The risks to consider before you start
+ETH lending rates currently range from 1.5% to 4% APY on base lending, but you can reach 4-8% by stacking yields with liquid staking tokens. This guide covers current rates across major protocols, the LST yield stacking strategy, and the risks involved.
 
 ---
 
 ## How ETH Lending Works
 
-At its core, ETH lending is straightforward: you supply your Ethereum to a lending protocol, and borrowers pay interest to use it. Here's the step-by-step process:
+ETH lending works like this: you supply Ethereum to a lending protocol, and borrowers pay interest to use it. Here's the step-by-step process:
 
 ### 1. Supply ETH to a Protocol
 
@@ -45,7 +39,7 @@ Unlike selling your ETH, lending it means you maintain price exposure. If ETH go
 
 Most lending protocols allow instant withdrawals, provided there's available liquidity in the pool. You simply swap your deposit token back for ETH and receive your original amount plus accrued interest.
 
-The beauty of this system is that it's permissionless and non-custodial. There's no application process, no credit check, and no one else controls your funds – you can withdraw at any time through the smart contract.
+The system is permissionless and non-custodial. There's no application process, no credit check, and no one else controls your funds – you can withdraw at any time through the smart contract.
 
 ---
 
@@ -90,8 +84,6 @@ Here's where things get interesting. Instead of lending native ETH, you can stak
 ### Combined Yield Comparison
 
 The combined yield from staking plus lending varies by protocol and LST. Typical combined APYs range from 3.3% to 6.2% depending on market conditions. Check live rates on [Superlend](https://app.superlend.xyz) to find current opportunities.
-
-*Rates are variable and subject to change. Past performance does not guarantee future results.*
 
 ### Why LST Lending Rates Are Lower
 
