@@ -6,14 +6,16 @@ date: "2025-05-29T12:00:00.000Z"
 category: "DeFi Basics"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/what_is_defi.webp"
 ---
 
 ## What Is DeFi Lending? Your Complete Beginner's Guide
 
-Wondering what is DeFi lending and how it works? Imagine earning interest on your crypto, borrowing funds, or sending money globally – all without a bank in between. That's the power of **DeFi**, or **Decentralized Finance**. In this guide, we'll explain what DeFi lending is, how it works, and why it might be the future of how we handle money.
+DeFi lending is earning interest on crypto by depositing into smart contract protocols – no banks, no credit checks, no middlemen. You can earn 4-12% APY on stablecoins while maintaining full control of your assets.
+
+Superlend is a non-custodial aggregator that connects you to 350+ money markets across 11+ chains. Compare rates, find the best opportunities, and lend or borrow from one unified dashboard.
 
 ---
 
@@ -106,7 +108,7 @@ New to DeFi? Here are essential terms you'll encounter:
 
 Getting started is straightforward:
 
-1. **Connect Your Wallet:** Use a wallet like [MetaMask](https://metamask.io) or [Phantom](https://phantom.com) to connect to the platform.
+1. **Connect Your Wallet:** Use a wallet like [MetaMask](https://metamask.io) or [Phantom](https://phantom.com) to connect to [Superlend](https://app.superlend.xyz/vaults).
 
 2. **Deposit USDC:** Add your stablecoins to SuperFund's vault.
 

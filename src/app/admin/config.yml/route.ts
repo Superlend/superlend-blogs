@@ -21,7 +21,8 @@ public_folder: "/assets/blog/covers"
 site_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
 display_url: https://superlend-blogs-git-development-superlend-devs.vercel.app/
 
-logo_url: /assets/blog/authors/superlend-team.svg
+# Logo for the CMS (optional)
+logo_url: /assets/blog/authors/superlend-team.png
 
 collections:
   - name: "posts"
@@ -86,7 +87,7 @@ collections:
           - label: "Picture"
             name: "picture"
             widget: "image"
-            default: "/assets/blog/authors/superlend-team.svg"
+            default: "/assets/blog/authors/superlend-team.png"
             media_folder: "/public/assets/blog/authors"
             public_folder: "/assets/blog/authors"
 

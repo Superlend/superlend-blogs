@@ -89,14 +89,14 @@ export function BlogCardCompact({
           </p> */}
 
           {/* Author + Meta + CTA */}
-          <div className="absolute bottom-3 flex items-center gap-3">
+          <div className="absolute bottom-3 flex items-center gap-2">
             {/* Avatar */}
             <Image
               src={author.picture ?? "/assets/default-avatar.png"}
               alt={author.name}
-              width={32}
-              height={32}
-              className="rounded-full shrink-0 grow-0 object-cover max-w-[32px] max-h-[32px] min-w-[32px] min-h-[32px]"
+              width={24}
+              height={24}
+              className="shrink-0 grow-0 object-cover max-w-[24px] max-h-[24px] min-w-[24px] min-h-[24px]"
             />
 
             {/* Info */}
