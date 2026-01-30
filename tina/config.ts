@@ -21,8 +21,9 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "assets/blog",
+      mediaRoot: "assets",
       publicFolder: "public",
+      static: false, //default is false
     },
   },
   schema: {
