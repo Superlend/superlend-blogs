@@ -12,19 +12,13 @@ ogImage:
   url: "/assets/blog/covers/understanding_lending_protocols.webp"
 ---
 
-## How DeFi Lending Protocols Work: A Complete Guide
+## How DeFi Lending Protocols Work
 
-Curious about how DeFi lending protocols actually work? Lending protocols are one of the biggest forces behind DeFi, with over $56.7 billion in Total Value Locked. Aave, the biggest lending platform, holds the number one spot for all of DeFi TVL on [DeFiLlama](https://defillama.com/).
+**DeFi lending protocols let you earn yield by supplying crypto to liquidity pools.** Borrowers pay interest to use those funds – smart contracts enforce the rules, no banks involved.
 
-DeFi lending protocols allow anyone, anywhere, to lend or borrow crypto assets without needing a traditional bank. But how do they actually work, and what should you know before you dive in?
+With $56B+ locked across lending protocols (per [DeFiLlama](https://defillama.com/)), DeFi lending has proven product-market fit. That scale means deep liquidity – you can deposit and withdraw substantial amounts without slippage.
 
-In this guide, we'll break down:
-
-- What assets you can supply or borrow
-- How DeFi lending interest rates are set
-- The main risks to keep in mind
-
-Whether you're new to DeFi lending protocols or looking to sharpen your understanding, this overview will help you make sense of the moving parts. For a comprehensive introduction, also check out our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending).
+Superlend is a non-custodial aggregator connecting you to 350+ money markets across 11+ chains. Compare rates across Aave, Compound, Morpho, and more from one dashboard – then execute directly. This guide covers which assets to lend, how rates work, and what risks to manage. For a comprehensive introduction, see our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending).
 
 ---
 
@@ -62,8 +56,6 @@ Unlike traditional banks that fix rates behind closed doors, DeFi lending rates 
 - Most protocols use an [Interest Rate Model (IRM)](https://rareskills.io/post/aave-interest-rate-model) to adjust rates automatically
 
 Some advanced DeFi lending protocols even have variable models that adapt more smoothly to large inflows or outflows. This helps keep things balanced and ensures there's always enough liquidity for borrowers and lenders alike.
-
-*Rates are variable and subject to change. Past performance does not guarantee future results.*
 
 ---
 
@@ -123,4 +115,4 @@ Ready to make your idle crypto work for you? Explore DeFi lending protocols thro
 
 ---
 
-*This article is for educational purposes only and does not constitute financial advice. DeFi involves risks including smart contract vulnerabilities. Always do your own research.*
+*This article is for educational purposes only and does not constitute financial advice. DeFi involves risks including smart contract vulnerabilities and market volatility. Rates are variable and subject to change. Past performance does not guarantee future results. Always do your own research.*

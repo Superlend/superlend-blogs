@@ -7,7 +7,7 @@ published: true
 category: "DeFi Basics"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/defi-lending-safe.png"
 ---
@@ -18,20 +18,13 @@ We're not here to tell you DeFi is risk-free. It isn't. We're here to give you t
 
 Over the past few years, DeFi lending has matured significantly. Protocols have hardened their security, developed better risk management frameworks, and proven their resilience through multiple market cycles. But that doesn't mean risks have disappeared. They've simply become better understood.
 
-**In this article, you'll learn:**
-
-- The main categories of DeFi lending risks
-- How to evaluate and mitigate each risk type
-- What makes some protocols safer than others
-- Practical steps to protect your capital
-
-Let's be honest about what you're dealing with.
+Superlend is a non-custodial aggregator – your funds go directly to underlying protocols like Aave, Compound, and Morpho, not to us. This guide covers smart contract risk, liquidation risk, protocol risk, and practical steps to protect your capital.
 
 ---
 
 ## Smart Contract Risk
 
-At its core, every DeFi protocol is a set of smart contracts – code that runs on a blockchain and handles your funds. Smart contract risk is the possibility that bugs, vulnerabilities, or exploits in this code could lead to loss of funds.
+Every DeFi protocol runs on smart contracts – code on a blockchain that handles your funds. Smart contract risk is the possibility that bugs, vulnerabilities, or exploits in this code could lead to loss of funds.
 
 ### Why This Risk Exists
 

@@ -7,7 +7,7 @@ published: true
 category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/wbtc-lending.png"
 ---
@@ -18,7 +18,7 @@ For long-term Bitcoin believers, selling isn't an option. You've held through be
 
 That's exactly what WBTC lending offers. By converting your BTC to Wrapped Bitcoin (WBTC) and supplying it to DeFi lending protocols, you can earn yield while maintaining your exposure to Bitcoin's price movements. It's not as high-yielding as stablecoin lending – typically ranging from 0.5% to 4% APY – but for those who want their Bitcoin working for them, it's an attractive option.
 
-In this guide, we'll walk you through everything you need to know about WBTC lending: what WBTC is, how lending works, current rates across protocols, the risks involved, and how to get started.
+WBTC lending typically yields 0.5-4% APY – modest compared to stablecoins, but valuable for Bitcoin holders who want their BTC working without selling. Here's what you need to know about rates, risks, and getting started.
 
 ---
 

@@ -6,7 +6,7 @@ date: "2025-12-01T12:00:00.000Z"
 category: "DeFi Basics"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.svg"
+  picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
   url: "/assets/blog/covers/why_structured_yield_products_are_the_future_of_passive_income_in_deFi.webp"
   published: true
@@ -14,7 +14,7 @@ ogImage:
 
 ## DeFi Yield Strategies: Why Structured Products Are the Future
 
-Looking for reliable DeFi yield strategies that don't require constant management? Structured yield products are reshaping how users earn passive income in decentralized finance – replacing complex yield farming with automated, risk-adjusted returns.
+**Structured yield products automate complex DeFi strategies into one-click deposits with built-in risk management.** Instead of manual looping, rate chasing, and position monitoring, you deposit once and earn optimized returns automatically.
 
 Over the past couple of years, the DeFi ecosystem has gone through every kind of yield meta imaginable: delta-neutral strategies, points season, 200-step yield loops, farming dashboards with a hundred different tabs, and manual looping. Yet every cycle proves the same thing:
 
