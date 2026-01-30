@@ -1,14 +1,15 @@
 ---
-title: "DeFi Yield Optimization: How Yield Ramp-Up Works"
-excerpt: "Learn how DeFi yield optimization through Yield Ramp-Up creates stable, predictable returns. Discover why smoothed yield beats volatile APY swings."
-coverImage: "/assets/blog/covers/abstract-3.jpg"
+title: "Yield Ramp-Up: The Path to Stable DeFi Returns"
+excerpt: "A persistent issue in many yield-generating protocols is the volatility and unpredictability of returns"
+coverImage: "/assets/blog/covers/yield_ramp_up.webp"
 date: "2025-06-29T19:18:03.920Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/covers/abstract-3.jpg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/abstract-3.jpg"
+  url: "/assets/blog/covers/yield_ramp_up.webp"
 ---
 
 ## DeFi Yield Optimization: Understanding Yield Ramp-Up

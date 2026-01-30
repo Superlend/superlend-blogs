@@ -1,14 +1,15 @@
 ---
-title: "DeFi Looping Strategy: Automated Vaults for Higher Yield"
-excerpt: "Master the DeFi looping strategy with Loop Vaults. Automate leveraged yield on Etherlink – amplify returns without manual complexity or liquidation risks."
-coverImage: "/assets/blog/covers/loop.png"
+title: "Looping on Etherlink: Automated Vaults & Manual Markets for Supercharged Yield"
+excerpt: "Loop Vaults are automated DeFi strategies designed to maximize yield while keeping the process simple"
+coverImage: "/assets/blog/covers/superlend_loop.webp"
 date: "2025-08-14T19:18:03.920Z"
 published: true
+category: "Product Updates"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/covers/loop.png"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
-  url: "/assets/blog/covers/loop.png"
+  url: "/assets/blog/covers/superlend_loop.webp"
 ---
 
 ## DeFi Looping Strategy: How Loop Vaults Amplify Your Yield

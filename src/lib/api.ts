@@ -1,15 +1,30 @@
-import { Post } from "@/interfaces/post";
+import { Post, BLOG_CATEGORIES, type BlogCategory } from "@/interfaces/post";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
+// Validate and type-check category from frontmatter
+function validateCategory(category: unknown, slug: string): BlogCategory {
+  if (
+    typeof category === "string" &&
+    BLOG_CATEGORIES.includes(category as BlogCategory)
+  ) {
+    return category as BlogCategory;
+  }
+  console.warn(
+    `[api] Invalid category "${category}" in post "${slug}". ` +
+      `Valid categories: ${BLOG_CATEGORIES.join(", ")}. Defaulting to "${BLOG_CATEGORIES[0]}".`,
+  );
+  return BLOG_CATEGORIES[0];
+}
+
 export function getPostSlugs() {
   try {
     return fs.readdirSync(postsDirectory);
   } catch (error) {
-    console.error('Error reading posts directory:', error);
+    console.error("Error reading posts directory:", error);
     return []; // Return empty array if directory doesn't exist or can't be read
   }
 }
@@ -34,9 +49,13 @@ export function getPostBySlug(slug: string): Post | null {
       excerpt: data.excerpt || "No excerpt available",
       coverImage: data.coverImage || "/assets/blog/covers/abstract-1.jpg",
       date: data.date || new Date().toISOString(),
-      author: data.author || { name: "Superlend Team", picture: "/assets/blog/authors/superlend-team.jpeg" },
+      author: data.author || {
+        name: "Superlend Team",
+        picture: "/assets/blog/authors/superlend-team.jpeg",
+      },
       ogImage: data.ogImage || { url: "/assets/blog/covers/abstract-1.jpg" },
-      content: content || ""
+      content: content || "",
+      category: validateCategory(data.category, realSlug),
     } as Post;
 
     return post;
@@ -56,7 +75,7 @@ export function getAllPosts(): Post[] {
       .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
     return posts;
   } catch (error) {
-    console.error('Error loading posts:', error);
+    console.error("Error loading posts:", error);
     return []; // Return empty array instead of undefined
   }
 }
@@ -76,14 +95,19 @@ export function getAllPostsIncludingUnpublished(): Post[] {
           // Don't check published status - include all posts
           const post = {
             slug: realSlug,
-            title: data.title || `Untitled (${realSlug})`,
-            excerpt: data.excerpt || "No excerpt available",
-            coverImage: data.coverImage || "/assets/blog/covers/abstract-1.jpg",
-            date: data.date || new Date().toISOString(),
-            author: data.author || { name: "Superlend Team", picture: "/assets/blog/authors/superlend-team.jpeg" },
-            ogImage: data.ogImage || { url: "/assets/blog/covers/abstract-1.jpg" },
-            content: content || "",
-            published: data.published !== false // Add published status to the post object
+            title: data.title ?? `Untitled (${realSlug})`,
+            excerpt: data.excerpt ?? "No excerpt available",
+            coverImage: data.coverImage ?? "/assets/blog/covers/abstract-1.jpg",
+            date: data.date ?? new Date().toISOString(),
+            author: data.author ?? {
+              name: "Superlend Team",
+              picture: "/assets/blog/authors/superlend-team.jpeg",
+            },
+            ogImage: data.ogImage ?? {
+              url: "/assets/blog/covers/abstract-1.jpg",
+            },
+            content: content ?? "",
+            published: data.published !== false,
           } as Post & { published: boolean };
 
           return post;
@@ -97,7 +121,7 @@ export function getAllPostsIncludingUnpublished(): Post[] {
       .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
     return posts;
   } catch (error) {
-    console.error('Error loading all posts:', error);
+    console.error("Error loading all posts:", error);
     return [];
   }
 }

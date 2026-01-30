@@ -10,8 +10,34 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'basier': ['Basier Circle', 'Inter', 'system-ui', 'sans-serif'],
-        'sans': ['Basier Circle', 'Inter', 'system-ui', 'sans-serif'],
+        basier: ["Basier Circle", "Inter", "system-ui", "sans-serif"],
+        sans: ["Basier Circle", "Inter", "system-ui", "sans-serif"],
+      },
+      // Enhanced border radius for glassmorphism
+      borderRadius: {
+        "4": "24px",
+        "5": "32px",
+        soft: "16px",
+      },
+      // Enhanced animations
+      animation: {
+        "fade-in": "fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        "slide-up": "slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        "scale-in": "scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        scaleIn: {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -69,60 +95,60 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
-            color: '#2A2826',
+            color: "#2A2826",
             a: {
-              color: '#FF5B00',
-              '&:hover': {
-                color: '#e54f00',
+              color: "#FF5B00",
+              "&:hover": {
+                color: "#e54f00",
               },
             },
             h1: {
-              color: '#2A2826',
+              color: "#2A2826",
             },
             h2: {
-              color: '#2A2826',
+              color: "#2A2826",
             },
             h3: {
-              color: '#2A2826',
+              color: "#2A2826",
             },
             h4: {
-              color: '#2A2826',
+              color: "#2A2826",
             },
             blockquote: {
-              borderLeftColor: '#FF5B00',
+              borderLeftColor: "#FF5B00",
             },
           },
         },
         invert: {
           css: {
-            color: '#e5e5e5',
+            color: "#e5e5e5",
             a: {
-              color: '#FF5B00',
-              '&:hover': {
-                color: '#ff7733',
+              color: "#FF5B00",
+              "&:hover": {
+                color: "#ff7733",
               },
             },
             h1: {
-              color: '#e5e5e5',
+              color: "#e5e5e5",
             },
             h2: {
-              color: '#e5e5e5',
+              color: "#e5e5e5",
             },
             h3: {
-              color: '#e5e5e5',
+              color: "#e5e5e5",
             },
             h4: {
-              color: '#e5e5e5',
+              color: "#e5e5e5",
             },
             blockquote: {
-              borderLeftColor: '#FF5B00',
-              color: '#9CA3AF',
+              borderLeftColor: "#FF5B00",
+              color: "#9CA3AF",
             },
           },
         },
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

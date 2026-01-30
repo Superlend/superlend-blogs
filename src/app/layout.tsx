@@ -1,18 +1,34 @@
-import Footer from "@/app/_components/footer";
+import Footer from "@/components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import cn from "classnames";
 import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
 
 import "./globals.css";
+import { BackgroundImage } from "../components/background-image";
+import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://blog.superlend.xyz"),
   title: `Superlend Blog - DeFi Insights & Updates`,
   description: `Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator. Discover trends, strategies, and innovations in decentralized finance.`,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
     title: "Superlend Blog - DeFi Insights & Updates",
-    description: "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    description:
+      "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    type: "website",
+    siteName: "Superlend Blog",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Superlend Blog - DeFi Insights & Updates",
+    description:
+      "Stay updated with the latest insights from Superlend - the leading DeFi lending and borrowing aggregator.",
+    images: [HOME_OG_IMAGE_URL],
   },
 };
 
@@ -22,10 +38,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Get Amplitude API key from environment variables
-  const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || '';
+  const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || "";
 
   return (
-    <html lang="en" data-mode="light">
+    <html lang="en" data-mode="light" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -60,13 +76,22 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn("font-sans bg-background text-secondary-dark min-h-screen")}
+        className={cn(
+          "font-sans bg-background text-secondary-dark min-h-screen",
+        )}
+        suppressHydrationWarning
       >
+        <BackgroundImage />
         <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>
           <div className="min-h-screen">{children}</div>
           <Footer />
         </AmplitudeAnalyticsProvider>
       </body>
+      <Script
+        src="https://scripts.ahrefs.com/ae.js"
+        strategy="afterInteractive"
+        data-project-id="EbD32RmwTubQE3StFq2h4Q"
+      />
     </html>
   );
 }
