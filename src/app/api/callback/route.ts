@@ -65,12 +65,17 @@ export async function GET(request: NextRequest) {
               const provider = "github";
               
               // Send message to parent window (Decap CMS)
+              // Use '*' for targetOrigin since popup may have different origin
               if (window.opener) {
                 window.opener.postMessage(
                   'authorization:' + provider + ':success:' + JSON.stringify({ token, provider }),
-                  window.location.origin
+                  '*'
                 );
-                window.close();
+                setTimeout(function() {
+                  window.close();
+                }, 500);
+              } else {
+                document.body.innerHTML = '<p>Authorization successful! You can close this window.</p>';
               }
             })();
           </script>
@@ -102,9 +107,11 @@ export async function GET(request: NextRequest) {
               if (window.opener) {
                 window.opener.postMessage(
                   'authorization:github:error:' + JSON.stringify({ message: "${errorMessage}" }),
-                  window.location.origin
+                  '*'
                 );
-                window.close();
+                setTimeout(function() {
+                  window.close();
+                }, 500);
               }
             })();
           </script>
