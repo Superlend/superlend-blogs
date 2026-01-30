@@ -34,7 +34,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
       },
       {
         root: null,
-        rootMargin: "-100px 0px -66%", // Trigger when heading is in top 1/3
+        rootMargin: "-5px 0px -80% 0px", // Trigger when heading reaches top (minus 5px)
         threshold: 0,
       },
     );
@@ -58,7 +58,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const yOffset = -100; // Offset for sticky header
+      const yOffset = -10; // Offset for sticky header
       const y =
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
