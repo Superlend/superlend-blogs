@@ -1,6 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {
+  getIndentClass,
+  getActiveStyles,
+  getInactiveStyles,
+} from "@/lib/table-of-content";
 
 export interface Heading {
   id: string;
@@ -61,29 +66,30 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   };
 
   return (
-    <nav className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-auto">
+    <nav className="sticky top-24">
       <h3 className="text-sm font-semibold text-secondary-navy dark:text-white mb-4">
         Table of Content
       </h3>
-      <ul className="space-y-2 text-sm">
-        {headings.map((heading) => (
-          <li key={heading.id} className={heading.level === 3 ? "pl-4" : ""}>
-            <a
-              href={`#${heading.id}`}
-              onClick={(e) => handleClick(e, heading.id)}
-              className={`
-                block py-1 transition-all duration-200
-                ${
-                  activeId === heading.id
-                    ? "text-primary font-medium border-l-2 border-primary pl-3 -ml-1"
-                    : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
-                }
-              `}
-            >
-              {heading.text}
-            </a>
-          </li>
-        ))}
+      <ul className="space-y-1 text-sm max-h-[calc(100vh-8rem)] overflow-auto">
+        {headings.map((heading) => {
+          const isActive = activeId === heading.id;
+          const indentClass = getIndentClass(heading.level);
+          const stateStyles = isActive
+            ? getActiveStyles(heading.level)
+            : getInactiveStyles(heading.level);
+
+          return (
+            <li key={heading.id} className={indentClass}>
+              <a
+                href={`#${heading.id}`}
+                onClick={(e) => handleClick(e, heading.id)}
+                className={`block py-1.5 transition-all duration-200 ${stateStyles}`}
+              >
+                {heading.text}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

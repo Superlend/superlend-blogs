@@ -4,9 +4,10 @@ excerpt: "Compare ETH lending rates across DeFi protocols. Learn how to earn yie
 coverImage: "/assets/blog/covers/eth-lending-rates.png"
 date: "2026-01-29T12:00:00.000Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/eth-lending-rates.png"
 ---

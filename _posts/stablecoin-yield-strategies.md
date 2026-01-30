@@ -4,9 +4,10 @@ excerpt: "Discover proven strategies to maximize yield on your stablecoins. From
 coverImage: "/assets/blog/covers/stablecoin-yield-strategies.png"
 date: "2026-01-29T12:00:00.000Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/stablecoin-yield-strategies.png"
 ---

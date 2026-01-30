@@ -4,9 +4,10 @@ excerpt: "Learn how to earn passive income on your Bitcoin through WBTC lending.
 coverImage: "/assets/blog/covers/wbtc-lending.png"
 date: "2026-01-29T12:00:00.000Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/wbtc-lending.png"
 ---

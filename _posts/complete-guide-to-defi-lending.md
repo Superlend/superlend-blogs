@@ -4,9 +4,10 @@ excerpt: "Learn everything about DeFi lending – how it works, top protocols, y
 coverImage: "/assets/blog/covers/defi-lending-guide.png"
 date: "2026-01-29T12:00:00.000Z"
 published: true
+category: "Guides"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/defi-lending-guide.png"
 ---

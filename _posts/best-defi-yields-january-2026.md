@@ -4,9 +4,10 @@ excerpt: "Discover the highest DeFi yields in January 2026. Compare stablecoin, 
 coverImage: "/assets/blog/covers/best-defi-yields-jan-2026.png"
 date: "2026-01-29T12:00:00.000Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
-  picture: "/assets/blog/authors/superlend-team.jpeg"
+  picture: "/assets/blog/authors/superlend-team.svg"
 ogImage:
   url: "/assets/blog/covers/best-defi-yields-jan-2026.png"
 ---
