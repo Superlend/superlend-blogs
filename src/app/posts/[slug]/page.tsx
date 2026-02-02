@@ -1,92 +1,55 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
-import Container from "@/components/container";
-import Header from "@/components/header";
-import { PostBody } from "@/components/post-body";
-import { PostHeader } from "@/components/post-header";
-import { BackNavigation } from "@/components/analytics/back-navigation";
-import { ScrollProgress } from "@/components/scroll-progress";
-import { TableOfContents } from "@/components/table-of-contents";
-import { ArticleMetadataSidebar } from "@/components/article-metadata-sidebar";
-import { extractHeadings } from "@/lib/extract-headings";
-import { calculateReadingTime } from "@/lib/reading-time";
+import { client } from "../../../../tina/__generated__/client";
+import ClientPage from "./client-page";
 import { ArticleSchema } from "@/components/article-schema";
-import Image from "next/image";
+import { type Post as PostType, type BlogCategory } from "@/interfaces/post";
 
 export default async function Post(props: Params) {
   const params = await props.params;
-  const post = getPostBySlug(params.slug);
+  const { slug } = params;
 
-  if (!post) {
+  let response;
+  try {
+    response = await client.queries.post({
+      relativePath: `${slug}.md`,
+    });
+  } catch (error) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
-  const headings = extractHeadings(content);
-  const readTime = calculateReadingTime(post.content || "");
-  const postUrl = `https://blog.superlend.xyz/posts/${params.slug}`;
+  if (!response.data.post) {
+    return notFound();
+  }
+
+  const post = response.data.post;
+  const postUrl = `https://blog.superlend.xyz/posts/${slug}`;
+
+  const schemaPost: PostType = {
+    slug: slug,
+    title: post.title,
+    date: post.date || "",
+    coverImage: post.coverImage || "",
+    author: {
+      name: post.author?.name || "Superlend Team",
+      picture: post.author?.picture || "",
+    },
+    excerpt: post.excerpt || "",
+    ogImage: {
+      url: post.ogImage?.url || "",
+    },
+    content: JSON.stringify(post.body),
+    category: (post.category as BlogCategory) || "Guides",
+  };
 
   return (
     <>
-      {/* JSON-LD structured data for rich search results */}
-      <ArticleSchema post={post} url={postUrl} />
-
-      <main className="min-h-screen bg-background">
-        {/* LayerZero-style scroll progress indicator */}
-        <ScrollProgress />
-
-        <Header />
-
-        {/* Clean tinted background */}
-        <Container>
-          <div className="py-6">
-            <BackNavigation />
-          </div>
-
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-            content={post.content ?? ""}
-          />
-
-          {/* Three-column layout: metadata sidebar | content | TOC sidebar */}
-          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_260px] gap-4 max-w-7xl mx-auto pb-16">
-            {/* Left Sidebar - Metadata (hidden on mobile, sticky on desktop) */}
-            <div className="hidden lg:block">
-              <ArticleMetadataSidebar
-                author={post.author}
-                date={post.date}
-                readTime={readTime}
-                category="Article"
-                title={post.title}
-              />
-            </div>
-
-            {/* Center - Article Content */}
-            <article className="min-w-0 px-4 pt-5 rounded-4 bg-white bg-opacity-40 flex flex-col gap-6">
-              <div className="relative aspect-[21/9] rounded-xl overflow-hidden shadow-lg">
-                <Image
-                  src={post.coverImage}
-                  alt={`Cover image for article: ${post.title}`}
-                  width={736}
-                  height={315}
-                  className="object-cover aspect-[21/9]"
-                />
-              </div>
-              <PostBody content={content} />
-            </article>
-
-            {/* Right Sidebar - Table of Content (hidden on mobile, sticky on desktop) */}
-            <div className="hidden lg:block">
-              <TableOfContents headings={headings} />
-            </div>
-          </div>
-        </Container>
-      </main>
+      <ArticleSchema post={schemaPost} url={postUrl} />
+      <ClientPage
+        query={response.query}
+        variables={response.variables}
+        data={response.data}
+      />
     </>
   );
 }
@@ -99,46 +62,66 @@ type Params = {
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const post = getPostBySlug(params.slug);
+  const { slug } = params;
+
+  let post;
+  try {
+    const response = await client.queries.post({
+      relativePath: `${slug}.md`,
+    });
+    post = response.data.post;
+  } catch (error) {
+    return {
+      title: "Superlend Blog",
+      description: "Read the latest from Superlend.",
+    };
+  }
 
   if (!post) {
-    return notFound();
+    return {
+      title: "Superlend Blog",
+    };
   }
 
   const title = `${post.title} | Superlend Blog`;
-  const url = `/posts/${params.slug}`;
-  const imageUrl = post.ogImage.url.startsWith("http")
-    ? post.ogImage.url
-    : `https://blog.superlend.xyz${post.ogImage.url}`;
+  const url = `/posts/${slug}`;
+  const imageUrl = post.ogImage?.url
+    ? post.ogImage.url.startsWith("http")
+      ? post.ogImage.url
+      : `https://blog.superlend.xyz${post.ogImage.url}`
+    : post.coverImage || "";
 
   return {
     title,
-    description: post.excerpt,
+    description: post.excerpt || "",
     alternates: {
       canonical: url,
     },
     openGraph: {
       title,
-      description: post.excerpt,
+      description: post.excerpt || "",
       type: "article",
-      publishedTime: post.date,
-      authors: [post.author.name],
-      images: [imageUrl],
+      publishedTime: post.date || "",
+      authors: [post.author?.name || "Superlend Team"],
+      images: imageUrl ? [imageUrl] : [],
       url,
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description: post.excerpt,
-      images: [imageUrl],
+      description: post.excerpt || "",
+      images: imageUrl ? [imageUrl] : [],
     },
   };
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const postsResponse = await client.queries.postConnection();
+  const edges = postsResponse.data.postConnection.edges || [];
 
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return edges
+    .map((edge) => ({
+      slug: edge?.node?._sys.filename || "",
+    }))
+    .filter((p) => p.slug !== "");
 }

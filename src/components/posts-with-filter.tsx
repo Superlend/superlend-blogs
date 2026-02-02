@@ -32,7 +32,7 @@ function PostsWithFilterContent({ posts }: { posts: Post[] }) {
   const pillRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // Get current category from URL
-  const categoryParam = searchParams.get("category");
+  const categoryParam = searchParams?.get("category") ?? null;
   const selectedCategorySlug = categoryParam || null;
 
   // Calculate categories with counts
@@ -73,14 +73,15 @@ function PostsWithFilterContent({ posts }: { posts: Post[] }) {
   // Handle category selection
   const handleCategorySelect = useCallback(
     (category: CategoryWithCount) => {
-      const params = new URLSearchParams(searchParams.toString());
+      const params = new URLSearchParams(searchParams?.toString() ?? "");
       if (category.slug === "all") {
         params.delete("category");
       } else {
         params.set("category", category.slug);
       }
       const query = params.toString();
-      router.push(query ? `${pathname}?${query}` : pathname, { scroll: false });
+      const basePath = pathname ?? "/";
+      router.push(query ? `${basePath}?${query}` : basePath, { scroll: false });
     },
     [searchParams, router, pathname],
   );

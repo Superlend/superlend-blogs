@@ -14,6 +14,17 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.tina.io',
+        port: '',
+      },
+    ],
+    localPatterns: [
+      {
+        pathname: '/assets/**',
+        search: '',
+      },
     ],
   },
 }
