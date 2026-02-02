@@ -15,6 +15,12 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    localPatterns: [
+      {
+        pathname: '/assets/**',
+        search: '',
+      },
+    ],
   },
 }
 
