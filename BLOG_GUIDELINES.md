@@ -397,6 +397,7 @@ Distribution targets from brand guidelines:
 | Screenshots with popups | Close all overlays before capturing |
 | Uncropped cover images | Use object-contain for article pages |
 | Broken table syntax | Verify rendering in preview |
+| Internal links with `/blog/` prefix | Use `/posts/` prefix (e.g., `/posts/usdc-lending-guide`) |
 
 ### Brand Voice (from CLAUDE.md)
 
@@ -454,6 +455,9 @@ npm run dev            # Start dev server (localhost:3000)
 # Check for old URLs
 grep -r "funds.superlend.xyz" _posts/
 grep -r "loop.superlend.xyz" _posts/
+
+# Check for broken internal links (must use /posts/ not /blog/)
+grep -r "(/blog/" _posts/
 
 # Check for broken tables
 grep -r "\|[-]{3,}\|" _posts/

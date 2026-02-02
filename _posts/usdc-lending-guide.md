@@ -242,9 +242,9 @@ Ready to put your USDC to work?
 
 - **Compare rates across 350+ markets**: [app.superlend.xyz](https://app.superlend.xyz)
 - **Automate your USDC yield**: [Vaults section on Superlend](https://app.superlend.xyz/vaults)
-- **Learn more about DeFi lending**: [Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending)
-- **Explore stablecoin strategies**: [Stablecoin Yield Strategies](/blog/stablecoin-yield-strategies)
-- **Understand DeFi safety**: [Is DeFi Lending Safe](/blog/is-defi-lending-safe)
+- **Learn more about DeFi lending**: [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending)
+- **Explore stablecoin strategies**: [Stablecoin Yield Strategies](/posts/stablecoin-yield-strategies)
+- **Understand DeFi safety**: [Is DeFi Lending Safe](/posts/is-defi-lending-safe)
 
 ---
 

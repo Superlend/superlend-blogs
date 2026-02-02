@@ -17,7 +17,7 @@ ogImage:
 
 With $56B+ locked across lending protocols (per [DeFiLlama](https://defillama.com/)), DeFi lending has proven product-market fit. That scale means deep liquidity – you can deposit and withdraw substantial amounts without slippage.
 
-Superlend is a non-custodial aggregator connecting you to 350+ money markets across 11+ chains. Compare rates across Aave, Compound, Morpho, and more from one dashboard – then execute directly. This guide covers which assets to lend, how rates work, and what risks to manage. For a comprehensive introduction, see our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending).
+Superlend is a non-custodial aggregator connecting you to 350+ money markets across 11+ chains. Compare rates across Aave, Compound, Morpho, and more from one dashboard – then execute directly. This guide covers which assets to lend, how rates work, and what risks to manage. For a comprehensive introduction, see our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending).
 
 ---
 
@@ -26,7 +26,7 @@ Superlend is a non-custodial aggregator connecting you to 350+ money markets acr
 Most lending protocols support a range of crypto assets. The most common categories are:
 
 ### Stablecoins (USDC, DAI, USDT)
-These are popular for lenders who want steady returns without the volatility of regular crypto. Stablecoins are designed to maintain a value pegged to a real-world currency (usually the US dollar). This means when you lend stablecoins, you're less exposed to big price swings and your $1 stays close to $1. For a deep dive into stablecoin opportunities, see our [stablecoin yield strategies guide](/blog/stablecoin-yield-strategies).
+These are popular for lenders who want steady returns without the volatility of regular crypto. Stablecoins are designed to maintain a value pegged to a real-world currency (usually the US dollar). This means when you lend stablecoins, you're less exposed to big price swings and your $1 stays close to $1. For a deep dive into stablecoin opportunities, see our [stablecoin yield strategies guide](/posts/stablecoin-yield-strategies).
 
 That's why many people use stablecoins as a way to earn passive income on idle funds. Instead of just holding them in a wallet, you can supply them to a lending pool and earn interest – often higher than traditional savings accounts, while keeping your principal relatively stable.
 
@@ -102,7 +102,7 @@ A DeFi lending protocol is a decentralized platform that allows users to lend an
 You earn by supplying assets to a lending pool. Borrowers pay interest on their loans, and that interest is distributed to lenders proportionally based on their deposits.
 
 ### Which DeFi lending protocols are safest?
-Established protocols like Aave, Compound, and Morpho have been audited multiple times and have billions in TVL. However, no protocol is completely risk-free. Diversifying across protocols and using aggregators like Superlend can help manage risk. Learn more in our guide on [whether DeFi lending is safe](/blog/is-defi-lending-safe).
+Established protocols like Aave, Compound, and Morpho have been audited multiple times and have billions in TVL. However, no protocol is completely risk-free. Diversifying across protocols and using aggregators like Superlend can help manage risk. Learn more in our guide on [whether DeFi lending is safe](/posts/is-defi-lending-safe).
 
 ---
 

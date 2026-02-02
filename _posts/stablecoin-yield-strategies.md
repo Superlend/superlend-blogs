@@ -269,7 +269,7 @@ Stablecoin yields exist because borrowers pay interest to use your capital. As l
 
 **Q: Which stablecoin should I use – USDC or USDT?**
 
-Both work well for yield strategies. USDC is generally considered more transparent and regulatory-compliant, while USDT has deeper liquidity in some markets. Many users hold both. The key is using stablecoins issued by reputable entities with clear reserves. For a deeper dive, check out our [USDC Lending Guide](/blog/usdc-lending-guide).
+Both work well for yield strategies. USDC is generally considered more transparent and regulatory-compliant, while USDT has deeper liquidity in some markets. Many users hold both. The key is using stablecoins issued by reputable entities with clear reserves. For a deeper dive, check out our [USDC Lending Guide](/posts/usdc-lending-guide).
 
 **Q: How much should I start with?**
 
@@ -286,7 +286,7 @@ Idle stablecoins are a missed opportunity. Whether you choose simple lending, au
 - Deposit into automated yield optimization in the [Vaults section](https://app.superlend.xyz/vaults)
 - Explore leveraged strategies in [Loop Vaults](https://app.superlend.xyz/vaults)
 
-For a comprehensive understanding of DeFi lending fundamentals, read our [Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending).
+For a comprehensive understanding of DeFi lending fundamentals, read our [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending).
 
 ---
 

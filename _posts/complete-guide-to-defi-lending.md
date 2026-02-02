@@ -302,7 +302,7 @@ These tokens represent staked ETH and continue earning staking rewards. When you
 1. Staking rewards (currently 3-4% APY)
 2. Lending interest (variable)
 
-**Risk consideration:** Lending ETH means your principal can decrease in dollar terms if ETH's price drops. However, you're not at risk of liquidation since you're the lender, not the borrower. For current rates and strategies, see our [ETH lending rates](/blog/eth-lending-rates) guide.
+**Risk consideration:** Lending ETH means your principal can decrease in dollar terms if ETH's price drops. However, you're not at risk of liquidation since you're the lender, not the borrower. For current rates and strategies, see our [ETH lending rates](/posts/eth-lending-rates) guide.
 
 ### WBTC and Bitcoin Derivatives
 
@@ -318,7 +318,7 @@ Wrapped Bitcoin (WBTC) and other BTC derivatives let Bitcoin holders participate
 - tBTC – Decentralized Bitcoin wrapping
 - cbBTC – Coinbase's wrapped Bitcoin
 
-**Note:** Wrapped Bitcoin introduces bridge and custodial risk that native Bitcoin doesn't have. Consider whether the yield justifies these additional risk factors. Learn more in our [WBTC lending guide](/blog/wbtc-lending).
+**Note:** Wrapped Bitcoin introduces bridge and custodial risk that native Bitcoin doesn't have. Consider whether the yield justifies these additional risk factors. Learn more in our [WBTC lending guide](/posts/wbtc-lending).
 
 ### Long-Tail Assets
 
@@ -655,7 +655,7 @@ For users who understand leverage and want amplified returns, [Loop Vaults](http
 
 ### Is DeFi lending safe?
 
-DeFi lending involves real risks including smart contract vulnerabilities, market volatility, and protocol failures. However, established protocols have processed billions of dollars over several years. Safety depends on choosing reputable protocols, understanding the risks, and not investing more than you can afford to lose. Diversifying across protocols and maintaining conservative positions helps manage risk. For a deeper exploration of this topic, read [Is DeFi Lending Safe?](/blog/is-defi-lending-safe)
+DeFi lending involves real risks including smart contract vulnerabilities, market volatility, and protocol failures. However, established protocols have processed billions of dollars over several years. Safety depends on choosing reputable protocols, understanding the risks, and not investing more than you can afford to lose. Diversifying across protocols and maintaining conservative positions helps manage risk. For a deeper exploration of this topic, read [Is DeFi Lending Safe?](/posts/is-defi-lending-safe)
 
 ### How much can I earn from DeFi lending?
 

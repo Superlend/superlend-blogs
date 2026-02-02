@@ -120,7 +120,7 @@ Stablecoins are designed to maintain a 1:1 peg with the US dollar, but this peg 
 
 Different types of stablecoins have different risk profiles:
 
-**Fiat-backed stablecoins** (USDC, USDT) are backed by reserves held by centralized entities. Their main risks are custodial – you're trusting the issuer to maintain adequate reserves and remain solvent. USDC briefly depegged in 2023 due to exposure to a failed bank, though it recovered. For strategies on lending USDC specifically, see our [USDC lending guide](/blog/usdc-lending-guide).
+**Fiat-backed stablecoins** (USDC, USDT) are backed by reserves held by centralized entities. Their main risks are custodial – you're trusting the issuer to maintain adequate reserves and remain solvent. USDC briefly depegged in 2023 due to exposure to a failed bank, though it recovered. For strategies on lending USDC specifically, see our [USDC lending guide](/posts/usdc-lending-guide).
 
 **Crypto-backed stablecoins** (DAI) are overcollateralized by crypto assets. They're more decentralized but can be affected by extreme market volatility that impacts their collateral.
 
@@ -128,7 +128,7 @@ Different types of stablecoins have different risk profiles:
 
 ### Diversification Approach
 
-Consider spreading your stablecoin exposure across different types and issuers. If you're lending $100,000 in stables, holding it all in a single stablecoin concentrates your risk. Splitting across USDC, USDT, and DAI provides some protection against any single stablecoin having problems. For more on optimizing stablecoin yields, see our [stablecoin yield strategies guide](/blog/stablecoin-yield-strategies).
+Consider spreading your stablecoin exposure across different types and issuers. If you're lending $100,000 in stables, holding it all in a single stablecoin concentrates your risk. Splitting across USDC, USDT, and DAI provides some protection against any single stablecoin having problems. For more on optimizing stablecoin yields, see our [stablecoin yield strategies guide](/posts/stablecoin-yield-strategies).
 
 ---
 
@@ -138,7 +138,7 @@ Market risk refers to the impact of price movements and broader market condition
 
 ### Volatile Asset Exposure
 
-If you're lending volatile assets like ETH or BTC rather than stablecoins, you're exposed to price movements in those assets. A 50% drop in ETH price means a 50% drop in the dollar value of your lending position, regardless of the yield you're earning. For current rates on these assets, see our guides on [ETH lending rates](/blog/eth-lending-rates) and [wBTC lending](/blog/wbtc-lending).
+If you're lending volatile assets like ETH or BTC rather than stablecoins, you're exposed to price movements in those assets. A 50% drop in ETH price means a 50% drop in the dollar value of your lending position, regardless of the yield you're earning. For current rates on these assets, see our guides on [ETH lending rates](/posts/eth-lending-rates) and [wBTC lending](/posts/wbtc-lending).
 
 ### Rate Volatility
 
@@ -250,8 +250,8 @@ If you choose to lend in DeFi, do it with eyes open. Use established protocols. 
 
 **Further Reading:**
 
-- [The Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending)
-- [Understanding Lending Protocols: Assets, Rates, and Risks](/blog/understanding-lending-protocols)
+- [The Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending)
+- [Understanding Lending Protocols: Assets, Rates, and Risks](/posts/understanding-lending-protocols)
 
 ---
 

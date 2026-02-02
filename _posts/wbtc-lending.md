@@ -133,7 +133,7 @@ Morpho optimizes lending by directly matching lenders with borrowers when possib
 ![WBTC lending rates on Superlend](/assets/screenshots/superlend-wbtc-markets.png)
 *Compare WBTC lending rates across protocols on Superlend*
 
-For most users, Aave offers the best balance of liquidity, rates, and security. If you're comfortable with a slightly newer protocol and want to optimize for yield, Morpho is worth considering. For a detailed breakdown of the two largest protocols, read our [Aave vs Compound comparison](/blog/aave-vs-compound).
+For most users, Aave offers the best balance of liquidity, rates, and security. If you're comfortable with a slightly newer protocol and want to optimize for yield, Morpho is worth considering. For a detailed breakdown of the two largest protocols, read our [Aave vs Compound comparison](/posts/aave-vs-compound).
 
 ---
 
@@ -185,7 +185,7 @@ Ready to start earning yield on your Bitcoin? Superlend makes it easy to compare
 
 Don't have WBTC yet? You can wrap BTC through various bridges or swap for WBTC on decentralized exchanges. Superlend shows you where to find the best rates for your wrapped Bitcoin once you're ready.
 
-For a deeper understanding of how DeFi lending works, check out our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending). If you're also interested in lending ETH, see our breakdown of [ETH lending rates](/blog/eth-lending-rates). Want to understand protocol safety? Read [Is DeFi lending safe?](/blog/is-defi-lending-safe)
+For a deeper understanding of how DeFi lending works, check out our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending). If you're also interested in lending ETH, see our breakdown of [ETH lending rates](/posts/eth-lending-rates). Want to understand protocol safety? Read [Is DeFi lending safe?](/posts/is-defi-lending-safe)
 
 ---
 

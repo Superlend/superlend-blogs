@@ -52,7 +52,7 @@ Native ETH lending rates typically range from 1.5% to 4% APY, depending on marke
 ![ETH lending rates on Superlend](/assets/screenshots/superlend-eth-markets.png)
 *Compare ETH lending rates across protocols on Superlend*
 
-Rates are variable and change frequently based on market conditions. For a deeper understanding of how these protocols differ, see our [Aave vs Compound comparison](/blog/aave-vs-compound).
+Rates are variable and change frequently based on market conditions. For a deeper understanding of how these protocols differ, see our [Aave vs Compound comparison](/posts/aave-vs-compound).
 
 ### What Affects ETH Lending Rates?
 
@@ -190,7 +190,7 @@ Ready to put your ETH to work? Superlend makes it easy to find the best rates ac
 
 Instead of checking Aave, Compound, and Morpho separately, Superlend aggregates everything in one place. You can see real-time rates, historical trends, and execute transactions without visiting multiple interfaces.
 
-For deeper learning, check out our [Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending), explore [USDC lending opportunities](/blog/usdc-lending-guide), or learn about [understanding lending protocols](/blog/understanding-lending-protocols).
+For deeper learning, check out our [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending), explore [USDC lending opportunities](/posts/usdc-lending-guide), or learn about [understanding lending protocols](/posts/understanding-lending-protocols).
 
 ---
 

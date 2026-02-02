@@ -32,7 +32,7 @@ The instantaneous nature of yield distribution can create opportunities for larg
 ### Uneven User Experience
 For users seeking consistent passive income, unpredictable yield can be frustrating. It makes financial planning difficult and can erode trust in the platform's ability to deliver stable returns.
 
-Hence most regular folks prefer fixed rate lending protocols. For a broader understanding of how DeFi lending works, see our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending). For DeFi risk management, check our guide on [whether DeFi lending is safe](/blog/is-defi-lending-safe).
+Hence most regular folks prefer fixed rate lending protocols. For a broader understanding of how DeFi lending works, see our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending). For DeFi risk management, check our guide on [whether DeFi lending is safe](/posts/is-defi-lending-safe).
 
 ---
 
@@ -101,7 +101,7 @@ DeFi yield optimization refers to strategies and mechanisms that maximize return
 Instant distribution pays out yield immediately as it's earned, exposing users to rate volatility. Yield Ramp-Up buffers earned yield and distributes it gradually over 7-14 days, creating smoother, more predictable returns.
 
 ### Is Yield Ramp-Up suitable for all DeFi users?
-Yield Ramp-Up is ideal for users who prioritize stable, predictable returns over chasing short-term rate spikes. If you're a long-term holder seeking consistent passive income, Yield Ramp-Up provides a better experience than volatile instant-distribution models. For stablecoin-specific strategies, check out our [USDC lending guide](/blog/usdc-lending-guide) and [stablecoin yield strategies](/blog/stablecoin-yield-strategies).
+Yield Ramp-Up is ideal for users who prioritize stable, predictable returns over chasing short-term rate spikes. If you're a long-term holder seeking consistent passive income, Yield Ramp-Up provides a better experience than volatile instant-distribution models. For stablecoin-specific strategies, check out our [USDC lending guide](/posts/usdc-lending-guide) and [stablecoin yield strategies](/posts/stablecoin-yield-strategies).
 
 ---
 

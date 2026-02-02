@@ -28,7 +28,7 @@ Superlend aggregates 350+ money markets across 11+ chains. Compare rates across 
 This is one of the most popular strategies for layering yields on top of each other.
 
 **What It Is:**
-You first stake a base asset like ETH or SOL through a liquid staking protocol (e.g., Lido for ETH, Jito for SOL). This earns you a baseline staking reward of around 3-4%. In return, you receive a liquid token (like stETH or JitoSOL) that represents your staked position. You then take this liquid staked token (LST) and lend it out on a money market like Aave, Morpho, or Compound for additional yield. For current ETH rates, check our [ETH lending rates guide](/blog/eth-lending-rates).
+You first stake a base asset like ETH or SOL through a liquid staking protocol (e.g., Lido for ETH, Jito for SOL). This earns you a baseline staking reward of around 3-4%. In return, you receive a liquid token (like stETH or JitoSOL) that represents your staked position. You then take this liquid staked token (LST) and lend it out on a money market like Aave, Morpho, or Compound for additional yield. For current ETH rates, check our [ETH lending rates guide](/posts/eth-lending-rates).
 
 **The Reward:**
 By combining the base staking reward (3-4%) with the lending yield (5-10%), users can achieve a blended APR of 9-15%.
@@ -104,7 +104,7 @@ Early adopters can see APYs of **15-30% or more** on common assets like ETH and 
 
 Chasing high APRs beyond stablecoins is a high-stakes game. Always prioritize safety with these key principles:
 
-- **Smart Contract Risk:** A bug or hack can wipe out funds. Stick to audited platforms with high TVL like Aave, Morpho, and Compound. Learn more about evaluating these risks in [Is DeFi Lending Safe?](/blog/is-defi-lending-safe)
+- **Smart Contract Risk:** A bug or hack can wipe out funds. Stick to audited platforms with high TVL like Aave, Morpho, and Compound. Learn more about evaluating these risks in [Is DeFi Lending Safe?](/posts/is-defi-lending-safe)
 - **Market Volatility:** The value of ETH, SOL, or other assets can plummet, offsetting any yield you've earned
 - **Liquidation Risk:** If using leverage, maintain conservative loan-to-value ratios
 - **Unsustainable Incentives:** Be skeptical of APRs that seem too good to be true

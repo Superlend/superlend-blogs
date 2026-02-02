@@ -124,10 +124,10 @@ It's that simple.
 DeFi looping is a strategy where you deposit an asset as collateral, borrow against it, and redeposit the borrowed amount to increase your total position size. This amplifies your exposure to yield-generating opportunities but also increases risk.
 
 ### Is DeFi looping risky?
-Yes, looping involves leverage which amplifies both gains and losses. If the value of your collateral drops below the liquidation threshold, your position can be automatically closed. Loop Vaults include risk controls, but users should only invest what they can afford to lose. For more on DeFi risks and safety, read our guide on [Is DeFi Lending Safe](/blog/is-defi-lending-safe).
+Yes, looping involves leverage which amplifies both gains and losses. If the value of your collateral drops below the liquidation threshold, your position can be automatically closed. Loop Vaults include risk controls, but users should only invest what they can afford to lose. For more on DeFi risks and safety, read our guide on [Is DeFi Lending Safe](/posts/is-defi-lending-safe).
 
 ### How are Loop Vaults different from manual looping?
-Manual looping requires you to execute multiple transactions, monitor health factors, and manage unwinding yourself. Loop Vaults automate all of this – the vault handles borrowing, redepositing, and risk management automatically. To learn more about how lending protocols work under the hood, check out [Understanding Lending Protocols](/blog/understanding-lending-protocols).
+Manual looping requires you to execute multiple transactions, monitor health factors, and manage unwinding yourself. Loop Vaults automate all of this – the vault handles borrowing, redepositing, and risk management automatically. To learn more about how lending protocols work under the hood, check out [Understanding Lending Protocols](/posts/understanding-lending-protocols).
 
 ---
 
@@ -139,7 +139,7 @@ Ready to amplify your yield with a professional DeFi looping strategy?
 
 ---
 
-For more stablecoin yield strategies including non-leveraged options, see our [Stablecoin Yield Strategies](/blog/stablecoin-yield-strategies) guide.
+For more stablecoin yield strategies including non-leveraged options, see our [Stablecoin Yield Strategies](/posts/stablecoin-yield-strategies) guide.
 
 ---
 
