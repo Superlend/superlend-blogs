@@ -41,9 +41,15 @@ npm start        # Start production server
 
 **Writing style:**
 - Lead with conclusions, answer main question in first 1-2 sentences
-- Superlend is a "non-custodial DeFi lending aggregator" - state once per article
+- Superlend is a "non-custodial DeFi lending aggregator" - state once per article in the intro
 - Include 1-2 quotable definitions per article (bold key sentence)
 - Decision-oriented framing (help users choose, not just understand)
+
+**AI citability (for AI overviews/citations):**
+- Bold standalone definitions that AI can quote verbatim
+- Format: "**Stablecoin yield is interest earned by lending USDC or USDT on DeFi protocols.**"
+- Place key answers in first 1-2 sentences, not buried mid-paragraph
+- Best examples: `aave-vs-compound.md`, `is-defi-lending-safe.md`
 
 **Avoid:**
 - Generic AI filler ("Let's dive in", "At its core", "You've come to the right place")
@@ -55,6 +61,8 @@ npm start        # Start production server
 grep -r "funds.superlend.xyz" _posts/    # Should return nothing
 grep -r "loop.superlend.xyz" _posts/     # Should return nothing
 grep -r "(/blog/" _posts/                # Should return nothing (use /posts/)
+grep -ri "at its core" _posts/           # Should return nothing (AI filler)
+grep -ri "let's dive" _posts/            # Should return nothing (AI filler)
 ```
 
 ## Environment Variables
