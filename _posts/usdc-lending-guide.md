@@ -95,8 +95,8 @@ Polygon offers extremely low transaction costs and a wide range of DeFi protocol
 
 ### Chain Comparison
 
-![USDC rates across chains on Superlend](/assets/screenshots/superlend-dashboard.png)
-*Compare USDC rates across all supported chains on Superlend*
+![USDC and stablecoin rates on Superlend](/assets/screenshots/superlend-stablecoins-rates.png)
+*Compare USDC and stablecoin rates across protocols on Superlend*
 
 The best chain for you depends on your position size. If you're lending $100,000+ in USDC, Ethereum mainnet's deep liquidity might justify the higher gas costs. For smaller amounts, Layer 2s like Base or Arbitrum make more sense.
 

@@ -116,8 +116,8 @@ Both protocols use utilization-based interest rate models, but with some differe
 
 Interest rates fluctuate constantly based on market conditions.
 
-![Aave and Compound rates on Superlend](/assets/screenshots/superlend-discover-all.png)
-*Compare Aave and Compound rates side-by-side on Superlend*
+![DeFi lending rates on Superlend](/assets/screenshots/superlend-discover-all.png)
+*Compare lending rates across protocols on Superlend's Discover page*
 
 *Note: Rates are variable and change based on market conditions. Check live rates on [Superlend](https://app.superlend.xyz) for current comparisons.*
 
