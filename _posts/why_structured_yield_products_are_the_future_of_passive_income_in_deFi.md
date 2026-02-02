@@ -115,13 +115,13 @@ Structured yield products automate complex strategies and include built-in risk 
 Structured products typically include risk controls and use battle-tested protocols, reducing but not eliminating risk. They protect against common user errors like improper leverage or forgetting to rebalance. However, all DeFi involves smart contract and market risks.
 
 ### How do I get started with Superlend's yield products?
-Access SuperFund and Loop Vaults in the [Vaults section on Superlend](https://app.superlend.xyz/vaults) for stablecoin yield optimization and amplified returns, or browse 350+ markets on [Superlend](https://app.superlend.xyz). For a deeper dive, read our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending).
+Access SuperFund and Loop Vaults in the [Vaults section on Superlend](https://app.superlend.xyz/vaults) for stablecoin yield optimization and amplified returns, or browse 350+ markets on [Superlend](https://app.superlend.xyz). For a deeper dive, read our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending).
 
 ---
 
 ## Start Earning with Structured DeFi Yield Strategies
 
-Ready for DeFi yield strategies that work for you instead of against you? Learn more about [whether DeFi lending is safe](/blog/is-defi-lending-safe) or explore specific assets like [USDC](/blog/usdc-lending-guide) and [ETH](/blog/eth-lending-rates).
+Ready for DeFi yield strategies that work for you instead of against you? Learn more about [whether DeFi lending is safe](/posts/is-defi-lending-safe) or explore specific assets like [USDC](/posts/usdc-lending-guide) and [ETH](/posts/eth-lending-rates).
 
 [Explore SuperFund and Loop Vaults](https://app.superlend.xyz/vaults) | [Browse Superlend Markets](https://app.superlend.xyz)
 

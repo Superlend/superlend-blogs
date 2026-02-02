@@ -121,7 +121,7 @@ Getting started is straightforward:
 ## Frequently Asked Questions
 
 ### Is DeFi lending safe?
-DeFi lending involves risks including smart contract vulnerabilities, market volatility, and liquidity risks. However, established protocols undergo security audits and have been battle-tested over time. Always do your own research and only invest what you can afford to lose. For a detailed breakdown of risks and how to manage them, read our guide on [Is DeFi Lending Safe](/blog/is-defi-lending-safe).
+DeFi lending involves risks including smart contract vulnerabilities, market volatility, and liquidity risks. However, established protocols undergo security audits and have been battle-tested over time. Always do your own research and only invest what you can afford to lose. For a detailed breakdown of risks and how to manage them, read our guide on [Is DeFi Lending Safe](/posts/is-defi-lending-safe).
 
 ### How much can I earn with DeFi lending?
 Yields vary based on market conditions, asset type, and protocol. Stablecoin lending typically offers 4-12% APY, though rates fluctuate with supply and demand. *Past performance does not guarantee future results.*
@@ -135,7 +135,7 @@ DeFi lending operates on blockchain without intermediaries, offering higher pote
 
 DeFi lending represents a new paradigm for earning yield on your assets. It offers more control, better potential returns, and global accessibility. With platforms like [Superlend](https://app.superlend.xyz) and SuperFund in the [Vaults section](https://app.superlend.xyz/vaults), getting started has never been easier.
 
-Ready to explore? [Access SuperFund in the Vaults section](https://app.superlend.xyz/vaults) and start earning yield on your USDC. For a deeper understanding of lending mechanics, check out our [Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending) or learn about [stablecoin yield strategies](/blog/stablecoin-yield-strategies).
+Ready to explore? [Access SuperFund in the Vaults section](https://app.superlend.xyz/vaults) and start earning yield on your USDC. For a deeper understanding of lending mechanics, check out our [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending) or learn about [stablecoin yield strategies](/posts/stablecoin-yield-strategies).
 
 ---
 

@@ -26,7 +26,7 @@ Stablecoins remain the bread and butter of DeFi lending. With their price stabil
 
 ### USDC Rates
 
-USDC continues to be one of the most popular assets for DeFi lending. Rates vary depending on the protocol, chain, and current utilization levels. As of January 2026, you can expect to see USDC lending rates ranging from approximately 4% to 8% APY across major protocols. For a deep dive on USDC specifically, see our [USDC lending guide](/blog/usdc-lending-guide).
+USDC continues to be one of the most popular assets for DeFi lending. Rates vary depending on the protocol, chain, and current utilization levels. As of January 2026, you can expect to see USDC lending rates ranging from approximately 4% to 8% APY across major protocols. For a deep dive on USDC specifically, see our [USDC lending guide](/posts/usdc-lending-guide).
 
 The variance comes down to a few factors: Ethereum mainnet typically offers more competitive rates due to higher borrowing demand, while Layer 2 networks may offer different rates based on their unique ecosystem dynamics. Protocols with higher utilization tend to offer better rates, though this comes with slightly higher withdrawal risk during peak demand periods.
 
@@ -58,7 +58,7 @@ Earning yield on ETH has evolved significantly with the rise of liquid staking. 
 
 ### Native ETH Lending
 
-Lending native ETH on protocols like Aave, Compound, and Morpho offers straightforward yields. As of January 2026, native ETH lending rates typically range from 1.5% to 4% APY. These rates fluctuate based on borrowing demand – when traders want to short ETH or use it for specific strategies, rates increase. For comprehensive ETH lending strategies, see our [ETH lending rates guide](/blog/eth-lending-rates).
+Lending native ETH on protocols like Aave, Compound, and Morpho offers straightforward yields. As of January 2026, native ETH lending rates typically range from 1.5% to 4% APY. These rates fluctuate based on borrowing demand – when traders want to short ETH or use it for specific strategies, rates increase. For comprehensive ETH lending strategies, see our [ETH lending rates guide](/posts/eth-lending-rates).
 
 ### Liquid Staking Token Yields
 
@@ -89,7 +89,7 @@ Bitcoin holders looking to earn yield in DeFi typically use Wrapped Bitcoin (WBT
 
 ### WBTC Lending Rates
 
-WBTC lending rates as of January 2026 typically range from 0.5% to 3% APY. These rates are generally lower than stablecoin or ETH yields because borrowing demand for WBTC tends to be lower – most traders who want BTC exposure simply hold it rather than borrow it. For more on Bitcoin lending opportunities, see our [WBTC lending guide](/blog/wbtc-lending).
+WBTC lending rates as of January 2026 typically range from 0.5% to 3% APY. These rates are generally lower than stablecoin or ETH yields because borrowing demand for WBTC tends to be lower – most traders who want BTC exposure simply hold it rather than borrow it. For more on Bitcoin lending opportunities, see our [WBTC lending guide](/posts/wbtc-lending).
 
 ### Where to Find the Best BTC Yields
 
@@ -253,7 +253,7 @@ For stablecoin holders, current yields in the 4% to 8% range represent a meaning
 
 The key is having the right tools and information to make informed decisions. Whether you prefer hands-on rate hunting through [Superlend](https://app.superlend.xyz) or automated optimization via the [Vaults section](https://app.superlend.xyz/vaults), the infrastructure exists to help you earn more on your crypto holdings.
 
-For more background on how DeFi lending works, check out our [Complete Guide to DeFi Lending](/blog/complete-guide-to-defi-lending), [Understanding Lending Protocols](/blog/understanding-lending-protocols), and [Is DeFi Lending Safe](/blog/is-defi-lending-safe).
+For more background on how DeFi lending works, check out our [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending), [Understanding Lending Protocols](/posts/understanding-lending-protocols), and [Is DeFi Lending Safe](/posts/is-defi-lending-safe).
 
 ---
 

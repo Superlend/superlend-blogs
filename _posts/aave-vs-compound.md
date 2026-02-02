@@ -117,8 +117,8 @@ Both protocols use utilization-based interest rate models, but with some differe
 
 Interest rates fluctuate constantly based on market conditions.
 
-![Aave and Compound rates on Superlend](/assets/screenshots/superlend-discover-all.png)
-*Compare Aave and Compound rates side-by-side on Superlend*
+![DeFi lending rates on Superlend](/assets/screenshots/superlend-discover-all.png)
+*Compare lending rates across protocols on Superlend's Discover page*
 
 *Note: Rates are variable and change based on market conditions. Check live rates on [Superlend](https://app.superlend.xyz) for current comparisons.*
 
@@ -357,7 +357,7 @@ Compound's simpler interface and fewer options make it slightly more approachabl
 
 Aave and Compound are both pillars of DeFi lending. Aave offers more features, chains, and asset variety. Compound provides elegant simplicity and deep liquidity on core assets. Neither is universally "better" – the right choice depends on your specific needs, the assets you're working with, and your comfort level with complexity.
 
-For most users, the ideal approach isn't choosing one forever – it's having the flexibility to use both, and access other protocols too. That's the power of DeFi: open, permissionless markets competing for your capital. For a broader understanding of the space, check out our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending) or explore specific assets like [ETH lending rates](/blog/eth-lending-rates) and [WBTC lending](/blog/wbtc-lending).
+For most users, the ideal approach isn't choosing one forever – it's having the flexibility to use both, and access other protocols too. That's the power of DeFi: open, permissionless markets competing for your capital. For a broader understanding of the space, check out our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending) or explore specific assets like [ETH lending rates](/posts/eth-lending-rates) and [WBTC lending](/posts/wbtc-lending).
 
 Ready to compare rates across Aave, Compound, and 350+ other markets? [Start exploring with Superlend](https://app.superlend.xyz).
 

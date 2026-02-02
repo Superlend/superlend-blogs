@@ -78,7 +78,7 @@ Access SuperFund in the [Vaults section on Superlend](https://app.superlend.xyz/
 
 ## Why SuperFund for Stablecoin Yield?
 
-[SuperFund](https://app.superlend.xyz/vaults) is Superlend's automated yield optimization vault for stablecoins. Superlend aggregates 350+ money markets across 11+ chains into one dashboard – SuperFund takes this further by automatically allocating your USDC across top lending protocols like Aave, Morpho, Euler, and Fluid to capture optimal yields without manual management. If you want to understand the fundamentals first, check out our [complete guide to DeFi lending](/blog/complete-guide-to-defi-lending).
+[SuperFund](https://app.superlend.xyz/vaults) is Superlend's automated yield optimization vault for stablecoins. Superlend aggregates 350+ money markets across 11+ chains into one dashboard – SuperFund takes this further by automatically allocating your USDC across top lending protocols like Aave, Morpho, Euler, and Fluid to capture optimal yields without manual management. If you want to understand the fundamentals first, check out our [complete guide to DeFi lending](/posts/complete-guide-to-defi-lending).
 
 **Benefits include:**
 - Automated rebalancing across top protocols
@@ -105,7 +105,7 @@ SuperFund automatically allocates your USDC across battle-tested DeFi protocols 
 
 ## Start Earning Stablecoin Yield Today
 
-Whether you're crypto-curious or already exploring DeFi, stablecoin yield is one of the simplest ways to make your money work for you. For more detail on USDC specifically, see our [USDC lending guide](/blog/usdc-lending-guide). If you're concerned about safety, we also cover [whether DeFi lending is safe](/blog/is-defi-lending-safe).
+Whether you're crypto-curious or already exploring DeFi, stablecoin yield is one of the simplest ways to make your money work for you. For more detail on USDC specifically, see our [USDC lending guide](/posts/usdc-lending-guide). If you're concerned about safety, we also cover [whether DeFi lending is safe](/posts/is-defi-lending-safe).
 
 **Stablecoin yield is the new savings account.** Only smarter, faster, and built for the internet age.
 
