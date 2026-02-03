@@ -15,12 +15,12 @@ Arbitrum offers DeFi lending yields ranging from 0.04% on WBTC to over 2.6% APY 
 
 This guide covers everything you need to know about lending on Arbitrum: current rates, protocol options, risk factors, and how to maximize your returns using aggregation tools like [Superlend](https://app.superlend.xyz/discover), a non-custodial DeFi lending aggregator that helps you find the best yields across multiple protocols.
 
-![Arbitrum DeFi lending markets on Superlend](/assets/screenshots/superlend-arbitrum-feb2026.png)
+![Arbitrum DeFi lending rates across Aave, Compound and other protocols in February 2026](/assets/screenshots/superlend-arbitrum-feb2026.png)
 *Arbitrum lending opportunities showing current yields across protocols.*
 
 ## Why Arbitrum for DeFi Lending?
 
-Arbitrum has established itself as the dominant Layer 2 solution for Ethereum-based DeFi. Several factors make it the preferred choice for lenders seeking better returns than mainnet can offer.
+[Arbitrum](https://docs.arbitrum.io/) has established itself as the dominant Layer 2 solution for Ethereum-based DeFi. Several factors make it the preferred choice for lenders seeking better returns than mainnet can offer.
 
 ### Largest L2 by Total Value Locked
 
@@ -78,7 +78,7 @@ Multiple established protocols compete for depositors on Arbitrum, each with dis
 
 ### Aave v3
 
-Aave v3 represents the largest lending market on Arbitrum by TVL. Key features include:
+[Aave v3](https://docs.aave.com/) represents the largest lending market on Arbitrum by TVL. Key features include:
 
 - Efficiency mode (E-mode) for correlated asset pairs
 - Isolation mode for newer assets with limited exposure

@@ -32,15 +32,15 @@ The yields in DeFi often exceed traditional finance because:
 
 If you're new to decentralized finance altogether, you might want to read our [introduction to DeFi](/posts/what-is-defi) before diving into yield farming strategies.
 
-## Types of Yield Farming
+## Types of Yield Farming Strategies
 
-Yield farming isn't a single activity –it encompasses several different strategies, each with its own risk-reward profile.
+Yield farming isn't a single activity – it encompasses several different yield farming strategies, each with its own risk-reward profile.
 
 ### Lending
 
 The most straightforward form of yield farming is lending your crypto through a DeFi protocol. You deposit assets like USDC, ETH, or other tokens into a lending pool. Borrowers pay interest to access these funds, and that interest gets distributed to lenders.
 
-Lending is considered the most beginner-friendly yield farming strategy because you maintain exposure to a single asset. If you deposit USDC, you get back USDC plus interest. There's no complex token mechanics to understand.
+Lending is considered the most beginner-friendly crypto yield farming strategy because you maintain exposure to a single asset. If you deposit USDC, you get back USDC plus interest. There's no complex token mechanics to understand.
 
 Popular lending protocols include Aave, Compound, and Morpho. Each offers different rates and operates on various blockchains. Comparing rates across protocols manually can be tedious, which is why aggregators exist to simplify the process.
 
@@ -54,11 +54,11 @@ The catch is that liquidity provision exposes you to something called impermanen
 
 ### Staking
 
-Staking involves locking up tokens to help secure a blockchain network or participate in protocol governance. Proof-of-stake networks like Ethereum reward stakers with newly issued tokens for helping validate transactions.
+Staking involves locking up tokens to help secure a blockchain network or participate in protocol governance. Proof-of-stake networks like [Ethereum](https://ethereum.org/en/staking/) reward stakers with newly issued tokens for helping validate transactions.
 
 Staking yields tend to be more predictable than other forms of yield farming since they're tied to network inflation schedules rather than market demand. However, staked tokens are often locked for a period, limiting your flexibility.
 
-Liquid staking protocols like Lido allow you to stake while receiving a liquid token in return, which you can then use in other DeFi activities –effectively compounding your yield farming strategies.
+Liquid staking protocols like [Lido](https://lido.fi/) allow you to stake while receiving a liquid token in return, which you can then use in other DeFi activities –effectively compounding your yield farming strategies.
 
 ### Yield Aggregators and Vaults
 
@@ -96,7 +96,7 @@ These rates are base yields from major protocols. Some yield farming strategies 
 
 To compare current rates across lending protocols, you can use [Superlend's discover page](https://app.superlend.xyz/discover), which aggregates yields from multiple protocols and chains in real-time.
 
-![DeFi yield opportunities on Superlend](/assets/screenshots/superlend-discover-feb2026.png)
+![Yield farming opportunities showing DeFi lending rates across protocols](/assets/screenshots/superlend-discover-feb2026.png)
 *Superlend's Discover page showing yield farming opportunities across protocols.*
 
 ## Getting Started with Yield Farming

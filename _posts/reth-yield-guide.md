@@ -1,5 +1,5 @@
 ---
-title: "rETH Yield Guide: Maximize Rocket Pool Staked ETH Returns"
+title: "rETH Yield Guide: Maximize Rocket Pool ETH Returns"
 excerpt: "Learn how to earn additional yield on rETH through DeFi lending. Combine Rocket Pool staking rewards with lending for compounded returns on Ethereum."
 coverImage: "/assets/blog/covers/reth-yield-guide.png"
 date: "2026-02-03T12:00:00.000Z"
@@ -15,7 +15,7 @@ rETH is Rocket Pool's liquid staking token that represents staked ETH plus accum
 
 ## What is rETH?
 
-rETH (Rocket Pool ETH) is the liquid staking derivative issued by Rocket Pool, the largest decentralized Ethereum staking protocol. When users deposit ETH into Rocket Pool, they receive rETH tokens that represent their staked ETH plus a proportional share of staking rewards.
+rETH (Rocket Pool ETH) is the liquid staking derivative issued by [Rocket Pool](https://rocketpool.net/), the largest decentralized Ethereum staking protocol. When users deposit ETH into Rocket Pool, they receive rETH tokens that represent their staked ETH plus a proportional share of staking rewards.
 
 Unlike rebasing tokens that increase in quantity, rETH uses a value-accruing model. The token's exchange rate against ETH increases over time as staking rewards accumulate. One rETH today might be worth 1.10 ETH, while in a year it could be worth 1.14 ETH, reflecting the earned rewards.
 
@@ -82,7 +82,7 @@ Borrowers typically seek rETH for arbitrage or hedging strategies rather than op
 
 Check [Superlend's discover page](https://app.superlend.xyz/discover) to find current rETH markets across multiple protocols and chains. Superlend operates as a non-custodial DeFi lending aggregator, surfacing opportunities across protocols without taking custody of user funds.
 
-![ETH and LST lending markets on Superlend](/assets/screenshots/superlend-eth-feb2026.png)
+![rETH and Rocket Pool liquid staking token lending opportunities](/assets/screenshots/superlend-eth-feb2026.png)
 *ETH and liquid staking token lending opportunities across protocols.*
 
 ## Stacking Yields: Staking + DeFi Strategies

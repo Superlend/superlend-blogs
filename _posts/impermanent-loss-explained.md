@@ -50,7 +50,7 @@ To understand impermanent loss, you need to understand how AMMs function.
 
 Traditional exchanges use order books where buyers and sellers set specific prices. AMMs work differently – they use mathematical formulas to determine prices based on the ratio of assets in a pool.
 
-The most common formula is the constant product formula used by Uniswap:
+The most common formula is the constant product formula used by [Uniswap](https://docs.uniswap.org/):
 
 ```
 x * y = k
@@ -208,7 +208,7 @@ Lending through protocols aggregated on [Superlend](https://app.superlend.xyz/di
 
 For a comprehensive overview of how DeFi lending works, see our [Complete Guide to DeFi Lending](/posts/complete-guide-to-defi-lending).
 
-![DeFi lending opportunities on Superlend](/assets/screenshots/superlend-discover-feb2026.png)
+![DeFi lending as an alternative to liquidity pools without impermanent loss risk](/assets/screenshots/superlend-discover-feb2026.png)
 *Superlend aggregates lending opportunities without impermanent loss risk.*
 
 ---

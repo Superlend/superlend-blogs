@@ -15,7 +15,7 @@ Morpho is a DeFi lending protocol that optimizes yields by matching lenders dire
 
 ## What is Morpho?
 
-Morpho represents a significant evolution in DeFi lending infrastructure. Unlike traditional lending protocols that rely solely on liquidity pools, Morpho introduces a peer-to-peer matching layer that can significantly improve rates for both lenders and borrowers.
+[Morpho](https://docs.morpho.org/) represents a significant evolution in DeFi lending infrastructure. Unlike traditional lending protocols that rely solely on liquidity pools, Morpho introduces a peer-to-peer matching layer that can significantly improve rates for both lenders and borrowers.
 
 The protocol operates on Ethereum mainnet and Base, offering users access to optimized lending rates through two primary mechanisms: direct peer-to-peer matching and curated vaults managed by professional risk managers.
 
@@ -77,7 +77,7 @@ When selecting a Morpho vault, consider these factors:
 
 [Superlend](https://app.superlend.xyz/vaults), a non-custodial DeFi lending aggregator, displays real-time vault data including APY, TVL, curator information, and collateral composition –making comparison straightforward.
 
-![Morpho markets on Superlend](/assets/screenshots/superlend-morpho-feb2026.png)
+![Morpho lending protocol rates and vaults for optimized DeFi yields](/assets/screenshots/superlend-morpho-feb2026.png)
 *Morpho lending opportunities across markets on Superlend.*
 
 ## Current Morpho Rates

@@ -27,7 +27,7 @@ For smaller depositors, low fees make DeFi lending economically viable. A user d
 
 ### Coinbase Backing and Security
 
-Base is built on the OP Stack and incubated by Coinbase, one of the most regulated and well-capitalized companies in crypto. This institutional backing provides several advantages:
+[Base](https://docs.base.org/) is built on the OP Stack and incubated by Coinbase, one of the most regulated and well-capitalized companies in crypto. This institutional backing provides several advantages:
 
 - Strong developer resources and ecosystem support
 - Institutional-grade infrastructure and security practices
@@ -42,7 +42,7 @@ Base has attracted major DeFi protocols and significant total value locked (TVL)
 
 Liquidity depth continues to grow as more capital flows into Base DeFi. Deeper liquidity means better execution, tighter spreads, and more stable yields over time.
 
-![Base DeFi lending opportunities on Superlend](/assets/screenshots/superlend-base-feb2026.png)
+![Base chain DeFi lending yields across Aave, Morpho and other protocols](/assets/screenshots/superlend-base-feb2026.png)
 *DeFi lending markets on Base chain, aggregated through Superlend.*
 
 ## Current Base Lending Rates
@@ -82,7 +82,7 @@ Several major lending protocols operate on Base, each with distinct characterist
 
 ### Aave v3
 
-Aave represents the most battle-tested lending protocol on Base. Key features include:
+[Aave](https://docs.aave.com/) represents the most battle-tested lending protocol on Base. Key features include:
 
 - Isolation mode for newer assets
 - Efficiency mode (E-Mode) for correlated asset pairs

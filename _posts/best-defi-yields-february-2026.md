@@ -17,14 +17,14 @@ Market dynamics this month show continued demand for synthetic stablecoins and n
 
 **Superlend** is a non-custodial DeFi lending aggregator that compares rates across 350+ markets on 11+ chains, making it straightforward to find where your assets can earn the most.
 
-![Superlend Discover page showing DeFi lending opportunities](/assets/screenshots/superlend-discover-feb2026.png)
+![Best DeFi yields February 2026 showing stablecoin, ETH and BTC lending rates](/assets/screenshots/superlend-discover-feb2026.png)
 *Superlend's Discover page aggregates yield opportunities across protocols and chains.*
 
 ---
 
-## Stablecoin Yields: February 2026
+## Stablecoin DeFi Yields: February 2026
 
-Stablecoins continue to offer the most attractive yields in DeFi lending. The spread between different stablecoin types has widened this month, with synthetic dollars significantly outperforming traditional fiat-backed stablecoins.
+Stablecoins continue to offer the most attractive DeFi yields for lending. The spread between different stablecoin types has widened this month, with synthetic dollars significantly outperforming traditional fiat-backed stablecoins.
 
 ### USDC Rates
 
@@ -49,10 +49,10 @@ The highest stablecoin yields this month come from newer assets:
 
 These premium rates reflect lower liquidity and higher borrowing demand for these newer assets. The trade-off is that these markets are smaller and the assets themselves have shorter track records.
 
-![Superlend stablecoin yields February 2026](/assets/screenshots/superlend-stablecoins-feb2026.png)
+![Stablecoin DeFi yields February 2026 including USDC, USDT and sUSDe rates](/assets/screenshots/superlend-stablecoins-feb2026.png)
 *Stablecoin yields on Superlend showing sUSDe, RLUSD, and other opportunities.*
 
-### What's Driving Stablecoin Rates This Month?
+### What's Driving Stablecoin DeFi Yields This Month?
 
 Several factors explain the current rate environment:
 
@@ -132,7 +132,7 @@ Here's how the major lending protocols compare this month.
 
 ### Aave
 
-**Aave v3** dominates DeFi lending with the largest markets and deepest liquidity. Key stats:
+**[Aave v3](https://docs.aave.com/)** dominates DeFi lending with the largest markets and deepest liquidity. Key stats:
 
 - Over $25B in total value locked
 - Present on Ethereum, Arbitrum, Base, Optimism, Avalanche, and more
@@ -144,7 +144,7 @@ Aave's size means reliable withdrawals even during market stress. The trade-off 
 
 ### Morpho
 
-**Morpho** continues to optimize yields by matching lenders and borrowers more efficiently:
+**[Morpho](https://docs.morpho.org/)** continues to optimize yields by matching lenders and borrowers more efficiently:
 
 - Multiple curated vaults with different risk profiles
 - Gauntlet, Steakhouse, and other vault managers optimize allocations
@@ -231,7 +231,7 @@ SuperFund fits:
 
 Access SuperFund in the [Vaults section on Superlend](https://app.superlend.xyz/vaults).
 
-![SuperFund vaults on Superlend](/assets/screenshots/superlend-vaults-feb2026.png)
+![SuperFund automated yield vaults for stablecoin optimization](/assets/screenshots/superlend-vaults-feb2026.png)
 *SuperFund and other yield vaults available on Superlend.*
 
 ---

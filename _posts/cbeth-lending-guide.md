@@ -15,7 +15,7 @@ cbETH is Coinbase's liquid staking token representing staked ETH on the Coinbase
 
 ## What is cbETH?
 
-cbETH (Coinbase Wrapped Staked ETH) is a liquid staking token issued by Coinbase. When users stake ETH through Coinbase, they receive cbETH in return. This token represents their staked ETH plus accumulated staking rewards.
+[cbETH](https://www.coinbase.com/cbeth) (Coinbase Wrapped Staked ETH) is a liquid staking token issued by Coinbase. When users stake ETH through Coinbase, they receive cbETH in return. This token represents their staked ETH plus accumulated staking rewards.
 
 Unlike traditional ETH staking, which locks your assets until withdrawals are enabled, cbETH provides immediate liquidity. You can trade, transfer, or use cbETH in DeFi protocols while still earning staking rewards in the background.
 
@@ -29,7 +29,7 @@ The liquid staking market includes several major players. Understanding how cbET
 
 ### cbETH vs wstETH
 
-wstETH (Wrapped Staked ETH) comes from Lido, the largest liquid staking provider by total value locked. Both tokens use a reward-bearing model where the token appreciates against ETH rather than rebasing.
+wstETH (Wrapped Staked ETH) comes from [Lido](https://lido.fi/), the largest liquid staking provider by total value locked. Both tokens use a reward-bearing model where the token appreciates against ETH rather than rebasing.
 
 Key differences:
 
@@ -81,7 +81,7 @@ Several factors contribute to relatively low cbETH lending rates:
 
 The primary value of lending cbETH comes from using it as collateral rather than earning high supply APY. Check current rates on [Superlend's discover page](https://app.superlend.xyz/discover) to find the best opportunities across protocols.
 
-![ETH and LST lending markets on Superlend](/assets/screenshots/superlend-eth-feb2026.png)
+![cbETH and liquid staking token lending rates across DeFi protocols](/assets/screenshots/superlend-eth-feb2026.png)
 *ETH and liquid staking token lending opportunities, including cbETH markets.*
 
 ## Stacking Yields: Staking + Lending
