@@ -1,6 +1,6 @@
 ---
 title: "Base Chain DeFi Yields: Complete Lending Guide"
-excerpt: "Discover DeFi lending opportunities on Base. Compare yields across Aave, Morpho, and other protocols on Coinbase's Layer 2 network."
+excerpt: "Discover DeFi lending opportunities on Base. Compare yields across Aave, Morpho, and other protocols on Coinbase's Layer 2 network with ultra-low fees."
 coverImage: "/assets/blog/covers/base-defi-yields.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
@@ -156,7 +156,7 @@ Sort by yield, TVL, or protocol to find opportunities matching your criteria. Fo
 
 ### Step 4: Deposit
 
-Select your target protocol and asset. Superlend routes your transaction directly to the underlying protocol smart contracts. Your funds remain in the protocol's custody—Superlend never holds user assets.
+Select your target protocol and asset. Superlend routes your transaction directly to the underlying protocol smart contracts. Your funds remain in the protocol's custody – Superlend never holds user assets.
 
 Approve the token spend (first-time only) and confirm the deposit transaction. On Base, both transactions typically cost less than $0.02 combined.
 

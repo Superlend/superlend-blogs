@@ -1,6 +1,6 @@
 ---
 title: "cbETH Lending: Earn Yield on Coinbase Staked ETH"
-excerpt: "Learn how to maximize returns on cbETH through DeFi lending. Stack staking rewards with lending yields for compounded returns."
+excerpt: "Learn how to maximize returns on cbETH through DeFi lending. Stack Coinbase staking rewards with lending yields for compounded returns on your ETH."
 coverImage: "/assets/blog/covers/cbeth-lending-guide.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
@@ -53,7 +53,7 @@ For users already on Coinbase or those who prefer a centralized, regulated entit
 
 ## Current cbETH Lending Rates
 
-cbETH lending rates vary significantly by network and protocol. As of early 2025, here are the typical rates you can expect:
+cbETH lending rates vary significantly by network and protocol. Here are the typical rates you can expect:
 
 ### Aave v3 on Base
 

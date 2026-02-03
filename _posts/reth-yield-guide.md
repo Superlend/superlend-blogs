@@ -1,6 +1,6 @@
 ---
 title: "rETH Yield Guide: Maximize Rocket Pool Staked ETH Returns"
-excerpt: "Learn how to earn additional yield on rETH through DeFi lending. Combine Rocket Pool staking rewards with lending for compounded returns."
+excerpt: "Learn how to earn additional yield on rETH through DeFi lending. Combine Rocket Pool staking rewards with lending for compounded returns on Ethereum."
 coverImage: "/assets/blog/covers/reth-yield-guide.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
@@ -87,13 +87,13 @@ Check [Superlend's discover page](https://app.superlend.xyz/discover) to find cu
 
 ## Stacking Yields: Staking + DeFi Strategies
 
-The primary advantage of rETH comes from yield stacking—combining base staking returns with additional DeFi strategies for compounded returns.
+The primary advantage of rETH comes from yield stacking – combining base staking returns with additional DeFi strategies for compounded returns.
 
 ### Base Layer: Staking Rewards
 
 rETH holders automatically earn Ethereum staking rewards, currently around 3-4% APY. These rewards accumulate through the token's increasing exchange rate against ETH, requiring no active management.
 
-This passive yield forms the foundation for additional strategies. Every approach builds on top of this guaranteed staking income.
+This passive yield forms the foundation for additional strategies. Every approach builds on top of this base staking income.
 
 ### Strategy 1: Collateralized Borrowing Loop
 
@@ -225,7 +225,7 @@ For comprehensive risk analysis, read our guide on [DeFi lending safety](/posts/
 rETH currently earns approximately 3-4% APY from Ethereum staking rewards. This rate fluctuates based on network activity, validator participation rates, and MEV rewards. The yield compounds automatically through the token's increasing exchange rate against ETH, requiring no claim transactions or manual harvesting.
 
 **Can I earn lending yield directly on rETH?**
-Direct rETH supply yields remain limited compared to ETH or stablecoins. Most protocols use rETH primarily as collateral rather than creating active supply markets. When supply markets exist, APYs typically range from 0.5-2%. The primary yield opportunity comes from stacking strategies—using rETH as collateral to access capital for other yield-generating activities while continuing to earn base staking rewards.
+Direct rETH supply yields remain limited compared to ETH or stablecoins. Most protocols use rETH primarily as collateral rather than creating active supply markets. When supply markets exist, APYs typically range from 0.5-2%. The primary yield opportunity comes from stacking strategies – using rETH as collateral to access capital for other yield-generating activities while continuing to earn base staking rewards.
 
 **How does rETH compare to running my own validator?**
 Running a validator requires 32 ETH minimum and technical expertise for node operation. rETH provides exposure to staking rewards with any amount of capital and no hardware requirements. Solo validators earn higher gross returns (no protocol fees), but rETH offers instant liquidity, lower technical burden, and the ability to use staked assets as collateral. For most users, rETH's convenience and capital efficiency outweigh the approximately 10-15% fee on rewards taken by Rocket Pool.

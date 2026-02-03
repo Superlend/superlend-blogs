@@ -1,6 +1,6 @@
 ---
 title: "Best DeFi Yields February 2026: Where to Earn"
-excerpt: "Compare the highest DeFi yields in February 2026. Stablecoin, ETH, and BTC lending rates across Aave, Morpho, Compound, and more."
+excerpt: "Compare the highest DeFi yields in February 2026. Stablecoin, ETH, and BTC lending rates across Aave, Morpho, Compound, and other top protocols."
 coverImage: "/assets/blog/covers/best-defi-yields-feb-2026.png"
 date: "2026-02-02T12:00:00.000Z"
 published: true

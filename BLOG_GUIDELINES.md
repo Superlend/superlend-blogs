@@ -398,6 +398,11 @@ Distribution targets from brand guidelines:
 | Uncropped cover images | Use object-contain for article pages |
 | Broken table syntax | Verify rendering in preview |
 | Internal links with `/blog/` prefix | Use `/posts/` prefix (e.g., `/posts/usdc-lending-guide`) |
+| Em dashes (—) | En dashes with spaces ( – ) for parenthetical breaks |
+| Title over 60 characters | Keep titles under 60 chars for SEO |
+| Excerpt under 150 characters | Aim for 150-160 chars for optimal SEO snippets |
+| Outdated date references | Remove "As of [date]" or keep dates current |
+| Positive use of "guaranteed" | Only use negatively: "not guaranteed", "no guarantees" |
 
 ### Brand Voice (from CLAUDE.md)
 
@@ -464,6 +469,36 @@ grep -r "\|[-]{3,}\|" _posts/
 
 # Count app.superlend.xyz links
 grep -c "app.superlend.xyz" _posts/*.md
+
+# Check for em dashes (should use en dashes)
+grep -r "—" _posts/
+
+# Check for banned words used positively
+grep -ri "guaranteed\|risk-free\|100x" _posts/
+
+# Check for outdated date references
+grep -ri "as of 202[0-4]\|as of early 202" _posts/
+```
+
+### Frontmatter Validation
+```bash
+# Check title length (should be under 60 chars)
+for f in _posts/*.md; do
+  title=$(grep -m1 "^title:" "$f" | sed 's/title: "//;s/"$//')
+  len=${#title}
+  if [ $len -gt 60 ]; then
+    echo "$f: Title is $len chars (over 60): $title"
+  fi
+done
+
+# Check excerpt length (should be 150-160 chars)
+for f in _posts/*.md; do
+  excerpt=$(grep -m1 "^excerpt:" "$f" | sed 's/excerpt: "//;s/"$//')
+  len=${#excerpt}
+  if [ $len -lt 150 ] || [ $len -gt 170 ]; then
+    echo "$f: Excerpt is $len chars (target 150-160)"
+  fi
+done
 ```
 
 ### Screenshot Workflow
@@ -486,4 +521,4 @@ agent-browser screenshot output.png
 
 ---
 
-*Last updated: January 30, 2026*
+*Last updated: February 3, 2026*

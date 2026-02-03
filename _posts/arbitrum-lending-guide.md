@@ -1,6 +1,6 @@
 ---
 title: "Arbitrum DeFi Lending: Complete Yield Guide"
-excerpt: "Explore DeFi lending on Arbitrum. Compare yields across Aave, Compound, and other protocols on Ethereum's leading Layer 2."
+excerpt: "Explore DeFi lending on Arbitrum. Compare yields across Aave, Compound, and other protocols on Ethereum's leading Layer 2. Find the best rates today."
 coverImage: "/assets/blog/covers/arbitrum-lending-guide.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true

@@ -1,6 +1,6 @@
 ---
 title: "Impermanent Loss Explained: What DeFi Users Need to Know"
-excerpt: "Understand impermanent loss in DeFi liquidity pools. Learn how it works, when it matters, and strategies to minimize its impact."
+excerpt: "Understand impermanent loss in DeFi liquidity pools. Learn how it works, when it matters, and proven strategies to minimize its impact on your returns."
 coverImage: "/assets/blog/covers/impermanent-loss-explained.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
