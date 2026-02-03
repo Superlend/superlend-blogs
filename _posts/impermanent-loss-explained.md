@@ -4,6 +4,7 @@ excerpt: "Understand impermanent loss in DeFi liquidity pools. Learn how it work
 coverImage: "/assets/blog/covers/impermanent-loss-explained.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
+category: "DeFi Basics"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"

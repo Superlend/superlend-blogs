@@ -4,6 +4,7 @@ excerpt: "Compare the highest DeFi yields in February 2026. Stablecoin, ETH, and
 coverImage: "/assets/blog/covers/best-defi-yields-feb-2026.png"
 date: "2026-02-02T12:00:00.000Z"
 published: true
+category: "Yield Strategies"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"

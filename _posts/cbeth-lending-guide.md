@@ -4,6 +4,7 @@ excerpt: "Learn how to maximize returns on cbETH through DeFi lending. Stack Coi
 coverImage: "/assets/blog/covers/cbeth-lending-guide.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
+category: "Guides"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"

@@ -4,6 +4,7 @@ excerpt: "Learn how to earn additional yield on rETH through DeFi lending. Combi
 coverImage: "/assets/blog/covers/reth-yield-guide.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
+category: "Guides"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"

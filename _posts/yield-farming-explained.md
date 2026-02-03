@@ -4,6 +4,7 @@ excerpt: "Learn what yield farming is, how it works, and how to start earning pa
 coverImage: "/assets/blog/covers/yield-farming-explained.png"
 date: "2026-02-03T12:00:00.000Z"
 published: true
+category: "DeFi Basics"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
