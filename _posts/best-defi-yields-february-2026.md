@@ -13,7 +13,7 @@ ogImage:
 
 February 2026 DeFi yields remain strong, with stablecoin rates between 3-9% APY, ETH at 1.5-2% APY for native lending, and BTC yields under 0.1% APY. Synthetic dollar assets like sUSDe are leading the pack with yields approaching 9%, while traditional stablecoins like USDC and USDT offer more modest but consistent returns in the 3-5% range.
 
-Market dynamics this month show continued demand for synthetic stablecoins and newer assets like RLUSD and PYUSD, which are commanding premium rates on protocols like Euler and Aave. Meanwhile, the main USDC and USDT markets on Aave v3 Ethereum hold over $10B in combined deposits, reflecting strong confidence in established markets.
+Market dynamics this month show continued demand for synthetic stablecoins and newer assets like RLUSD and PYUSD, which are commanding premium rates on protocols like Euler v2 and Aave. Meanwhile, the main USDC and USDT markets on Aave v3 Ethereum hold over $10B in combined deposits, reflecting strong confidence in established markets.
 
 **Superlend** is a non-custodial DeFi lending aggregator that compares rates across 350+ markets on 11+ chains, making it straightforward to find where your assets can earn the most.
 
@@ -151,18 +151,18 @@ Aave's size means reliable withdrawals even during market stress. The trade-off 
 - USDC vaults showing 3.5-5% APY
 - Built on top of Aave and Compound infrastructure
 
-Morpho delivers higher yields than base Aave/Compound rates through its matching mechanism.
+Morpho Vaults often deliver higher yields than base Aave/Compound rates through professional curation and optimized capital allocation across Morpho Blue markets.
 
-### Euler
+### Euler v2
 
-**Euler** has emerged as a destination for newer stablecoin yields:
+**Euler v2** has emerged as a destination for newer stablecoin yields:
 
 - PYUSD markets with 8%+ APY
 - RLUSD markets with 7-8% APY
 - Permissionless market creation allows faster asset support
 - Smaller TVL means higher rates but also higher risk
 
-Euler appeals to yield-seekers willing to use newer assets and smaller markets.
+Euler v2 appeals to yield-seekers willing to use newer assets and smaller markets.
 
 ### Fluid
 
@@ -189,7 +189,7 @@ Rates change constantly as supply and demand shift across protocols. Here is how
 - Compare 7-day average rates to spot consistent opportunities
 - See total supply to gauge market depth
 
-This beats checking Aave, Compound, Morpho, and Euler individually.
+This beats checking Aave, Compound, Morpho, and Euler v2 individually.
 
 ### Beyond APY: What Else to Consider
 

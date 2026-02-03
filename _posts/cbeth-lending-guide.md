@@ -143,11 +143,11 @@ Compound supports cbETH on select markets:
 
 ### Morpho
 
-Morpho offers peer-to-peer matching on top of Aave and Compound:
+Morpho offers curated lending vaults built on Morpho Blue:
 
-- Potentially better rates through direct matching
-- More complex position management
-- Lower liquidity for immediate withdrawals
+- Professional risk curators manage capital allocation
+- Exposure to optimized, diversified lending positions
+- Various vault strategies matching different risk profiles
 
 For a comprehensive comparison of ETH and LST lending rates, see our [ETH lending rates guide](/posts/eth-lending-rates).
 

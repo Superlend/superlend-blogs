@@ -176,12 +176,7 @@ Understanding the tradeoffs between Base and Ethereum mainnet helps inform your 
 
 ### Cost Comparison
 
-| Action | Ethereum Mainnet | Base |
-|--------|------------------|------|
-| Token Approval | $3-15 | $0.001 |
-| Deposit | $10-50 | $0.005 |
-| Withdrawal | $10-50 | $0.005 |
-| Position Management | $5-30 | $0.003 |
+On Ethereum mainnet, a token approval costs $3-15, deposits and withdrawals run $10-50 each, and position management transactions cost $5-30. On Base, the same actions cost a fraction of a cent: approvals at $0.001, deposits and withdrawals at $0.005, and position management at $0.003.
 
 For a user making monthly deposits and quarterly rebalancing, annual gas costs might reach $200+ on mainnet versus under $1 on Base.
 

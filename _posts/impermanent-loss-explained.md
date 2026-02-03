@@ -96,14 +96,12 @@ Where price_ratio = new price / original price.
 
 Here's what impermanent loss looks like at various price changes:
 
-| Price Change | Impermanent Loss |
-|--------------|------------------|
-| 1.25x (25% increase) | 0.6% |
-| 1.5x (50% increase) | 2.0% |
-| 2x (100% increase) | 5.7% |
-| 3x (200% increase) | 13.4% |
-| 4x (300% increase) | 20.0% |
-| 5x (400% increase) | 25.5% |
+- **1.25x price change (25% increase):** 0.6% impermanent loss
+- **1.5x price change (50% increase):** 2.0% impermanent loss
+- **2x price change (100% increase):** 5.7% impermanent loss
+- **3x price change (200% increase):** 13.4% impermanent loss
+- **4x price change (300% increase):** 20.0% impermanent loss
+- **5x price change (400% increase):** 25.5% impermanent loss
 
 The same percentages apply to price decreases. If ETH drops 50% (0.5x), you experience roughly 5.7% impermanent loss – identical to a 2x increase.
 

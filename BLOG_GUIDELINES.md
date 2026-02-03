@@ -94,6 +94,33 @@ This section defines how Superlend content should read. Every blog post should p
 
 ---
 
+### Protocol-Specific Rules
+
+**CRITICAL:** These rules prevent outdated or inaccurate protocol information.
+
+| Protocol | ❌ Never Use | ✅ Always Use |
+|----------|--------------|---------------|
+| **Morpho** | Optimisers, Optimizers, peer-to-peer matching | Morpho Blue, Morpho Vaults |
+| **Euler** | Euler v1, "Euler" without version | Euler v2 |
+| **Aave** | Aave v1, Aave v2 (for current products) | Aave v3, Aave v4 (upcoming) |
+
+**Morpho Details:**
+- Morpho Optimisers are deprecated – never reference them
+- Morpho Blue is the base layer (permissionless lending primitive)
+- Morpho Vaults are curated strategies on top of Morpho Blue
+- Use [docs.morpho.org](https://docs.morpho.org) for accurate information
+- Never describe Morpho as "peer-to-peer matching" – that was the old Optimisers
+
+**Euler Details:**
+- Only discuss Euler v2 for product/yield information
+- Euler v1 was exploited and deprecated
+
+**Aave Details:**
+- For current lending products, only discuss Aave v3
+- May mention Aave v4 for upcoming features
+
+---
+
 ### Quality Checklist
 
 Before publishing, verify:
@@ -154,41 +181,48 @@ grep -r "loop.superlend.xyz" blog-repo/_posts/
 
 ## Table Formatting
 
-### Problem: AI-Looking Tables
+### Problem: Markdown Tables Don't Render
 
-Markdown tables with fake/static APY data look artificial and become outdated quickly:
+**CRITICAL:** Markdown tables do NOT render properly in the Superlend blog. They display as broken raw text like:
+```
+| Action | Ethereum Mainnet | Base | |--------|------------------|------| | Token Approval | $3-15 | $0.001 |
+```
 
+This applies to ALL markdown tables, not just APY data.
+
+### Solution: NEVER Use Markdown Tables
+
+**Use bullet lists instead:**
 ```markdown
 <!-- DON'T DO THIS -->
 | Protocol | APY |
 |----------|-----|
 | Aave | 5.2% |
 | Compound | 4.8% |
+
+<!-- DO THIS INSTEAD -->
+- **Aave:** 5.2% APY
+- **Compound:** 4.8% APY
 ```
 
-This renders as broken text if markdown isn't processed correctly, and the data becomes stale.
+**Or use prose:**
+```markdown
+On Ethereum mainnet, token approvals cost $3-15 and deposits run $10-50.
+On Base, the same actions cost fractions of a cent.
+```
 
-### Solution: Use Screenshots or Descriptive Text
-
-**Option 1: Replace with Screenshot**
+**Or use screenshots for comparisons:**
 ```markdown
 ![WBTC lending rates on Superlend](/assets/screenshots/superlend-wbtc-markets.png)
 *Compare WBTC lending rates across protocols on Superlend*
 ```
 
-**Option 2: Replace with Descriptive Text**
-```markdown
-WBTC lending rates vary by protocol and chain. Rather than listing static numbers
-that quickly become outdated, you can view current rates across all protocols on
-[Superlend's Discover page](https://app.superlend.xyz/discover) – just filter by
-BTC to see all Bitcoin-related lending opportunities.
-```
+### Alternatives for Different Content
 
-### When to Use Each
-
-- **Screenshots** - For "Choosing the Right Protocol" sections, comparisons
-- **Descriptive text** - For rate sections where numbers would go stale
-- **Keep tables** - For conceptual info (risk levels, features) that don't change
+- **Comparisons** → Use bullet lists or screenshots
+- **Rate data** → Use prose with "view current rates on Superlend" links
+- **Step-by-step** → Use numbered lists
+- **Feature lists** → Use bullet points with bold headers
 
 ### Verification Command
 
@@ -245,6 +279,21 @@ agent-browser screenshot /path/to/screenshots/filename.png
 - [ ] Correct filter applied (Stablecoins, ETH, BTC)
 - [ ] Clean URL bar not visible
 - [ ] Current/realistic data visible
+- [ ] **Content matches article** – screenshot must show protocol/asset discussed in the article
+- [ ] **Protocol visible** – if discussing Morpho yields, Morpho must appear in screenshot
+
+### Screenshot-Content Matching Rules
+
+**CRITICAL:** Never post a screenshot that doesn't match the article content.
+
+| Article Topic | Screenshot Must Show |
+|---------------|---------------------|
+| Morpho yields | Morpho protocol visible in the screenshot |
+| cbETH lending | cbETH markets/positions visible |
+| Arbitrum guide | Arbitrum chain selected |
+| Stablecoin yields | Stablecoins filter applied |
+
+**Verification:** Before publishing, verify each screenshot shows the protocol/asset/chain discussed in that section.
 
 ### Common Popups to Close
 
@@ -404,6 +453,17 @@ Distribution targets from brand guidelines:
 | Outdated date references | Remove "As of [date]" or keep dates current |
 | Positive use of "guaranteed" | Only use negatively: "not guaranteed", "no guarantees" |
 
+### Protocol Accuracy
+
+| Don't | Do Instead |
+|-------|------------|
+| "Morpho peer-to-peer matching" | "Morpho Blue" or "Morpho Vaults" |
+| "Morpho Optimiser/Optimizer" | "Morpho Blue" (base layer) or "Morpho Vaults" (curated) |
+| "Euler" without version | "Euler v2" |
+| "Aave v1" or "Aave v2" for current products | "Aave v3" |
+| Screenshot showing Aave when discussing Morpho | Screenshot must match content topic |
+| Describing old/deprecated protocol versions | Use current versions only |
+
 ### Brand Voice (from CLAUDE.md)
 
 | Don't | Do Instead |
@@ -478,6 +538,15 @@ grep -ri "guaranteed\|risk-free\|100x" _posts/
 
 # Check for outdated date references
 grep -ri "as of 202[0-4]\|as of early 202" _posts/
+
+# Check for deprecated Morpho Optimiser references
+grep -ri "peer-to-peer matching\|p2p matching\|optimiser\|optimizer" _posts/ | grep -i morpho
+
+# Check for Euler without version
+grep -r "Euler[^v ]" _posts/ | grep -v "Euler v2"
+
+# Check for old Aave versions
+grep -ri "aave v1\|aave v2" _posts/
 ```
 
 ### Frontmatter Validation
@@ -500,6 +569,39 @@ for f in _posts/*.md; do
   fi
 done
 ```
+
+### External Link Validation (Anti-Phishing)
+
+**IMPORTANT:** Always verify external protocol links against DeFiLlama's official database before publishing.
+
+```bash
+# Fetch official protocol URLs from DeFiLlama
+curl -s "https://api.llama.fi/protocols" | jq -r '.[] | select(.name | test("PROTOCOL_NAME"; "i")) | "\(.name): \(.url)"'
+
+# Example: Verify Aave, Morpho, Lido links
+curl -s "https://api.llama.fi/protocols" | jq -r '.[] | select(.name | test("Aave|Morpho|Lido|Rocket Pool|Uniswap"; "i")) | "\(.name): \(.url)"'
+```
+
+**Approved External Link Domains:**
+
+| Protocol | Official Domain | Docs Domain |
+|----------|-----------------|-------------|
+| Aave | aave.com | docs.aave.com |
+| Morpho | morpho.org | docs.morpho.org |
+| Lido | lido.fi | docs.lido.fi |
+| Rocket Pool | rocketpool.net | docs.rocketpool.net |
+| Uniswap | uniswap.org | docs.uniswap.org |
+| Compound | compound.finance | docs.compound.finance |
+| Arbitrum | arbitrum.io | docs.arbitrum.io |
+| Base | base.org | docs.base.org |
+| Ethereum | ethereum.org | - |
+| Coinbase | coinbase.com | - |
+
+**Never link to:**
+- Unofficial mirrors or forks
+- URLs not matching DeFiLlama database
+- Shortened URLs (bit.ly, t.co, etc.)
+- Social media links as primary sources
 
 ### Screenshot Workflow
 ```bash
