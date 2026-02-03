@@ -1,14 +1,14 @@
 ---
 title: "DeFi Lending Protocols: Assets, Rates, and Risks Explained"
 excerpt: "Understand how DeFi lending protocols work. Learn about supported assets, how interest rates are set, and key risks to manage for safer crypto lending."
-coverImage: "/assets/blog/covers/abstract-3.jpg"
+coverImage: "/assets/blog/covers/lending-protocols.png"
 date: "2025-07-11T19:18:03.920Z"
 published: true
 author:
   name: "Superlend Team"
   picture: "/assets/blog/covers/abstract-3.jpg"
 ogImage:
-  url: "/assets/blog/covers/abstract-3.jpg"
+  url: "/assets/blog/covers/lending-protocols.png"
 ---
 
 ## How DeFi Lending Protocols Work
