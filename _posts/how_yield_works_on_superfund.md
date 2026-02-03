@@ -1,7 +1,7 @@
 ---
 title: "How Yield works on SuperFund?"
 excerpt: "SuperFund is like a Candy Machine that gives out candy 🍬 (money!) every day to kids waiting in line."
-coverImage: "/assets/blog/covers/how_yield_works_on_superfund.webp"
+coverImage: "/assets/blog/covers/superfund-yield.png"
 date: "2025-05-28T19:18:03.920Z"
 published: false
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/how_yield_works_on_superfund.webp"
+  url: "/assets/blog/covers/superfund-yield.png"
 ---
 
 ### 🎢 Imagine a Candy Machine (SuperFund)
