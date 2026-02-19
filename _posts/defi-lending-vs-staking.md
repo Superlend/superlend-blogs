@@ -1,6 +1,6 @@
 ---
 title: "DeFi Lending vs Staking: Which Earns More?"
-excerpt: "Compare DeFi lending and staking side by side. Understand yields, risks, and flexibility to decide the best strategy for your crypto portfolio."
+excerpt: "Compare DeFi lending and staking side by side. Understand yields, risks, and flexibility to decide the best earning strategy for your crypto portfolio in 2026."
 coverImage: "/assets/blog/covers/defi-lending-vs-staking.png"
 date: "2026-02-17T12:00:00.000Z"
 published: true

@@ -1,6 +1,6 @@
 ---
 title: "How to Borrow Crypto in DeFi: Complete Guide"
-excerpt: "Learn how DeFi borrowing works, from depositing collateral to finding the cheapest rates. Compare protocols and borrow smartly across chains."
+excerpt: "Learn how DeFi borrowing works, from depositing collateral to finding the cheapest rates. Compare protocols across chains and borrow at the lowest cost."
 coverImage: "/assets/blog/covers/how-to-borrow-crypto-defi.png"
 date: "2026-02-17T12:00:00.000Z"
 published: true
@@ -161,7 +161,7 @@ On a $100,000 borrow position, a 2% rate difference means $2,000 per year in ext
 
 ### How Superlend Aggregates Borrow Rates
 
-Superlend pulls real-time borrow rates from 350+ money markets across 11+ chains into a single dashboard. Instead of manually checking Aave on Ethereum, then Compound on Base, then Morpho on Arbitrum – you see every option side by side.
+Superlend pulls real-time borrow rates from 350+ money markets across 11+ chains into a single dashboard. Instead of manually checking Aave on Ethereum, then Compound on Base, then Morpho Blue on Arbitrum – you see every option side by side.
 
 The [Discover page on Superlend](https://app.superlend.xyz/discover) lets you filter by the asset you want to borrow, sort by rate, and compare across every supported protocol and chain. You find the cheapest rate in seconds instead of spending an hour checking individual protocol interfaces.
 

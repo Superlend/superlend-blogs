@@ -1,6 +1,6 @@
 ---
 title: "Ethena USDe Yield: How Looping Amplifies Returns"
-excerpt: "Learn how USDe looping works, expected yields, and risks. Compare protocols for USDe lending and discover automated looping strategies on Superlend."
+excerpt: "Learn how USDe looping works, the expected yields and risks. Compare protocols for USDe lending and discover automated looping strategies on Superlend."
 coverImage: "/assets/blog/covers/ethena-usde-loop-guide.png"
 date: "2026-02-17T12:00:00.000Z"
 published: true
@@ -113,7 +113,7 @@ Over $1 billion in USDe-related positions were locked on Morpho Blue at peak, ma
 Euler v2 supports customizable lending vaults and has been expanding its collateral support.
 
 - **Strengths:** Customizable risk parameters, growing protocol with active development
-- **Considerations:** Smaller TVL than Aave or Morpho. Fewer sUSDe-specific markets. Check current availability.
+- **Considerations:** Smaller TVL than Aave v3 or Morpho Blue. Fewer sUSDe-specific markets. Check current availability.
 
 ### Fluid
 
@@ -155,7 +155,7 @@ A meaningful, sustained USDe depeg would cause sUSDe collateral values to drop, 
 
 Leverage means a smaller price movement can wipe out your position. If your health factor drops below the liquidation threshold – because sUSDe value decreases, borrow rates spike, or both – your collateral will be liquidated.
 
-Higher leverage means a thinner margin of safety. A 3x loop has more room to absorb shocks than a 10x loop. Know your liquidation price before entering any leveraged position.
+Higher leverage means a thinner margin of safety. A 3x loop has more room to absorb shocks than a 10x loop. Know your liquidation price before entering any leveraged position. For practical strategies to protect your positions, see our guide on [how to avoid liquidation](/posts/how-to-avoid-liquidation).
 
 ### Smart Contract Risk
 
@@ -189,4 +189,4 @@ No. USDe is Ethena's synthetic dollar. sUSDe is the staked version that earns yi
 
 ---
 
-*Leveraged positions carry additional risk of liquidation. Rates are variable and subject to change. Past performance does not indicate future results. Not financial advice. DeFi involves risks including smart contract vulnerabilities and potential loss of funds. DYOR.*
+*Leveraged positions carry additional risk of liquidation. Rates are variable and subject to change. Past performance does not guarantee future results. Not financial advice. DeFi involves risks including smart contract vulnerabilities and potential loss of funds. DYOR.*

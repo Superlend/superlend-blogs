@@ -14,7 +14,7 @@ ogImage:
 
 **A DeFi aggregator is a platform that connects to multiple decentralized protocols and blockchains, letting you compare rates, execute transactions, and manage positions from a single interface – instead of checking each protocol one by one.**
 
-That single sentence explains why aggregators have become essential infrastructure in DeFi. The ecosystem now has dozens of lending protocols spread across more than a dozen blockchains. Without an aggregator, finding the best rate for your USDC or ETH means opening tabs for Aave, Compound, Morpho, Euler, Fluid – and repeating that process across Ethereum, Base, Arbitrum, Optimism, and every other chain. By the time you finish checking, rates have already changed.
+That single sentence explains why aggregators have become essential infrastructure in DeFi. The ecosystem now has dozens of lending protocols spread across more than a dozen blockchains. Without an aggregator, finding the best rate for your USDC or ETH means opening tabs for Aave v3, Compound, Morpho Blue, Euler v2, Fluid – and repeating that process across Ethereum, Base, Arbitrum, Optimism, and every other chain. By the time you finish checking, rates have already changed.
 
 DeFi aggregators eliminate that friction. They pull real-time data from every connected protocol and chain, present it in a unified dashboard, and let you act on what you find without switching apps.
 
@@ -149,7 +149,7 @@ You can always use Aave v3, Morpho Blue, or any other protocol directly. An aggr
 The advantage of using a lending aggregator comes down to three things:
 
 - **Time.** Checking rates across 350+ markets manually is not realistic. An aggregator does it in seconds.
-- **Opportunity discovery.** You might know Aave and Compound, but an aggregator surfaces opportunities on protocols and chains you might not have considered – like Euler v2 on Scroll or Fluid on Arbitrum.
+- **Opportunity discovery.** You might know Aave v3 and Compound, but an aggregator surfaces opportunities on protocols and chains you might not have considered – like Euler v2 on Scroll or Fluid on Arbitrum.
 - **Unified management.** Once your funds are spread across 4 protocols on 3 chains, an aggregator's portfolio view becomes the only practical way to stay on top of your positions.
 
 The cost is zero. Superlend does not charge fees for using the aggregator. Your funds go to the same smart contracts, earn the same rates, and carry the same risks as if you had deposited directly. The aggregator adds convenience without adding cost.
