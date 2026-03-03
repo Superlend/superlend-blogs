@@ -6,6 +6,9 @@ import {
   getActiveStyles,
   getInactiveStyles,
 } from "@/lib/table-of-content";
+import { posthog } from "@/lib/analytics/posthog";
+import { ANALYTICS_EVENTS } from "@/lib/analytics/events";
+import type { TocClickProperties } from "@/lib/analytics/types";
 
 export interface Heading {
   id: string;
@@ -15,9 +18,11 @@ export interface Heading {
 
 interface TableOfContentsProps {
   headings: Heading[];
+  /** Post slug for analytics context */
+  postSlug?: string;
 }
 
-export function TableOfContents({ headings }: TableOfContentsProps) {
+export function TableOfContents({ headings, postSlug }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -54,15 +59,27 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
     return null;
   }
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    heading: Heading,
+  ) => {
     e.preventDefault();
-    const element = document.getElementById(id);
+    const element = document.getElementById(heading.id);
     if (element) {
       const yOffset = -10; // Offset for sticky header
       const y =
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
+
+    // Track TOC click in PostHog
+    const properties: TocClickProperties = {
+      post_slug: postSlug || "",
+      heading_id: heading.id,
+      heading_text: heading.text,
+      heading_level: heading.level,
+    };
+    posthog.capture(ANALYTICS_EVENTS.TOC_CLICK, properties);
   };
 
   return (
@@ -82,7 +99,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
             <li key={heading.id} className={indentClass}>
               <a
                 href={`#${heading.id}`}
-                onClick={(e) => handleClick(e, heading.id)}
+                onClick={(e) => handleClick(e, heading)}
                 className={`block py-1.5 transition-all duration-200 ${stateStyles}`}
               >
                 {heading.text}
