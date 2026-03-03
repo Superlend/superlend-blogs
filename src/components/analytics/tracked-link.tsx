@@ -2,6 +2,8 @@
 
 import Link, { LinkProps } from "next/link";
 import { useAnalytics } from "@/context/amplitude-analytics-provider";
+import { posthog } from "@/lib/analytics/posthog";
+import { ANALYTICS_EVENTS } from "@/lib/analytics/events";
 import { ReactNode, MouseEvent } from "react";
 import { ArrowUpRight } from "lucide-react";
 
@@ -36,7 +38,17 @@ export function TrackedLink({
       ...eventData,
     };
 
+    // Fire to Amplitude
     analytics.logEvent(defaultEventName, defaultEventData);
+
+    // Fire to PostHog
+    posthog.capture(ANALYTICS_EVENTS.LINK_CLICK, {
+      element_text: typeof children === "string" ? children : "Link",
+      element_url: linkProps.href.toString(),
+      page_url: typeof window !== "undefined" ? window.location.href : "",
+      original_event_name: defaultEventName,
+      ...eventData,
+    });
 
     // Call the original onClick handler if provided
     if (onClick) {

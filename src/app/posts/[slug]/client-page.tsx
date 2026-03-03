@@ -7,6 +7,7 @@ import Container from "@/components/container";
 import Header from "@/components/header";
 import { PostHeader } from "@/components/post-header";
 import { BackNavigation } from "@/components/analytics/back-navigation";
+import { BlogEngagementTracker } from "@/components/analytics/blog-engagement-tracker";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { ArticleMetadataSidebar } from "@/components/article-metadata-sidebar";
 import { calculateReadingTime } from "@/lib/reading-time";
@@ -34,8 +35,27 @@ export default function ClientPage(props: ClientPageProps) {
   const readTime = calculateReadingTime(contentString);
   const headings = extractHeadingsFromTina(post.body);
 
+  // Derive slug from the file path (e.g. "my-post.md" → "my-post")
+  const postSlug = props.variables.relativePath.replace(/\.md$/, "");
+
+  // Approximate word count for analytics
+  const wordCount = contentString
+    .replace(/<[^>]*>/g, "")
+    .trim()
+    .split(/\s+/).length;
+
   return (
     <main className="min-h-screen bg-background">
+      {/* PostHog engagement tracking (invisible) */}
+      <BlogEngagementTracker
+        postSlug={postSlug}
+        postTitle={post.title}
+        postCategory={post.category || "Article"}
+        postAuthor={post.author?.name || "Superlend Team"}
+        estimatedReadTimeMinutes={readTime}
+        wordCount={wordCount}
+      />
+
       {/* LayerZero-style scroll progress indicator */}
       <ScrollProgress />
 
@@ -92,7 +112,7 @@ export default function ClientPage(props: ClientPageProps) {
 
           {/* Right Sidebar - TOC */}
           <div className="hidden lg:block">
-            <TableOfContents headings={headings} />
+            <TableOfContents headings={headings} postSlug={postSlug} />
           </div>
         </div>
       </Container>

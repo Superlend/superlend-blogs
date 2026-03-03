@@ -3,6 +3,8 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import cn from "classnames";
 import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
+import { PostHogProvider } from "@/context/posthog-provider";
+import { PostHogPageView } from "@/components/analytics/posthog-page-view";
 
 import "./globals.css";
 import { BackgroundImage } from "../components/background-image";
@@ -83,8 +85,11 @@ export default function RootLayout({
       >
         <BackgroundImage />
         <AmplitudeAnalyticsProvider apiKey={amplitudeApiKey}>
-          <div className="min-h-screen">{children}</div>
-          <Footer />
+          <PostHogProvider>
+            <PostHogPageView />
+            <div className="min-h-screen">{children}</div>
+            <Footer />
+          </PostHogProvider>
         </AmplitudeAnalyticsProvider>
       </body>
       <Script

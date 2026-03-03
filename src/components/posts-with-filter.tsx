@@ -4,6 +4,8 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { useState, useRef, useCallback, useEffect, Suspense } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import type { Post } from "@/interfaces/post";
+import { posthog } from "@/lib/analytics/posthog";
+import { ANALYTICS_EVENTS } from "@/lib/analytics/events";
 import { HeroPost } from "./hero-post";
 import { BlogCardCompact } from "./blog-card-compact";
 
@@ -82,6 +84,13 @@ function PostsWithFilterContent({ posts }: { posts: Post[] }) {
       const query = params.toString();
       const basePath = pathname ?? "/";
       router.push(query ? `${basePath}?${query}` : basePath, { scroll: false });
+
+      // Track category filter in PostHog
+      posthog.capture(ANALYTICS_EVENTS.CATEGORY_FILTER, {
+        category_name: category.name,
+        category_slug: category.slug,
+        post_count: category.count,
+      });
     },
     [searchParams, router, pathname],
   );
