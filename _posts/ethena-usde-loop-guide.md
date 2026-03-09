@@ -1,7 +1,7 @@
 ---
 title: "Ethena USDe Yield: How Looping Amplifies Returns"
 excerpt: "Learn how USDe looping works, the expected yields and risks. Compare protocols for USDe lending and discover automated looping strategies on Superlend."
-coverImage: "/assets/blog/covers/ethena-usde-loop-guide.png"
+coverImage: "/assets/blog/covers/ethena-usde-loop-guide.webp"
 date: "2026-02-17T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/ethena-usde-loop-guide.png"
+  url: "/assets/blog/covers/ethena-usde-loop-guide.webp"
 ---
 
 USDe looping is the highest-yielding stablecoin strategy in DeFi right now. By depositing Ethena's sUSDe as collateral, borrowing stablecoins, and restaking into more sUSDe, you can amplify the base funding rate yield from single digits into double or even triple digits depending on leverage and market conditions.

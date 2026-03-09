@@ -5,6 +5,8 @@ import ClientPage from "./client-page";
 import { ArticleSchema } from "@/components/article-schema";
 import { type Post as PostType, type BlogCategory } from "@/interfaces/post";
 
+export const revalidate = 3600;
+
 export default async function Post(props: Params) {
   const params = await props.params;
   const { slug } = params;

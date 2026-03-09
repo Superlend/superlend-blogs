@@ -1,7 +1,7 @@
 ---
 title: "Impermanent Loss Explained: What DeFi Users Need to Know"
 excerpt: "Understand impermanent loss in DeFi liquidity pools. Learn how it works, when it matters, and proven strategies to minimize its impact on your returns."
-coverImage: "/assets/blog/covers/impermanent-loss-explained.png"
+coverImage: "/assets/blog/covers/impermanent-loss-explained.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "DeFi Basics"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/impermanent-loss-explained.png"
+  url: "/assets/blog/covers/impermanent-loss-explained.webp"
 ---
 
 Impermanent loss is the reduction in value that liquidity providers experience when the price of their deposited assets changes compared to simply holding them. It occurs exclusively in automated market maker (AMM) liquidity pools and represents one of the most misunderstood risks in DeFi.

@@ -1,7 +1,7 @@
 ---
 title: "Stablecoin Yield Strategies: Maximize USDC & USDT"
 excerpt: "Discover proven strategies to maximize yield on your stablecoins. From simple lending to advanced techniques, learn how to earn more on USDC and USDT."
-coverImage: "/assets/blog/covers/stablecoin-yield-strategies.png"
+coverImage: "/assets/blog/covers/stablecoin-yield-strategies.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/stablecoin-yield-strategies.png"
+  url: "/assets/blog/covers/stablecoin-yield-strategies.webp"
 ---
 
 Stablecoins have become the backbone of DeFi – and for good reason. They offer the best of both worlds: the stability of dollars with the flexibility of crypto. But holding USDC or USDT in a wallet earning nothing is like keeping cash under your mattress while inflation eats away at its value.

@@ -1,7 +1,7 @@
 ---
 title: "Best DeFi Yields February 2026: Where to Earn"
 excerpt: "Compare the highest DeFi yields in February 2026. Stablecoin, ETH, and BTC lending rates across Aave, Morpho, Compound, and other top protocols."
-coverImage: "/assets/blog/covers/best-defi-yields-feb-2026.png"
+coverImage: "/assets/blog/covers/best-defi-yields-feb-2026.webp"
 date: "2026-02-02T12:00:00.000Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/best-defi-yields-feb-2026.png"
+  url: "/assets/blog/covers/best-defi-yields-feb-2026.webp"
 ---
 
 February 2026 DeFi yields remain strong, with stablecoin rates between 3-9% APY, ETH at 1.5-2% APY for native lending, and BTC yields under 0.1% APY. Synthetic dollar assets like sUSDe are leading the pack with yields approaching 9%, while traditional stablecoins like USDC and USDT offer more modest but consistent returns in the 3-5% range.

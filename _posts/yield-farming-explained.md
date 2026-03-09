@@ -1,7 +1,7 @@
 ---
 title: "Yield Farming Explained: Complete Beginner's Guide"
 excerpt: "Learn what yield farming is, how it works, and how to start earning passive income in DeFi. A complete beginner's guide with practical strategies and risk tips."
-coverImage: "/assets/blog/covers/yield-farming-explained.png"
+coverImage: "/assets/blog/covers/yield-farming-explained.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "DeFi Basics"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/yield-farming-explained.png"
+  url: "/assets/blog/covers/yield-farming-explained.webp"
 ---
 
 Yield farming is the practice of earning returns on your cryptocurrency by putting it to work in decentralized finance (DeFi) protocols. Depending on the strategy and asset, you can expect annual yields ranging from 1-2% on volatile assets like ETH to 3-9% or higher on stablecoins.

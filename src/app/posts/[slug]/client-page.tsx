@@ -103,6 +103,7 @@ export default function ClientPage(props: ClientPageProps) {
                   alt={`Cover image for article: ${post.title}`}
                   width={736}
                   height={315}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 736px"
                   className="object-cover aspect-[21/9]"
                 />
               )}

@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        basier: ["Basier Circle", "Inter", "system-ui", "sans-serif"],
-        sans: ["Basier Circle", "Inter", "system-ui", "sans-serif"],
+        basier: ["var(--font-basier)", "Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-basier)", "Inter", "system-ui", "sans-serif"],
       },
       // Enhanced border radius for glassmorphism
       borderRadius: {

@@ -17,6 +17,7 @@ const CoverImage = ({ title, src, slug, isPriority = false }: Props) => {
       className="shadow-sm w-full h-full object-cover object-center hover:shadow-lg transition-shadow duration-200"
       width={1300}
       height={630}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       priority={isPriority}
       loading={isPriority ? undefined : "lazy"}
     />

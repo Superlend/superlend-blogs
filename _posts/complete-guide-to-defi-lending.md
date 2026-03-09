@@ -1,7 +1,7 @@
 ---
 title: "The Complete Guide to DeFi Lending in 2026"
 excerpt: "Learn everything about DeFi lending – how it works, top protocols, yield strategies, and risks. Your comprehensive guide to earning on your crypto."
-coverImage: "/assets/blog/covers/defi-lending-guide.png"
+coverImage: "/assets/blog/covers/defi-lending-guide.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/defi-lending-guide.png"
+  url: "/assets/blog/covers/defi-lending-guide.webp"
 ---
 
 # The Complete Guide to DeFi Lending in 2026

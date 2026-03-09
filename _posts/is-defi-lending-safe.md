@@ -1,7 +1,7 @@
 ---
 title: "Is DeFi Lending Safe? Understanding the Risks"
 excerpt: "An honest look at DeFi lending risks – smart contract vulnerabilities, liquidation, protocol failures, and how to protect yourself while earning yield."
-coverImage: "/assets/blog/covers/defi-lending-safe.png"
+coverImage: "/assets/blog/covers/defi-lending-safe.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "DeFi Basics"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/defi-lending-safe.png"
+  url: "/assets/blog/covers/defi-lending-safe.webp"
 ---
 
 "Is DeFi lending safe?" It's a question every newcomer asks – and one that experienced users continue to grapple with. The honest answer is nuanced: DeFi lending carries real risks, but they're risks that can be understood, measured, and managed.

@@ -1,7 +1,7 @@
 ---
 title: "Morpho Lending: Complete Guide to Optimized DeFi Yields"
 excerpt: "Learn how Morpho Blue and Morpho Vaults deliver optimized DeFi lending rates. Compare curated vaults and maximize your yields across multiple markets."
-coverImage: "/assets/blog/covers/morpho-lending-guide.png"
+coverImage: "/assets/blog/covers/morpho-lending-guide.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/morpho-lending-guide.png"
+  url: "/assets/blog/covers/morpho-lending-guide.webp"
 ---
 
 Morpho is a DeFi lending protocol built on Morpho Blue, a permissionless lending primitive that enables highly efficient, isolated lending markets. Users can expect yields ranging from 3-8% APY on stablecoins like USDC and USDT through curated Morpho Vaults that optimize capital allocation across multiple markets.

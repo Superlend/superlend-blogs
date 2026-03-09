@@ -1,7 +1,7 @@
 ---
 title: "Funding Rate Yield: How Ethena USDe Generates Returns"
 excerpt: "Funding rate yield comes from perpetual futures markets where longs pay shorts. Ethena captures this with a delta-neutral strategy powering USDe and sUSDe."
-coverImage: "/assets/blog/covers/funding-rate-yield-explained.png"
+coverImage: "/assets/blog/covers/funding-rate-yield-explained.webp"
 date: "2026-02-19T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/funding-rate-yield-explained.png"
+  url: "/assets/blog/covers/funding-rate-yield-explained.webp"
 ---
 
 Funding rate yield is the interest that perpetual futures traders pay to hold leveraged positions. In crypto, that rate is almost always positive – meaning longs pay shorts. Ethena captures this by holding ETH spot and shorting ETH perpetual futures simultaneously, then passing the income to USDe stakers as yield. The result is a stablecoin that earns returns without relying on traditional lending or liquidity mining.

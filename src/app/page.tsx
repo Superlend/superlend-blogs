@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import { getAllPosts } from "@/lib/api";
 import Hero from "@/components/hero";
 
+export const revalidate = 3600;
+
 export default function Index() {
   const allPosts = getAllPosts() || []; // Fallback to empty array
 
