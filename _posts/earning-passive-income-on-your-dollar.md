@@ -1,7 +1,7 @@
 ---
 title: "Earning Passive Income on Your Dollar"
 excerpt: "When you supply assets like USDC to a lending protocol, your funds are lent out safely (only to overcollateralized borrowers), and you earn interest in return"
-coverImage: "/assets/blog/covers/earning_passive_income_on_your_dollar.webp"
+coverImage: "/assets/blog/covers/earning-passive-income-on-your-dollar.webp"
 date: "2025-06-28T19:18:03.920Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/earning_passive_income_on_your_dollar.webp"
+  url: "/assets/blog/covers/earning-passive-income-on-your-dollar.webp"
 ---
 
 ## How Stablecoin Yield Works: Earning Passive Income on USDC

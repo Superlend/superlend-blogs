@@ -1,7 +1,7 @@
 ---
 title: "Beyond Stablecoins: Your Guide to High-APR Lending in DeFi"
 excerpt: "While stablecoin lending offers predictable yields, lending volatile assets like ETH, SOL, or other non-stable tokens can unlock APRs from 15% to over 80%"
-coverImage: "/assets/blog/covers/beyond_stablecoins.webp"
+coverImage: "/assets/blog/covers/beyond-stablecoins.webp"
 date: "2025-06-29T19:18:03.920Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/beyond_stablecoins.webp"
+  url: "/assets/blog/covers/beyond-stablecoins.webp"
 ---
 
 ## High APR DeFi Lending: Strategies Beyond Stablecoins

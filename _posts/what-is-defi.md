@@ -1,14 +1,14 @@
 ---
 title: "What is DeFi? A Beginner's Guide"
 excerpt: "Imagine you could send money to anyone, earn interest on it, or borrow some—all without a bank in between. That's DeFi, or Decentralized Finance."
-coverImage: "/assets/blog/covers/what_is_defi.webp"
+coverImage: "/assets/blog/covers/what-is-defi.webp"
 date: "2025-05-29T12:00:00.000Z"
 category: "DeFi Basics"
 author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/what_is_defi.webp"
+  url: "/assets/blog/covers/what-is-defi.webp"
 ---
 
 ## What Is DeFi Lending? Your Complete Beginner's Guide
