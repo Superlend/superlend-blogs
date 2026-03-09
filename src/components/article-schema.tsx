@@ -23,7 +23,7 @@ export function ArticleSchema({ post, url }: ArticleSchemaProps) {
     description: post.excerpt,
     image: toAbsoluteUrl(post.coverImage),
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.modifiedDate || post.date,
     author: {
       "@type": "Person",
       name: post.author.name,

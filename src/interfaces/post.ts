@@ -14,6 +14,7 @@ export type Post = {
   slug: string;
   title: string;
   date: string;
+  modifiedDate?: string;
   coverImage: string;
   author: Author;
   excerpt: string;
