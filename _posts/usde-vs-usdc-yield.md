@@ -1,7 +1,7 @@
 ---
 title: "USDe vs USDC: Which Stablecoin Earns More Yield?"
 excerpt: "USDe and USDC generate yield in completely different ways. Compare returns, risks, and strategies to decide which stablecoin earns more for your portfolio."
-coverImage: "/assets/blog/covers/usde-vs-usdc-yield.png"
+coverImage: "/assets/blog/covers/usde-vs-usdc-yield.webp"
 date: "2026-02-19T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/usde-vs-usdc-yield.png"
+  url: "/assets/blog/covers/usde-vs-usdc-yield.webp"
 ---
 
 USDe consistently earns more yield than USDC – but it carries more risk. In current market conditions, staking USDe into sUSDe returns approximately 5% APY, while USDC lending across major protocols yields 3-8% APY. During bullish crypto markets, sUSDe has reached 25%+ while USDC lending rarely exceeds 10%. The difference comes down to how each stablecoin generates that yield, and whether the extra return justifies the additional risk layers.

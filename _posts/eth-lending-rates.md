@@ -1,7 +1,7 @@
 ---
 title: "ETH Lending Rates: Earn Passive Income on Ethereum"
 excerpt: "Compare ETH lending rates across DeFi protocols. Learn how to earn yield on your Ethereum without selling, including LST strategies for higher returns."
-coverImage: "/assets/blog/covers/eth-lending-rates.png"
+coverImage: "/assets/blog/covers/eth-lending-rates.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/eth-lending-rates.png"
+  url: "/assets/blog/covers/eth-lending-rates.webp"
 ---
 
 Ethereum holders face a common dilemma: you believe in ETH's long-term potential, but watching it sit idle in your wallet feels like a missed opportunity. Selling isn't an option – you want to maintain your exposure. So what can you do?

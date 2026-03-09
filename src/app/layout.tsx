@@ -2,13 +2,30 @@ import Footer from "@/components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import cn from "classnames";
+import localFont from "next/font/local";
 import { AmplitudeAnalyticsProvider } from "@/context/amplitude-analytics-provider";
 import { PostHogProvider } from "@/context/posthog-provider";
 import { PostHogPageView } from "@/components/analytics/posthog-page-view";
+import { SiteSchema } from "@/components/site-schema";
 
 import "./globals.css";
 import { BackgroundImage } from "../components/background-image";
 import Script from "next/script";
+
+const basierCircle = localFont({
+  src: [
+    { path: "../../public/fonts/basier-circle/BasierCircle-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-Italic.woff2", weight: "400", style: "italic" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-Medium.woff2", weight: "500", style: "normal" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-MediumItalic.woff2", weight: "500", style: "italic" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-SemiBold.woff2", weight: "600", style: "normal" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-SemiBoldItalic.woff2", weight: "600", style: "italic" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-Bold.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/basier-circle/BasierCircle-BoldItalic.woff2", weight: "700", style: "italic" },
+  ],
+  variable: "--font-basier",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://blog.superlend.xyz"),
@@ -43,8 +60,9 @@ export default function RootLayout({
   const amplitudeApiKey = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY || "";
 
   return (
-    <html lang="en" data-mode="light" suppressHydrationWarning>
+    <html lang="en" data-mode="light" className={basierCircle.variable} suppressHydrationWarning>
       <head>
+        <SiteSchema />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

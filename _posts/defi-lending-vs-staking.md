@@ -1,7 +1,7 @@
 ---
 title: "DeFi Lending vs Staking: Which Earns More?"
 excerpt: "Compare DeFi lending and staking side by side. Understand yields, risks, and flexibility to decide the best earning strategy for your crypto portfolio in 2026."
-coverImage: "/assets/blog/covers/defi-lending-vs-staking.png"
+coverImage: "/assets/blog/covers/defi-lending-vs-staking.webp"
 date: "2026-02-17T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/defi-lending-vs-staking.png"
+  url: "/assets/blog/covers/defi-lending-vs-staking.webp"
 ---
 
 DeFi lending and staking are two fundamentally different ways to earn yield on crypto – and choosing between them depends on what assets you hold, how much flexibility you need, and what risks you're comfortable with.

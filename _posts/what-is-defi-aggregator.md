@@ -1,7 +1,7 @@
 ---
 title: "What Is a DeFi Aggregator and Why It Matters"
 excerpt: "DeFi aggregators compare rates across lending protocols so you always get the best yield. Learn how they work and why they're essential for optimizing returns."
-coverImage: "/assets/blog/covers/what-is-defi-aggregator.png"
+coverImage: "/assets/blog/covers/what-is-defi-aggregator.webp"
 date: "2026-02-17T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/what-is-defi-aggregator.png"
+  url: "/assets/blog/covers/what-is-defi-aggregator.webp"
 ---
 
 **A DeFi aggregator is a platform that connects to multiple decentralized protocols and blockchains, letting you compare rates, execute transactions, and manage positions from a single interface – instead of checking each protocol one by one.**

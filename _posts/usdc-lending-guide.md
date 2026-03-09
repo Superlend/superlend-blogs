@@ -1,7 +1,7 @@
 ---
 title: "USDC Lending: Guide to Earning Yield on Stablecoins"
 excerpt: "Learn how to earn yield on your USDC through DeFi lending. Compare rates, understand risks, and find the best platforms for stablecoin yields."
-coverImage: "/assets/blog/covers/usdc-lending-guide.png"
+coverImage: "/assets/blog/covers/usdc-lending-guide.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/usdc-lending-guide.png"
+  url: "/assets/blog/covers/usdc-lending-guide.webp"
 ---
 
 USDC lending earns 3-8% APY with minimal volatility risk. Your principal stays close to $1 while you earn interest that often exceeds traditional savings accounts.

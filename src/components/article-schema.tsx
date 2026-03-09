@@ -1,34 +1,36 @@
 import { Post } from "@/interfaces/post";
 
+const BASE_URL = "https://blog.superlend.xyz";
+
+function toAbsoluteUrl(path: string): string {
+  return path.startsWith("http") ? path : `${BASE_URL}${path}`;
+}
+
 interface ArticleSchemaProps {
   post: Post;
   url: string;
 }
 
 export function ArticleSchema({ post, url }: ArticleSchemaProps) {
-  const schema = {
+  const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    image: post.coverImage.startsWith("http")
-      ? post.coverImage
-      : `https://blog.superlend.xyz${post.coverImage}`,
+    image: toAbsoluteUrl(post.coverImage),
     datePublished: post.date,
     dateModified: post.date,
     author: {
       "@type": "Person",
       name: post.author.name,
-      image: post.author.picture?.startsWith("http")
-        ? post.author.picture
-        : `https://blog.superlend.xyz${post.author.picture}`,
+      image: post.author.picture ? toAbsoluteUrl(post.author.picture) : undefined,
     },
     publisher: {
       "@type": "Organization",
       name: "Superlend",
       logo: {
         "@type": "ImageObject",
-        url: "https://blog.superlend.xyz/favicon/apple-touch-icon.png",
+        url: `${BASE_URL}/favicon/apple-touch-icon.png`,
       },
     },
     mainEntityOfPage: {
@@ -37,10 +39,35 @@ export function ArticleSchema({ post, url }: ArticleSchemaProps) {
     },
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: post.title,
+        item: url,
+      },
+    ],
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+    </>
   );
 }

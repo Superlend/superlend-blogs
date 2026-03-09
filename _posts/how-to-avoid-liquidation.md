@@ -1,7 +1,7 @@
 ---
 title: "How to Avoid Liquidation in DeFi Lending"
 excerpt: "Practical strategies to protect your DeFi positions from liquidation. Learn health factors, buffer ratios, and monitoring tools to keep your collateral safe."
-coverImage: "/assets/blog/covers/how-to-avoid-liquidation.png"
+coverImage: "/assets/blog/covers/how-to-avoid-liquidation.webp"
 date: "2026-02-17T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/how-to-avoid-liquidation.png"
+  url: "/assets/blog/covers/how-to-avoid-liquidation.webp"
 ---
 
 Liquidation happens when the value of your collateral drops below the minimum ratio your lending protocol requires. When that threshold is breached, anyone can repay part of your debt and claim your collateral at a discount – costing you 5-15% of your position in a single transaction. The good news: liquidation is entirely preventable if you understand how it works and follow a few practical rules.

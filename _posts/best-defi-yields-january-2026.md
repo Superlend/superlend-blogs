@@ -1,7 +1,7 @@
 ---
 title: "Best DeFi Yields January 2026: Where to Earn"
 excerpt: "Discover the highest DeFi yields in January 2026. Compare stablecoin, ETH, and BTC lending rates across top protocols like Aave, Morpho, and Compound."
-coverImage: "/assets/blog/covers/best-defi-yields-jan-2026.png"
+coverImage: "/assets/blog/covers/best-defi-yields-jan-2026.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/best-defi-yields-jan-2026.png"
+  url: "/assets/blog/covers/best-defi-yields-jan-2026.webp"
 ---
 
 Finding the best yields in DeFi has never been more important – or more complex. With hundreds of lending markets spread across multiple chains and protocols, manually comparing rates is a full-time job. As of January 2026, the DeFi lending landscape continues to mature, offering a diverse range of opportunities for yield seekers.

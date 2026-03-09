@@ -1,7 +1,7 @@
 ---
 title: "How to Borrow Crypto in DeFi: Complete Guide"
 excerpt: "Learn how DeFi borrowing works, from depositing collateral to finding the cheapest rates. Compare protocols across chains and borrow at the lowest cost."
-coverImage: "/assets/blog/covers/how-to-borrow-crypto-defi.png"
+coverImage: "/assets/blog/covers/how-to-borrow-crypto-defi.webp"
 date: "2026-02-17T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/how-to-borrow-crypto-defi.png"
+  url: "/assets/blog/covers/how-to-borrow-crypto-defi.webp"
 ---
 
 DeFi borrowing lets you take loans against your crypto without selling it. You deposit collateral – like ETH or WBTC – borrow another asset like USDC, and repay when you're ready. No credit checks, no paperwork, no intermediaries. The entire process runs on smart contracts that execute automatically.

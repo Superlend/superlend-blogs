@@ -1,7 +1,7 @@
 ---
 title: "WBTC Lending: Earn Yield on Bitcoin Without Selling"
 excerpt: "Learn how to earn passive income on your Bitcoin through WBTC lending. Compare rates across DeFi protocols and understand the risks involved."
-coverImage: "/assets/blog/covers/wbtc-lending.png"
+coverImage: "/assets/blog/covers/wbtc-lending.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "Yield Strategies"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/wbtc-lending.png"
+  url: "/assets/blog/covers/wbtc-lending.webp"
 ---
 
 If you're holding Bitcoin and watching stablecoin lenders earn passive income, you might be wondering – is there a way to put your BTC to work without selling it? The answer is yes, and it's called WBTC lending.

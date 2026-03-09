@@ -1,7 +1,7 @@
 ---
 title: "Base Chain DeFi Yields: Complete Lending Guide"
 excerpt: "Discover DeFi lending opportunities on Base. Compare yields across Aave, Morpho, and other protocols on Coinbase's Layer 2 network with ultra-low fees."
-coverImage: "/assets/blog/covers/base-defi-yields.png"
+coverImage: "/assets/blog/covers/base-defi-yields.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/base-defi-yields.png"
+  url: "/assets/blog/covers/base-defi-yields.webp"
 ---
 
 Base offers DeFi lending yields ranging from 3-8% APY on stablecoins through protocols like Aave and Morpho, with transaction costs under $0.01. As Coinbase's Layer 2 network, Base combines institutional-grade infrastructure with the permissionless nature of DeFi, making it an attractive destination for yield-seeking lenders.

@@ -1,7 +1,7 @@
 ---
 title: "rETH Yield Guide: Maximize Rocket Pool ETH Returns"
 excerpt: "Learn how to earn additional yield on rETH through DeFi lending. Combine Rocket Pool staking rewards with lending for compounded returns on Ethereum."
-coverImage: "/assets/blog/covers/reth-yield-guide.png"
+coverImage: "/assets/blog/covers/reth-yield-guide.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/reth-yield-guide.png"
+  url: "/assets/blog/covers/reth-yield-guide.webp"
 ---
 
 rETH is Rocket Pool's liquid staking token that represents staked ETH plus accumulated staking rewards, currently earning approximately 3-4% APY from Ethereum's proof-of-stake consensus. By deploying rETH into DeFi lending protocols, holders can stack additional yield on top of base staking returns, potentially reaching 5-8% combined APY depending on market conditions.

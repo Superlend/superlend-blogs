@@ -1,7 +1,7 @@
 ---
 title: "Arbitrum DeFi Lending: Complete Yield Guide"
 excerpt: "Explore DeFi lending on Arbitrum. Compare yields across Aave, Compound, and other protocols on Ethereum's leading Layer 2. Find the best rates today."
-coverImage: "/assets/blog/covers/arbitrum-lending-guide.png"
+coverImage: "/assets/blog/covers/arbitrum-lending-guide.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/arbitrum-lending-guide.png"
+  url: "/assets/blog/covers/arbitrum-lending-guide.webp"
 ---
 
 Arbitrum offers DeFi lending yields ranging from 0.04% on WBTC to over 2.6% APY on stablecoins like USDC, with additional ARB incentives available on select protocols. These rates, combined with transaction costs that are a fraction of Ethereum mainnet, make Arbitrum one of the most attractive destinations for yield-seeking lenders.

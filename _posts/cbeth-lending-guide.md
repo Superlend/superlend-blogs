@@ -1,7 +1,7 @@
 ---
 title: "cbETH Lending: Earn Yield on Coinbase Staked ETH"
 excerpt: "Learn how to maximize returns on cbETH through DeFi lending. Stack Coinbase staking rewards with lending yields for compounded returns on your ETH."
-coverImage: "/assets/blog/covers/cbeth-lending-guide.png"
+coverImage: "/assets/blog/covers/cbeth-lending-guide.webp"
 date: "2026-02-03T12:00:00.000Z"
 published: true
 category: "Guides"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/cbeth-lending-guide.png"
+  url: "/assets/blog/covers/cbeth-lending-guide.webp"
 ---
 
 cbETH is Coinbase's liquid staking token representing staked ETH on the Coinbase platform, allowing holders to earn Ethereum staking rewards (currently around 2.5-3% APY) while maintaining liquidity. By lending cbETH through DeFi protocols, you can stack additional yield on top of your staking rewards, potentially earning 3-4% total APY depending on market conditions.

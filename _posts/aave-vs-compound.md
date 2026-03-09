@@ -1,7 +1,7 @@
 ---
 title: "Aave vs Compound: Which DeFi Lending Protocol?"
 excerpt: "Detailed comparison of Aave and Compound – rates, features, security, and supported assets. Find out which DeFi lending protocol is right for you."
-coverImage: "/assets/blog/covers/aave-vs-compound.png"
+coverImage: "/assets/blog/covers/aave-vs-compound.webp"
 date: "2026-01-29T12:00:00.000Z"
 published: true
 category: "DeFi Basics"
@@ -9,7 +9,7 @@ author:
   name: "Superlend Team"
   picture: "/assets/blog/authors/superlend-team.png"
 ogImage:
-  url: "/assets/blog/covers/aave-vs-compound.png"
+  url: "/assets/blog/covers/aave-vs-compound.webp"
 ---
 
 ## Aave vs Compound: Which DeFi Lending Protocol is Better?
