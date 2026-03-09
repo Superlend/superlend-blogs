@@ -6,6 +6,10 @@ function toAbsoluteUrl(path: string): string {
   return path.startsWith("http") ? path : `${BASE_URL}${path}`;
 }
 
+function safeJsonLd(obj: Record<string, unknown>): string {
+  return JSON.stringify(obj).replace(/<\/script/gi, "<\\/script");
+}
+
 interface ArticleSchemaProps {
   post: Post;
   url: string;
@@ -19,7 +23,7 @@ export function ArticleSchema({ post, url }: ArticleSchemaProps) {
     description: post.excerpt,
     image: toAbsoluteUrl(post.coverImage),
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.modifiedDate || post.date,
     author: {
       "@type": "Person",
       name: post.author.name,
@@ -62,11 +66,11 @@ export function ArticleSchema({ post, url }: ArticleSchemaProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(articleSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbSchema) }}
       />
     </>
   );

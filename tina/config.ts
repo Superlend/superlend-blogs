@@ -55,6 +55,11 @@ export default defineConfig({
             label: "Date",
           },
           {
+            type: "datetime",
+            name: "modifiedDate",
+            label: "Last Modified Date",
+          },
+          {
             type: "boolean",
             name: "published",
             label: "Published",

@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { client } from "../../../../tina/__generated__/client";
 import ClientPage from "./client-page";
 import { ArticleSchema } from "@/components/article-schema";
+import { RelatedPosts } from "@/components/related-posts";
+import { getAllPosts } from "@/lib/api";
+import Container from "@/components/container";
 import { type Post as PostType, type BlogCategory } from "@/interfaces/post";
 
 export const revalidate = 3600;
@@ -27,10 +30,13 @@ export default async function Post(props: Params) {
   const post = response.data.post;
   const postUrl = `https://blog.superlend.xyz/posts/${slug}`;
 
+  const modifiedDate = (post as any).modifiedDate || undefined;
+
   const schemaPost: PostType = {
     slug: slug,
     title: post.title,
     date: post.date || "",
+    modifiedDate,
     coverImage: post.coverImage || "",
     author: {
       name: post.author?.name || "Superlend Team",
@@ -44,6 +50,11 @@ export default async function Post(props: Params) {
     category: (post.category as BlogCategory) || "Guides",
   };
 
+  const category = (post.category as BlogCategory) || "Guides";
+  const relatedPosts = getAllPosts()
+    .filter((p) => p.slug !== slug && p.category === category)
+    .slice(0, 3);
+
   return (
     <>
       <ArticleSchema post={schemaPost} url={postUrl} />
@@ -52,6 +63,9 @@ export default async function Post(props: Params) {
         variables={response.variables}
         data={response.data}
       />
+      <Container>
+        <RelatedPosts posts={relatedPosts} />
+      </Container>
     </>
   );
 }
@@ -104,6 +118,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
       description: post.excerpt || "",
       type: "article",
       publishedTime: post.date || "",
+      modifiedTime: (post as any).modifiedDate || post.date || "",
       authors: [post.author?.name || "Superlend Team"],
       images: imageUrl ? [imageUrl] : [],
       url,

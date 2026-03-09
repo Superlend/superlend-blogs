@@ -1,5 +1,9 @@
 const BASE_URL = "https://blog.superlend.xyz";
 
+function safeJsonLd(obj: Record<string, unknown>): string {
+  return JSON.stringify(obj).replace(/<\/script/gi, "<\\/script");
+}
+
 export function SiteSchema() {
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -29,11 +33,11 @@ export function SiteSchema() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(organizationSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(websiteSchema) }}
       />
     </>
   );
