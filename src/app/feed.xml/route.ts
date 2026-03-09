@@ -1,5 +1,16 @@
 import { getAllPosts } from "@/lib/api";
 
+function escapeCdata(str: string): string {
+  return str.replace(/]]>/g, "]]]]><![CDATA[>");
+}
+
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 export async function GET() {
   const posts = getAllPosts();
   const baseUrl = "https://blog.superlend.xyz";
@@ -10,13 +21,13 @@ export async function GET() {
       const url = `${baseUrl}/posts/${post.slug}`;
 
       return `    <item>
-      <title><![CDATA[${post.title}]]></title>
+      <title><![CDATA[${escapeCdata(post.title)}]]></title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <description><![CDATA[${post.excerpt}]]></description>
+      <description><![CDATA[${escapeCdata(post.excerpt)}]]></description>
       <pubDate>${pubDate}</pubDate>
-      <author>blog@superlend.xyz (${post.author.name})</author>
-      <category>${post.category}</category>
+      <author>blog@superlend.xyz (${escapeXml(post.author.name)})</author>
+      <category>${escapeXml(post.category)}</category>
     </item>`;
     })
     .join("\n");
